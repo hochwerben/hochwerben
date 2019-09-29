@@ -25,6 +25,7 @@
 
 .closeBtn {
   border: none;
+  display: inline-block;
   text-transform: capitalize;
   font-size: 1.1rem;
   display: flex;
