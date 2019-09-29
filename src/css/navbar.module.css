@@ -31,6 +31,14 @@
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 500px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+  .header img {
+    max-width: 13rem;
+  }
+}
 
 .toggleBtn {
   border: none;
@@ -42,6 +50,7 @@
   cursor: pointer;
   color: var(--mainBlack);
   outline-color: var(--primaryColor);
+  background: transparent;
 }
 .toggleIcon {
   margin-left: 0.5rem;

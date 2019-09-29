@@ -9,7 +9,7 @@ const AppProvider = ({ children }) => {
   React.useEffect(() => {
     if (window) {
       setSize(window.innerWidth)
-      setSize(window.pageYOffset)
+      setHeight(window.pageYOffset)
       window.addEventListener("resize", () => {
         setSize(window.innerWidth)
       })
