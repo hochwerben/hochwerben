@@ -1,0 +1,11 @@
+.banner {
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 4rem;
+}
+@media screen and (min-width: 776px) {
+  .title {
+    font-size: 4rem;
+  }
+}
