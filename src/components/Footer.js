@@ -20,7 +20,7 @@ const Footer = () => {
       <div className={styles.info}>
         © {new Date().getFullYear()} John Smilga. All rights reserved. Built
         with
-        <a href="https://www.gatsby.org" className={styles.link}>
+        <a href="https://www.gatsbyjs.org/" className={styles.link}>
           Gatsby
         </a>
       </div>
