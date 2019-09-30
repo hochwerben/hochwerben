@@ -1,16 +1,19 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Image from "gatsby-image"
+import { graphql, useStaticQuery, Link } from "gatsby"
+import Course from "./Course"
+import styles from "../../css/courses.module.css"
+import Title from "../Title"
 const query = graphql`
-  query {
+  {
     allStrapiCourse {
       nodes {
         title
         url
         id
+        size
         image {
           childImageSharp {
-            fluid {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -26,19 +29,17 @@ const Courses = () => {
   } = useStaticQuery(query)
 
   return (
-    <div className="courses">
-      {courses.map(item => {
-        const { title, url } = item
-        const image = item.image.childImageSharp.fluid
-        return (
-          <div key={item.id} style={{ width: "200px" }}>
-            <Image fluid={image} alt="course image"></Image>
-            <h6>{title}</h6>
-            <h6>{url}</h6>
-          </div>
-        )
-      })}
-    </div>
+    <section className={styles.courses}>
+      <Title title="latest" subtitle="courses"></Title>
+      <div className={styles.center}>
+        {courses.map(item => {
+          return <Course key={item.id} {...item}></Course>
+        })}
+      </div>
+      <Link to="/courses" className="btn-primary">
+        all courses
+      </Link>
+    </section>
   )
 }
 

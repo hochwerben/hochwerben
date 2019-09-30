@@ -9,21 +9,13 @@ const HomeBanner = () => {
   if (size < 776) {
     return (
       <SmallBanner>
-        <Banner title="project-based web development courses">
-          <Link to="/courses" className="btn-primary">
-            courses
-          </Link>
-        </Banner>
+        <Banner title="project-based web development courses"></Banner>
       </SmallBanner>
     )
   }
   return (
     <Background>
-      <Banner title="project-based web development courses">
-        <Link to="/courses" className="btn-primary">
-          courses
-        </Link>
-      </Banner>
+      <Banner title="project-based web development courses"></Banner>
     </Background>
   )
 }
