@@ -1,15 +1,21 @@
 import React from "react"
 import styles from "../../css/single-course.module.css"
 import Image from "gatsby-image"
-import { Link } from "gatsby"
 import logo from "../../images/addict-logo.svg"
 const Course = ({ title, url, size, image }) => {
+  console.log(size)
+
   const mainImage = image.childImageSharp.fluid
   return (
     <article className={styles.course}>
       <div className={styles.imgContainer}>
         <Image fluid={mainImage} className={styles.img} />
-        <a className={styles.link} href={url}>
+        <a
+          className={styles.link}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           enroll
         </a>
       </div>
