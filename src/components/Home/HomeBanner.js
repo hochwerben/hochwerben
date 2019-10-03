@@ -2,8 +2,7 @@ import React from "react"
 import { AppContext } from "../../context/context"
 import SmallBanner from "./SmallBanner"
 import Banner from "../Banner"
-import { Link } from "gatsby"
-import Background from "../Background"
+import Background from "./Background"
 const HomeBanner = () => {
   const { size } = React.useContext(AppContext)
   if (size < 776) {

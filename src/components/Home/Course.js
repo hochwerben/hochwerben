@@ -3,8 +3,6 @@ import styles from "../../css/single-course.module.css"
 import Image from "gatsby-image"
 import logo from "../../images/addict-logo.svg"
 const Course = ({ title, url, size, image }) => {
-  console.log(size)
-
   const mainImage = image.childImageSharp.fluid
   return (
     <article className={styles.course}>

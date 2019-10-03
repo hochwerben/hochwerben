@@ -6,6 +6,7 @@ const AppProvider = ({ children }) => {
   const [size, setSize] = React.useState(null)
   const [height, setHeight] = React.useState(null)
   const [isSidebarOpen, setSidebar] = React.useState(false)
+
   React.useEffect(() => {
     if (window) {
       setSize(window.innerWidth)
