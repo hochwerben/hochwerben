@@ -1,0 +1,55 @@
+.project {
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+  background: var(--mainWhite);
+}
+.project:hover {
+  box-shadow: var(--darkShadow);
+}
+.project h3 {
+  font-size: 1rem;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.url {
+  position: absolute;
+  left: 0;
+  top: 75%;
+  background: var(--primaryColor);
+  padding: 0.3rem 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  text-transform: capitalize;
+  transition: var(--mainTransition);
+}
+.url:hover {
+  background: var(--mainWhite);
+}
+
+.footer {
+  padding: 1.1rem 1rem 1.3rem 1rem;
+  text-align: left;
+  background: var(--mainWhite);
+}
+.footer h3 {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+.github {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.github a {
+  text-transform: capitalize;
+  color: var(--darkGrey);
+  transition: var(--mainTransition);
+}
+.github a:hover {
+  color: var(--primaryColor);
+}

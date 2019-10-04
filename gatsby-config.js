@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `John Smilga`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Project-Based Web Development Courses`,
+    author: `@johnsmilga`,
+    twitterUsername: "@john_smilga",
+    image: "/mainBcg.jpeg",
+    siteUrl: "https://www.johnsmilga.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,12 +23,22 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
-        contentTypes: [`course`],
+        contentTypes: [`Course`, `Project`],
         // Possibility to login with a strapi user, when content types are not publically available (optional).
         loginData: {
           identifier: "",
           password: "",
         },
+      },
+    },
+
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.johnsmilga.com",
+        sitemap: "https://www.johnsmilga.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     {
