@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: `John Smilga`,
@@ -21,9 +24,11 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        // REMOVE TRAILING SLASH!!!!!!!!
+        apiURL: process.env.URL,
+        // apiURL: "http://localhost:1337",
         queryLimit: 1000, // Default to 100
-        contentTypes: [`Course`, `Project`],
+        contentTypes: [`course`, "project"],
         // Possibility to login with a strapi user, when content types are not publically available (optional).
         loginData: {
           identifier: "",
