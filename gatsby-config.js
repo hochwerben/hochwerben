@@ -25,7 +25,7 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         // REMOVE TRAILING SLASH!!!!!!!!
-        apiURL: process.env.URL,
+        apiURL: "http://localhost:1337",
         // apiURL: "http://localhost:1337",
         queryLimit: 1000, // Default to 100
         contentTypes: [`course`, "project"],
