@@ -14,6 +14,7 @@ const query = graphql`
         starterFiles
         strapiId
         url
+        api
         image {
           childImageSharp {
             fluid(maxWidth: 600) {

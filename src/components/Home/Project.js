@@ -2,7 +2,7 @@ import React from "react"
 import Image from "gatsby-image"
 import styles from "../../css/single-project.module.css"
 import { FaGithubSquare } from "react-icons/fa"
-const Project = ({ image, title, url, starterFiles, finishedFiles }) => {
+const Project = ({ image, title, url, starterFiles, finishedFiles, api }) => {
   const mainImage = image.childImageSharp.fluid
   return (
     <article className={styles.project}>
@@ -21,6 +21,9 @@ const Project = ({ image, title, url, starterFiles, finishedFiles }) => {
         <h3>{title}</h3>
         <div className={styles.github}>
           <FaGithubSquare className="github-icon icon"></FaGithubSquare>
+          <a href={api} target="_blank" rel="noopener noreferrer">
+            api
+          </a>
           <a href={starterFiles} target="_blank" rel="noopener noreferrer">
             starter files
           </a>
