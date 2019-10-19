@@ -21,9 +21,11 @@ const Project = ({ image, title, url, starterFiles, finishedFiles, api }) => {
         <h3>{title}</h3>
         <div className={styles.github}>
           <FaGithubSquare className="github-icon icon"></FaGithubSquare>
-          <a href={api} target="_blank" rel="noopener noreferrer">
-            api
-          </a>
+          {api ? (
+            <a href={api} target="_blank" rel="noopener noreferrer">
+              api
+            </a>
+          ) : null}
           <a href={starterFiles} target="_blank" rel="noopener noreferrer">
             starter files
           </a>
