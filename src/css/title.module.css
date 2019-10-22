@@ -6,20 +6,18 @@
 .banner h4 {
   text-align: center;
   position: relative;
+  letter-spacing: 7px;
   color: var(--primaryColor);
 }
 .title {
   color: var(--mainBlack);
 }
-.title span {
+.title {
   display: block;
 }
 @media (min-width: 576px) {
-  span {
+  .banner span {
     display: inline-block;
     margin: 0 0.35rem;
-  }
-  .banner h4 {
-    letter-spacing: 7px;
   }
 }
