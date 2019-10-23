@@ -45,6 +45,7 @@ a {
   text-decoration: none;
   color: var(--mainBlack);
 }
+.btn,
 .btn-white,
 .btn-primary {
   text-transform: uppercase;

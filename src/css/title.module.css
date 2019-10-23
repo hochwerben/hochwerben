@@ -7,7 +7,6 @@
   text-align: center;
   position: relative;
   letter-spacing: 7px;
-  color: var(--primaryColor);
 }
 .title {
   color: var(--mainBlack);
