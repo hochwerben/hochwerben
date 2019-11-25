@@ -22,21 +22,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-source-strapi`,
+      resolve: `gatsby-source-contentful`,
       options: {
-        // REMOVE TRAILING SLASH!!!!!!!!
-        // apiURL: "http://localhost:1337",
-        apiURL: "https://gatsby-personal-site.herokuapp.com",
-        queryLimit: 1000, // Default to 100
-        contentTypes: [`course`, "project"],
-        // Possibility to login with a strapi user, when content types are not publically available (optional).
-        loginData: {
-          identifier: "",
-          password: "",
-        },
+        spaceId: process.env.SPACE_ID,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.ACCESS_TOKEN,
       },
     },
-
     `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-robots-txt",

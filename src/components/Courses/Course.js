@@ -3,11 +3,10 @@ import styles from "../../css/single-course.module.css"
 import Image from "gatsby-image"
 import logo from "../../images/addict-logo.svg"
 const Course = ({ title, url, size, image }) => {
-  const mainImage = image.childImageSharp.fluid
   return (
     <article className={styles.course}>
       <div className={styles.imgContainer}>
-        <Image fluid={mainImage} className={styles.img} />
+        <Image fluid={image.fluid} className={styles.img} />
         <a
           className={styles.link}
           href={url}

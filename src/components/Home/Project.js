@@ -2,12 +2,11 @@ import React from "react"
 import Image from "gatsby-image"
 import styles from "../../css/single-project.module.css"
 import { FaGithubSquare } from "react-icons/fa"
-const Project = ({ image, title, url, starterFiles, finishedFiles, api }) => {
-  const mainImage = image.childImageSharp.fluid
+const Project = ({ image, title, url, starterFiles, completeProject, api }) => {
   return (
     <article className={styles.project}>
       <div className={styles.imgContainer}>
-        <Image fluid={mainImage} alt={title} className={styles.img}></Image>
+        <Image fluid={image.fluid} alt={title} className={styles.img}></Image>
         <a
           href={url}
           target="_blank"
@@ -26,12 +25,16 @@ const Project = ({ image, title, url, starterFiles, finishedFiles, api }) => {
               api
             </a>
           ) : null}
-          <a href={starterFiles} target="_blank" rel="noopener noreferrer">
-            starter files
-          </a>
-          <a href={finishedFiles} target="_blank" rel="noopener noreferrer">
-            complete project
-          </a>
+          {starterFiles && (
+            <a href={starterFiles} target="_blank" rel="noopener noreferrer">
+              starter files
+            </a>
+          )}
+          {completeProject && (
+            <a href={completeProject} target="_blank" rel="noopener noreferrer">
+              complete project
+            </a>
+          )}
         </div>
       </div>
     </article>

@@ -5,17 +5,15 @@ import styles from "../../css/courses.module.css"
 import Title from "../Title"
 const query = graphql`
   {
-    allStrapiCourse(sort: { fields: published, order: DESC }, limit: 6) {
+    allContentfulCourses(sort: { fields: published, order: DESC }, limit: 6) {
       nodes {
-        title
-        url
         id
         size
+        title
+        url
         image {
-          childImageSharp {
-            fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+          fluid(maxWidth: 600) {
+            ...GatsbyContentfulFluid
           }
         }
       }
@@ -25,7 +23,7 @@ const query = graphql`
 
 const Courses = () => {
   const {
-    allStrapiCourse: { nodes: courses },
+    allContentfulCourses: { nodes: courses },
   } = useStaticQuery(query)
 
   return (

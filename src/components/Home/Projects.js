@@ -6,23 +6,20 @@ import Title from "../Title"
 
 // projects center
 const query = graphql`
-  {
-    allStrapiProject {
+  query MyQuery {
+    allContentfulProjects(sort: { order: DESC, fields: createdAt }) {
       nodes {
-        finishedFiles
-        slug
+        completeProject
         starterFiles
-        strapiId
+        title
         url
-        api
+        id
         image {
-          childImageSharp {
-            fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+          fluid {
+            ...GatsbyContentfulFluid
           }
         }
-        title
+        api
       }
     }
   }
@@ -30,7 +27,7 @@ const query = graphql`
 
 const Projects = () => {
   const {
-    allStrapiProject: { nodes: projects },
+    allContentfulProjects: { nodes: projects },
   } = useStaticQuery(query)
 
   return (
@@ -38,7 +35,7 @@ const Projects = () => {
       <Title title="latest" subtitle="projects"></Title>
       <div className={styles.center}>
         {projects.map(item => {
-          return <Project key={item.strapiId} {...item} />
+          return <Project key={item.id} {...item} />
         })}
       </div>
     </section>
