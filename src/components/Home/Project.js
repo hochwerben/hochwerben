@@ -27,7 +27,6 @@ const Project = ({
       </div>
       <div className={styles.footer}>
         <h3>{title}</h3>
-        <h5>Stack : {technology}</h5>
         <p>{info}</p>
 
         <div className={styles.github}>
