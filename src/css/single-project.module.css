@@ -28,7 +28,7 @@
   transition: var(--mainTransition);
 }
 .url:hover {
-  background: var(--mainWhite);
+  background: var(--darkGrey);
 }
 
 .footer {
@@ -36,18 +36,28 @@
   text-align: left;
   background: var(--mainWhite);
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
 }
 .footer h3 {
   text-transform: capitalize;
   font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.footer h5 {
+  letter-spacing: var(--mainSpacing);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  color: var(--primaryColor);
+}
+.footer p {
+  letter-spacing: 2px;
   margin-bottom: 0;
 }
 .github {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 .github a {
   text-transform: capitalize;

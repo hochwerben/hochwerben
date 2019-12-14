@@ -1,0 +1,21 @@
+.form {
+  margin-bottom: 4rem;
+}
+.formGroup label {
+  display: block;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 4px;
+}
+.formControl {
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: transparent;
+  width: 10rem;
+  height: 2rem;
+  border: 1px solid var(--mainBlack);
+}
+.type {
+  padding: 1rem;
+}

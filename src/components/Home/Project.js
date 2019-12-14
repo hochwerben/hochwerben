@@ -2,7 +2,16 @@ import React from "react"
 import Image from "gatsby-image"
 import styles from "../../css/single-project.module.css"
 import { FaGithubSquare } from "react-icons/fa"
-const Project = ({ image, title, url, starterFiles, completeProject, api }) => {
+const Project = ({
+  image,
+  title,
+  url,
+  starterFiles,
+  completeProject,
+  api,
+  info: { info },
+  technology,
+}) => {
   return (
     <article className={styles.project}>
       <div className={styles.imgContainer}>
@@ -18,6 +27,9 @@ const Project = ({ image, title, url, starterFiles, completeProject, api }) => {
       </div>
       <div className={styles.footer}>
         <h3>{title}</h3>
+        <h5>Stack : {technology}</h5>
+        <p>{info}</p>
+
         <div className={styles.github}>
           <FaGithubSquare className="github-icon icon"></FaGithubSquare>
           {api ? (
