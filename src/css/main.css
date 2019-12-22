@@ -79,7 +79,7 @@ a {
   color: #1dcaff;
 }
 .github-icon {
-  color: var(--darkGrey);
+  color: var(--primaryColor);
 }
 .background {
   min-height: calc(100vh - 5rem);
