@@ -43,7 +43,7 @@ const Project = ({
           )}
           {completeProject && (
             <a href={completeProject} target="_blank" rel="noopener noreferrer">
-              complete project
+              source code
             </a>
           )}
         </div>
