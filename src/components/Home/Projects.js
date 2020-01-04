@@ -7,7 +7,7 @@ import SelectInput from "./SelectInput"
 // projects center
 const query = graphql`
   query MyQuery {
-    allContentfulProjects(sort: { order: DESC, fields: createdAt }) {
+    allContentfulProjects(sort: { order: DESC, fields: updatedAt }) {
       nodes {
         completeProject
         starterFiles
