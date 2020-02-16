@@ -65,7 +65,7 @@
 }
 .navLink {
   text-transform: capitalize;
-  letter-spacing: 0.4rem;
+  letter-spacing: var(--mainSpacing);
   font-weight: 500;
   font-size: 1.1rem;
   margin-left: 1.5rem;

@@ -8,7 +8,7 @@
   --mainGrey: hsl(210, 32%, 93%);
   --darkGrey: #afafaf;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 0.3rem;
+  --mainSpacing: 2px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
@@ -32,10 +32,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Catamaran", sans-serif;
   margin-bottom: 1.25rem;
-  line-height: 1;
   letter-spacing: var(--mainSpacing);
+}
+h1,
+h2 {
+  line-height: 1;
 }
 p {
   margin-bottom: 1.25rem;
