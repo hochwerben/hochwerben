@@ -6,6 +6,7 @@
   background: var(--mainWhite);
   z-index: 1;
   transition: all 0.5s;
+  border-top: 0.2rem solid var(--primaryColor);
 }
 .navbarFixed {
   position: fixed;
@@ -13,7 +14,6 @@
   left: 0;
   width: 100%;
   height: 3.5rem;
-  border-bottom: 0.1rem solid var(--primaryColor);
   box-shadow: var(--darkShadow);
 }
 .center {

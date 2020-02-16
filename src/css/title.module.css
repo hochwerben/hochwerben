@@ -1,12 +1,11 @@
 .banner {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 2.3rem;
   margin-bottom: 2rem;
 }
 .banner h4 {
   text-align: center;
   position: relative;
-  letter-spacing: 7px;
 }
 .title {
   color: var(--mainBlack);

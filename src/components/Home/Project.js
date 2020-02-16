@@ -16,14 +16,16 @@ const Project = ({
     <article className={styles.project}>
       <div className={styles.imgContainer}>
         <Image fluid={image.fluid} alt={title} className={styles.img}></Image>
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.url}
-        >
-          finished project
-        </a>
+        {url ? (
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.url}
+          >
+            finished project
+          </a>
+        ) : null}
       </div>
       <div className={styles.footer}>
         <h3>{title}</h3>

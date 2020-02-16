@@ -38,7 +38,7 @@
 }
 .footer h3 {
   text-transform: capitalize;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 .footer h5 {
@@ -50,6 +50,7 @@
 .footer p {
   letter-spacing: 2px;
   margin-bottom: 0;
+  color: var(--lightGrey);
 }
 .github .github-icon {
   color: var(--primaryColor);

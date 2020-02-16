@@ -3,8 +3,9 @@
   --primaryColor: #2892d7;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
-  --mainBlack: #222;
-  --mainGrey: #ececec;
+  --mainBlack: hsl(212, 56%, 16%);
+  --lightGrey: hsl(212, 18%, 35%);
+  --mainGrey: hsl(210, 32%, 93%);
   --darkGrey: #afafaf;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 0.3rem;
@@ -22,7 +23,7 @@ body {
   font-family: "Catamaran", sans-serif;
   color: var(--mainBlack);
   background: var(--mainGrey);
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: 1rem;
 }
 h1,
@@ -33,6 +34,7 @@ h5,
 h6 {
   font-family: "Catamaran", sans-serif;
   margin-bottom: 1.25rem;
+  line-height: 1;
   letter-spacing: var(--mainSpacing);
 }
 p {
