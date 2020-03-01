@@ -12,8 +12,9 @@ const Course = ({ title, url, size, image }) => {
         <div className={styles.footer}>
           <h4>{title}</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            ipsum quasi, pariatur ab magni eligendi?
+            Biodiesel humblebrag vinyl farm-to-table street art. Ugh kombucha
+            tattooed kickstarter affogato squid franzen ramps hella viral
+            intelligentsia pabst swag.
           </p>
         </div>
       </article>
