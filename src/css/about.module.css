@@ -5,16 +5,17 @@
   max-width: 1170px;
   margin: 0 auto;
 }
+
 .text p {
-  font-size: 1.6rem;
-  letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: var(--clr-grey-5);
 }
 .text a {
-  color: #c4302b;
+  color: var(--clr-red-dark);
   margin-left: 0.4rem;
   transition: var(--mainTransition);
 }
 .text a:hover {
-  color: var(--darkGrey);
+  color: var(--clr-red-light);
   text-decoration: underline;
 }

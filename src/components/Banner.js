@@ -1,9 +1,9 @@
 import React from "react"
 import styles from "../css/banner.module.css"
-const Banner = ({ title, children }) => {
+const Banner = ({ children }) => {
   return (
     <div className={styles.banner}>
-      <h1 className={styles.title}>
+      <h1>
         project based <br /> web development
         <br />
         courses

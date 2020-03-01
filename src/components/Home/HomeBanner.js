@@ -1,12 +1,19 @@
 import React from "react"
-import { AppContext } from "../../context/context"
-import SmallBanner from "./SmallBanner"
-import Banner from "../Banner"
 import Background from "./Background"
+import styles from "../../css/banner.module.css"
+
 const HomeBanner = () => {
   return (
     <Background>
-      <Banner title="project-based web development courses"></Banner>
+      <div className={styles.banner}>
+        <h1>
+          project based
+          <br />
+          web development
+          <br />
+          courses
+        </h1>
+      </div>
     </Background>
   )
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import logo from "../images/logo.svg"
+import logo from "../images/addict-logo.svg"
 import styles from "../css/navbar.module.css"
 import links from "../constants/Links"
 import icons from "../constants/SocialLinks"
@@ -20,7 +20,7 @@ const Navbar = () => {
       >
         <div className={styles.center}>
           <Link to="/">
-            <img src={logo} alt="john smilga logo"></img>
+            <img width="60" src={logo} alt="john smilga logo"></img>
           </Link>
           <ul className={styles.links}>
             {links.map(link => {

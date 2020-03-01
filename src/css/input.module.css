@@ -1,6 +1,7 @@
 .form {
   margin-bottom: 4rem;
-  color: var(--lightGrey);
+  color: var(--clr-grey-5);
+  text-align: center;
 }
 .formGroup label {
   display: block;
@@ -11,13 +12,13 @@
 .formControl {
   text-transform: uppercase;
   font-size: 1rem;
-  background: hsl(210, 38%, 97%);
+  background: var(--clr-grey-9);
   width: 10rem;
   height: 2rem;
   border: none;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: var(--spacing);
   color: var(--lightGrey);
-  box-shadow: 0 4px 6px hsl(0, 0%, 0%, 0.1);
+  box-shadow: 0 1px 3px hsl(0, 0%, 0%, 0.1);
 }
 .type {
   padding: 1rem;

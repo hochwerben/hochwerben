@@ -28,15 +28,17 @@ const Courses = () => {
 
   return (
     <section className={styles.courses}>
-      <Title title="latest" subtitle="courses"></Title>
+      <Title title="latest courses"></Title>
       <div className={styles.center}>
         {courses.map(item => {
           return <Course key={item.id} {...item}></Course>
         })}
       </div>
-      <Link to="/courses" className="btn-primary">
-        all courses
-      </Link>
+      <div className="center-div">
+        <Link to="/courses" className="btn">
+          all courses
+        </Link>
+      </div>
     </section>
   )
 }

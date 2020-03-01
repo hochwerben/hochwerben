@@ -3,10 +3,8 @@ import styles from "../css/title.module.css"
 const Title = ({ title, subtitle }) => {
   return (
     <div className={styles.banner}>
-      <h4>
-        <span className={styles.title}>{title}</span>
-        <span>{subtitle}</span>
-      </h4>
+      <h2>{title}</h2>
+      <div className={styles.underline}></div>
     </div>
   )
 }

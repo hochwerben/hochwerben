@@ -29,7 +29,7 @@ const Courses = () => {
 
   return (
     <section className={styles.courses}>
-      <Title title="all" subtitle="courses"></Title>
+      <Title title="all courses"></Title>
       <div className={styles.center}>
         {courses.map(item => {
           return <Course key={item.id} {...item}></Course>

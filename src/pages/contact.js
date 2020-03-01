@@ -13,11 +13,11 @@ const contact = () => {
         <article className={styles.text}>
           <p>
             If you are looking to get ahold of me, you can send me an email at{" "}
-            <a href="mailto:johnsmilga@gmail.com">johnsmilga@gmail.com</a>.
+            <a href="mailto:johnsmilga@gmail.com">johnsmilga@gmail.com</a>
           </p>
           <p>
             You can also reach me on Twitter at{" "}
-            <a href="https://twitter.com/john_smilga?lang=en">@john_smilga</a>.
+            <a href="https://twitter.com/john_smilga?lang=en">@john_smilga</a>
           </p>
         </article>
       </section>

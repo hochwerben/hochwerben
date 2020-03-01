@@ -50,7 +50,7 @@ const Projects = () => {
   }
   return (
     <section className={styles.projects}>
-      <Title title="latest" subtitle="projects"></Title>
+      <Title title="latest projects"></Title>
       <SelectInput type={type} handleChange={handleChange} projects={nodes} />
       <div className={styles.center}>
         {projects.map(item => {

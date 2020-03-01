@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
 import styles from "../../css/single-project.module.css"
-import { FaGithubSquare } from "react-icons/fa"
+import { FaGithubSquare, FaHome } from "react-icons/fa"
 const Project = ({
   image,
   title,
@@ -14,8 +14,9 @@ const Project = ({
 }) => {
   return (
     <article className={styles.project}>
-      <div className={styles.imgContainer}>
-        <Image fluid={image.fluid} alt={title} className={styles.img}></Image>
+      <Image fluid={image.fluid} alt={title} className={styles.img}></Image>
+
+      <div className={styles.footer}>
         {url ? (
           <a
             href={url}
@@ -23,12 +24,10 @@ const Project = ({
             rel="noopener noreferrer"
             className={styles.url}
           >
-            finished project
+            <FaHome />
           </a>
         ) : null}
-      </div>
-      <div className={styles.footer}>
-        <h3>{title}</h3>
+        <h4>{title}</h4>
         <p>{info}</p>
 
         <div className={styles.github}>
