@@ -44,7 +44,7 @@ h4 {
   margin-bottom: 0.75rem;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
 }
 h2 {
   font-size: 2rem;
@@ -57,6 +57,11 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -125,4 +130,24 @@ ul {
 }
 .gatsby-image-wrapper {
   height: 12.93rem;
+}
+.center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto 2rem auto;
+  display: grid;
+  row-gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+@media screen and (min-width: 576px) {
+  .center {
+    grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
+  }
+}
+@media screen and (min-width: 992px) {
+  .center {
+    width: 95vw;
+  }
 }

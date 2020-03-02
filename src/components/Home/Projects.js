@@ -52,7 +52,7 @@ const Projects = () => {
     <section className={styles.projects}>
       <Title title="latest projects"></Title>
       <SelectInput type={type} handleChange={handleChange} projects={nodes} />
-      <div className={styles.center}>
+      <div className="center">
         {projects.map(item => {
           return <Project key={item.id} {...item} />
         })}

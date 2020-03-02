@@ -12,6 +12,9 @@ const query = graphql`
         size
         title
         url
+        info {
+          info
+        }
         image {
           fluid(maxWidth: 600) {
             ...GatsbyContentfulFluid
@@ -30,7 +33,7 @@ const Courses = () => {
   return (
     <section className={styles.courses}>
       <Title title="all courses"></Title>
-      <div className={styles.center}>
+      <div className="center">
         {courses.map(item => {
           return <Course key={item.id} {...item}></Course>
         })}
