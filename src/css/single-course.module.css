@@ -3,6 +3,7 @@
   background: var(--clr-white);
   transition: var(--transition);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 .course:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);

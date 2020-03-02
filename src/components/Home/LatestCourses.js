@@ -11,6 +11,9 @@ const query = graphql`
         size
         title
         url
+        info {
+          info
+        }
         image {
           fluid(maxWidth: 600) {
             ...GatsbyContentfulFluid

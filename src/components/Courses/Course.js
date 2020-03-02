@@ -2,10 +2,13 @@ import React from "react"
 import styles from "../../css/single-course.module.css"
 import Image from "gatsby-image"
 const Course = ({ title, url, size, image, info }) => {
-  console.log(info)
-
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="course-link"
+    >
       <article className={styles.course}>
         <div className={styles.container}>
           <Image fluid={image.fluid} />
