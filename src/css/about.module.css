@@ -7,8 +7,9 @@
 }
 
 .text p {
-  font-size: 1.25rem;
   color: var(--clr-grey-5);
+  max-width: var(--fixed-width);
+  margin: 0 auto;
 }
 .text a {
   color: var(--clr-red-dark);
