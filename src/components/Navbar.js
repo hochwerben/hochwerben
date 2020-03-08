@@ -11,13 +11,7 @@ const Navbar = () => {
 
   if (size > 992) {
     return (
-      <nav
-        className={
-          height < 80
-            ? `${styles.navbar}`
-            : `${styles.navbar} ${styles.navbarFixed}`
-        }
-      >
+      <nav className={styles.navbar}>
         <div className={styles.center}>
           <Link to="/">
             <img width="60" src={logo} alt="john smilga logo"></img>
@@ -47,13 +41,7 @@ const Navbar = () => {
     )
   } else {
     return (
-      <nav
-        className={
-          height < 80
-            ? `${styles.navbar}`
-            : `${styles.navbar} ${styles.navbarFixed}`
-        }
-      >
+      <nav className={styles.navbar}>
         <div className={styles.header}>
           <img src={logo} alt="john smilga logo"></img>
           <button

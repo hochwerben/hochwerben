@@ -4,24 +4,18 @@ const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
   const [size, setSize] = React.useState(null)
-  const [height, setHeight] = React.useState(null)
   const [isSidebarOpen, setSidebar] = React.useState(false)
 
   React.useEffect(() => {
     if (window) {
       setSize(window.innerWidth)
-      setHeight(window.pageYOffset)
       window.addEventListener("resize", () => {
         setSize(window.innerWidth)
-      })
-      window.addEventListener("scroll", () => {
-        setHeight(window.pageYOffset)
       })
     }
 
     return () => {
       window.removeEventListener("resize", () => {})
-      window.removeEventListener("scroll", () => {})
     }
   }, [])
   const handleOpenSidebar = () => {
@@ -34,7 +28,6 @@ const AppProvider = ({ children }) => {
     <AppContext.Provider
       value={{
         size,
-        height,
         handleCloseSidebar,
         handleOpenSidebar,
         isSidebarOpen,
