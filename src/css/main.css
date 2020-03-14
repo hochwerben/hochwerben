@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 :root {
   --clr-primary: hsl(205, 67%, 45%);
   --clr-primary-dark: hsl(205, 100%, 21%);
@@ -10,7 +10,8 @@
   --clr-white: #fff;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
-  --ff-primary: "Montserrat";
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -23,7 +24,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: var(--ff-primary);
+  font-family: var(--ff-secondary);
   background: var(--clr-grey-9);
   color: var(--clr-grey-1);
   line-height: 1.8;
@@ -43,6 +44,7 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
 }
 h1 {
   font-size: 1.7rem;
