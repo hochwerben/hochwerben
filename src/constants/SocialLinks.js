@@ -1,24 +1,24 @@
-import React from "react"
+import React from 'react';
 import {
-  FaGithubSquare,
-  FaTwitterSquare,
+  FaInstagram,
   FaYoutubeSquare,
-} from "react-icons/fa"
+  FaPinterestSquare,
+} from 'react-icons/fa';
 
 export default [
   {
     id: Math.random(),
-    url: "https://www.youtube.com/channel/UCMZFwxv5l-XtKi693qMJptA",
+    url: 'https://instagram.com/hochwerben',
+    image: <FaInstagram className="youtube-icon icon" />,
+  },
+  {
+    id: Math.random(),
+    url: 'https://pinterest.de',
+    image: <FaPinterestSquare className="youtube-icon" />,
+  },
+  {
+    id: Math.random(),
+    url: 'https://www.youtube.com/channel/UCBFCE4OPehK7whABCuWjw4Q',
     image: <FaYoutubeSquare className="youtube-icon" />,
   },
-  {
-    id: Math.random(),
-    url: "https://github.com/john-smilga",
-    image: <FaGithubSquare className="github-icon icon" />,
-  },
-  {
-    id: Math.random(),
-    url: "https://twitter.com/john_smilga?lang=en",
-    image: <FaTwitterSquare className="twitter-icon" />,
-  },
-]
+];

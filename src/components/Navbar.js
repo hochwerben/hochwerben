@@ -1,13 +1,13 @@
-import React from "react"
-import { Link } from "gatsby"
-import logo from "../images/addict-logo.svg"
-import styles from "../css/navbar.module.css"
-import links from "../constants/Links"
-import icons from "../constants/SocialLinks"
-import { FaAlignRight } from "react-icons/fa"
-import { AppContext } from "../context"
+import React from 'react';
+import { Link } from 'gatsby';
+import logo from '../images/hochwerben-logo.svg';
+import styles from '../css/navbar.module.css';
+import links from '../constants/Links';
+import icons from '../constants/SocialLinks';
+import { FaAlignRight } from 'react-icons/fa';
+import { AppContext } from '../context';
 const Navbar = () => {
-  const { size, handleOpenSidebar, height } = React.useContext(AppContext)
+  const { size, handleOpenSidebar, height } = React.useContext(AppContext);
 
   if (size > 992) {
     return (
@@ -24,7 +24,7 @@ const Navbar = () => {
                     {link.text}
                   </Link>
                 </li>
-              )
+              );
             })}
           </ul>
           <div className={styles.icons}>
@@ -33,12 +33,12 @@ const Navbar = () => {
                 <a key={icon.id} href={icon.url} className={styles.navIcon}>
                   {icon.image}
                 </a>
-              )
+              );
             })}
           </div>
         </div>
       </nav>
-    )
+    );
   } else {
     return (
       <nav className={styles.navbar}>
@@ -53,8 +53,8 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
-    )
+    );
   }
-}
+};
 
-export default Navbar
+export default Navbar;

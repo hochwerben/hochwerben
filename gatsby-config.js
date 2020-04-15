@@ -3,12 +3,12 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `John Smilga`,
-    description: `Project-Based Web Development Courses`,
-    author: `@johnsmilga`,
-    twitterUsername: "@john_smilga",
+    title: `Hochwerben`,
+    description: `Ihr Partner für Digitaldruck, Werbeträger und Webdesign`,
+    author: `Peter Pawelczyk`,
+    twitterUsername: "@hochwerben",
     image: "/mainBcg.jpeg",
-    siteUrl: "https://www.johnsmilga.com",
+    siteUrl: "https://www.hochwerben.de",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
