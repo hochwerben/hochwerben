@@ -43,7 +43,7 @@ const Navbar = () => {
     return (
       <nav className={styles.navbar}>
         <div className={styles.header}>
-          <img src={logo} alt="john smilga logo"></img>
+          <img src={logo} width="60" alt="john smilga logo"></img>
           <button
             type="button"
             className={styles.toggleBtn}

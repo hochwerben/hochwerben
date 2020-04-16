@@ -15,7 +15,7 @@ const IndexPage = () => (
     {/* <Courses></Courses> */}
     {/* <Projects></Projects> */}
     <WerbeTraeger></WerbeTraeger>
-    <WebDesign></WebDesign>
+    {/* <WebDesign></WebDesign> */}
   </Layout>
 );
 

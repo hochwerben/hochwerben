@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Image from 'gatsby-image';
 
-import styles from '../../css/courses.module.css';
+import styles from '../../css/sliderThree.module.css';
 import Title from '../Title';
 
 import 'slick-carousel/slick/slick.css';
