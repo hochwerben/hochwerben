@@ -1,9 +1,20 @@
-.sectionBackground {
-  background: var(--clr-grey-6);
+.twoColumns {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 50px 90%;
+}
+
+.titleColumn {
+  width: 50px;
+  height: 500px;
 }
 
 .sliderContainer {
   position: relative;
+}
+
+.sectionBackground {
+  background: var(--clr-grey-8);
 }
 
 .sliderText {

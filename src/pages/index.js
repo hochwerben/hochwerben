@@ -2,6 +2,8 @@ import React from 'react';
 import Layout from '../components/layout';
 // import HomeBanner from '../components/Home/HomeBanner';
 import SliderOne from '../components/Home/SliderOne';
+import SliderOneSide from '../components/Home/SliderOneSide';
+import SliderVertical from '../components/Home/SliderVertical';
 import WerbeTraeger from '../components/Home/WerbeTraeger';
 import WebDesign from '../components/Home/WebDesign';
 // import Courses from '../components/Home/LatestCourses';
@@ -15,7 +17,9 @@ const IndexPage = () => (
     {/* <Courses></Courses> */}
     {/* <Projects></Projects> */}
     <WerbeTraeger></WerbeTraeger>
-    {/* <WebDesign></WebDesign> */}
+    <WebDesign></WebDesign>
+    <SliderOneSide></SliderOneSide>
+    <SliderVertical></SliderVertical>
   </Layout>
 );
 

@@ -7,6 +7,9 @@
   /* --clr-primary-light: hsl(205, 84%, 74%); */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-5: hsl(209, 22%, 49%);
+  --clr-grey-6: #e0ebf7;
+  --clr-grey-7: #ebf9fa;
+  --clr-grey-8: #efebfa;
   --clr-grey-9: #f8f8f8;
   /* --clr-grey-9: hsl(210, 32%, 93%); */
   --clr-grey-10: hsl(206, 33%, 96%);
@@ -158,3 +161,10 @@ ul {
 /* .course-link {
   display: block;
 } */
+
+.columnHeader {
+  color: white;
+  font-family: var(--ff-secondary);
+  text-align: center;
+  margin: 2rem 0;
+}

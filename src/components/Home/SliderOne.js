@@ -34,6 +34,7 @@ const SliderOne = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    arrows: false,
   };
 
   return (
@@ -53,7 +54,7 @@ const SliderOne = () => {
               <span className={styles.name}>
                 Fahrzeug-
                 <br />
-                Folierung
+                Beschriftung
               </span>
               <Link to="/leistungen">mehr erfahren</Link>
             </div>
