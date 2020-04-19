@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Image from 'gatsby-image';
 
-import styles from '../../css/sliderThree.module.css';
+import styles from '../../css/sliderOne.module.css';
 import Title from '../Title';
 
 import Slider from 'react-slick';
@@ -27,7 +27,7 @@ const SliderOne = () => {
   `);
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -38,7 +38,7 @@ const SliderOne = () => {
   };
 
   return (
-    <section className={styles.sectionBackground}>
+    <section className={styles.sectionBackgroundWD}>
       <div className={styles.centerSliderOne}>
         <Title title="Webdesign"></Title>
         <div>
@@ -51,14 +51,13 @@ const SliderOne = () => {
                   alt="Image1"
                 />
               </div>
-              <div className={styles.sliderText}>
+              <Link to="/leistungen" as="div" className={styles.sliderText}>
                 <span className={styles.name}>
                   Persönliche
                   <br />
                   Webseite
                 </span>
-                <Link to="/leistungen">mehr erfahren</Link>
-              </div>
+              </Link>
               <div className={styles.price}>
                 <span>ab</span>
                 <span className={styles.priceText}>€ 499</span>
@@ -74,14 +73,13 @@ const SliderOne = () => {
                   alt="Image1"
                 />
               </div>
-              <div className={styles.sliderText}>
+              <Link to="/leistungen" as="div" className={styles.sliderText}>
                 <span className={styles.name}>
                   Business
                   <br />
                   Lösungen
                 </span>
-                <Link to="/leistungen">mehr erfahren</Link>
-              </div>
+              </Link>
               <div className={styles.price}>
                 <span>ab</span>
                 <span className={styles.priceText}>€ 1499</span>
@@ -97,14 +95,13 @@ const SliderOne = () => {
                   alt="Image1"
                 />
               </div>
-              <div className={styles.sliderText}>
+              <Link to="/leistungen" as="div" className={styles.sliderText}>
                 <span className={styles.name}>
                   eCommerce
                   <br />
                   Lösungen
                 </span>
-                <Link to="/leistungen">mehr erfahren</Link>
-              </div>
+              </Link>
               <div className={styles.price}>
                 <span>ab</span>
                 <span className={styles.priceText}>€ 2499</span>

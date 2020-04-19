@@ -27,7 +27,7 @@ const SliderOne = () => {
   `);
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -50,14 +50,13 @@ const SliderOne = () => {
                 alt="Image1"
               />
             </div>
-            <div className={styles.sliderText}>
+            <Link to="/leistungen" as="div" className={styles.sliderText}>
               <span className={styles.name}>
                 Fahrzeug-
                 <br />
                 Beschriftung
               </span>
-              <Link to="/leistungen">mehr erfahren</Link>
-            </div>
+            </Link>
             <div className={styles.price}>
               <span>ab</span>
               <span className={styles.priceText}>€ 699</span>
@@ -73,14 +72,13 @@ const SliderOne = () => {
                 alt="Image1"
               />
             </div>
-            <div className={styles.sliderText}>
+            <Link to="/leistungen" as="div" className={styles.sliderText}>
               <span className={styles.name}>
                 LKW-
                 <br />
                 Folierung
               </span>
-              <Link to="/leistungen">mehr erfahren</Link>
-            </div>
+            </Link>
             <div className={styles.price}>
               <span>ab</span>
               <span className={styles.priceText}>€ 1699</span>

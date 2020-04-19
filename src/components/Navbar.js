@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
       <nav className={styles.navbar}>
         <div className={styles.center}>
-          <Link to="/">
+          <Link to="/" className={styles.logoLink}>
             <img width="60" src={logo} alt="john smilga logo"></img>
           </Link>
           <ul className={styles.links}>
@@ -43,7 +43,9 @@ const Navbar = () => {
     return (
       <nav className={styles.navbar}>
         <div className={styles.header}>
-          <img src={logo} width="60" alt="john smilga logo"></img>
+          <Link to="/" className={styles.logoLink}>
+            <img src={logo} width="60" alt="john smilga logo"></img>
+          </Link>
           <button
             type="button"
             className={styles.toggleBtn}

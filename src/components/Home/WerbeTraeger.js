@@ -2,7 +2,8 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Image from 'gatsby-image';
 
-import styles from '../../css/sliderTwo.module.css';
+import styles from '../../css/sliderOne.module.css';
+// import styles from '../../css/sliderTwo.module.css';
 import Title from '../Title';
 
 import Slider from 'react-slick';
@@ -27,7 +28,7 @@ const SliderOne = () => {
   `);
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -39,7 +40,7 @@ const SliderOne = () => {
   };
 
   return (
-    <section className={styles.sectionBackground}>
+    <section className={styles.sectionBackgroundWT}>
       <div className={styles.centerSliderOne}>
         <Title title="Werbeträger"></Title>
         <div>
@@ -52,10 +53,9 @@ const SliderOne = () => {
                   alt="Image1"
                 />
               </div>
-              <div className={styles.sliderText}>
+              <Link to="/leistungen" as="div" className={styles.sliderText}>
                 <span className={styles.name}>Schilder</span>
-                <Link to="/leistungen">mehr erfahren</Link>
-              </div>
+              </Link>
               <div className={styles.price}>
                 <span>ab</span>
                 <span className={styles.priceText}>€ 699</span>
@@ -71,14 +71,13 @@ const SliderOne = () => {
                     alt="Image2"
                   />
                 </div>
-                <div className={styles.sliderText}>
+                <Link to="/leistungen" as="div" className={styles.sliderText}>
                   <span className={styles.name}>
                     Wechsel-
                     <br />
                     rahmen
                   </span>
-                  <Link to="/leistungen">mehr erfahren</Link>
-                </div>
+                </Link>
                 <div className={styles.price}>
                   <span>ab</span>
                   <span className={styles.priceText}>€ 199</span>
@@ -96,13 +95,12 @@ const SliderOne = () => {
                     alt="Image2"
                   />
                 </div>
-                <div className={styles.sliderText}>
+                <Link to="/leistungen" as="div" className={styles.sliderText}>
                   <span className={styles.name}>
                     LED
                     <br /> Displays
                   </span>
-                  <Link to="/leistungen">mehr erfahren</Link>
-                </div>
+                </Link>
                 <div className={styles.price}>
                   <span>ab</span>
                   <span className={styles.priceText}>€ 299</span>
@@ -120,10 +118,9 @@ const SliderOne = () => {
                     alt="Image2"
                   />
                 </div>
-                <div className={styles.sliderText}>
+                <Link to="/leistungen" as="div" className={styles.sliderText}>
                   <span className={styles.name}>Fahnen</span>
-                  <Link to="/leistungen">mehr erfahren</Link>
-                </div>
+                </Link>
                 <div className={styles.price}>
                   <span>ab</span>
                   <span className={styles.priceText}>€ 199</span>
@@ -141,14 +138,13 @@ const SliderOne = () => {
                     alt="Image2"
                   />
                 </div>
-                <div className={styles.sliderText}>
+                <Link to="/leistungen" as="div" className={styles.sliderText}>
                   <span className={styles.name}>
                     Fräs-
                     <br />
                     buchstaben
                   </span>
-                  <Link to="/leistungen">mehr erfahren</Link>
-                </div>
+                </Link>
                 <div className={styles.price}>
                   <span>ab</span>
                   <span className={styles.priceText}>€ 399</span>
@@ -166,14 +162,13 @@ const SliderOne = () => {
                     alt="Image2"
                   />
                 </div>
-                <div className={styles.sliderText}>
+                <Link to="/leistungen" as="div" className={styles.sliderText}>
                   <span className={styles.name}>
                     Messe-
                     <br />
                     displays
                   </span>
-                  <Link to="/leistungen">mehr erfahren</Link>
-                </div>
+                </Link>
                 <div className={styles.price}>
                   <span>ab</span>
                   <span className={styles.priceText}>€ 99</span>
@@ -191,10 +186,9 @@ const SliderOne = () => {
                     alt="Image2"
                   />
                 </div>
-                <div className={styles.sliderText}>
+                <Link to="/leistungen" as="div" className={styles.sliderText}>
                   <span className={styles.name}>Fahnen und Megaposter</span>
-                  <Link to="/leistungen">mehr erfahren</Link>
-                </div>
+                </Link>
                 <div className={styles.price}>
                   <span>ab</span>
                   <span className={styles.priceText}>€ 349</span>
@@ -212,14 +206,13 @@ const SliderOne = () => {
                     alt="Image2"
                   />
                 </div>
-                <div className={styles.sliderText}>
+                <Link to="/leistungen" as="div" className={styles.sliderText}>
                   <span className={styles.name}>
                     Werbe-
                     <br />
                     pylonen
                   </span>
-                  <Link to="/leistungen">mehr erfahren</Link>
-                </div>
+                </Link>
                 <div className={styles.price}>
                   <span>ab</span>
                   <span className={styles.priceText}>€ 599</span>

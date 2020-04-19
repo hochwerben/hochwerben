@@ -67,10 +67,14 @@
   margin-left: 1.5rem;
   transition: var(--transition);
   color: var(--clr-grey-1);
+  line-height: 1;
 }
 .navLink:hover {
   color: var(--clr-primary);
   box-shadow: 0 1.5px var(--clr-primary);
+}
+.logoLink {
+  line-height: 1;
 }
 .icons {
   display: flex;

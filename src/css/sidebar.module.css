@@ -32,8 +32,10 @@
   align-items: center;
   transition: var(--transition);
   cursor: pointer;
-  color: var(--clr-red-dark);
-  outline-color: var(--clr-red-light);
+  color: var(--clr-grey-5);
+  /* color: var(--clr-red-dark); */
+  /* outline-color: black; */
+  outline-color: var(--clr-grey-5);
   background: transparent;
 }
 .closeIcon {
@@ -41,7 +43,7 @@
   font-size: 1.5rem;
 }
 .closeBtn:hover {
-  color: var(--clr-red-light);
+  color: var(--clr-primary);
 }
 .linksContainer {
   margin-top: -4.875rem;
