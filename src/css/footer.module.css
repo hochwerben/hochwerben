@@ -2,7 +2,7 @@
   text-align: center;
   padding: 2rem;
   color: var(--clr-white);
-  background: var(--clr-primary-dark);
+  background: var(--clr-grey-1);
 }
 .icons {
   margin: 0.5rem 0;
@@ -29,4 +29,9 @@
 }
 .link:hover {
   color: var(--clr-primary-light);
+}
+
+.impLink {
+  margin: 0 0.5rem;
+  color: white;
 }

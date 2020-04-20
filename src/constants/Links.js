@@ -1,13 +1,8 @@
 export default [
   {
     id: Math.random(),
-    text: 'home',
-    url: '/',
-  },
-  {
-    id: Math.random(),
     text: 'kompetenzen',
-    url: '/kompetenzen',
+    url: '/',
   },
   {
     id: Math.random(),
@@ -17,6 +12,6 @@ export default [
   {
     id: Math.random(),
     text: 'kontakt',
-    url: '/kontakt',
+    url: '/#kontakt',
   },
 ];

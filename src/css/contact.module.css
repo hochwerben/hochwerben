@@ -30,18 +30,32 @@
 }
 
 .imageGrid {
+  margin: 0 auto;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
 }
 
-.imageContainer * {
+/* .imageContainer * {
   height: 300px;
-}
+} */
 
 .centerContactContainer {
   padding: 6rem 0;
   width: 90vw;
   max-width: 1170px;
   margin: auto;
+}
+
+/* @media only screen and(max-width: 500px) {
+  .imageGrid {
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+} */
+
+.mapContainer {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
 }

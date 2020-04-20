@@ -15,7 +15,7 @@ export default ({ data }) => {
         <div className={styles.imageGrid}>
           {data.allFile.edges.map(({ node }) => (
             <div
-              key={node.childImageSharp.id}
+              key={Math.floor(Math.random() * 100000)}
               className={styles.imageContainer}
             >
               <Image fluid={node.childImageSharp.fluid} alt="MyImage" />
@@ -34,7 +34,7 @@ export const query = graphql`
         node {
           childImageSharp {
             fluid {
-              src
+              ...GatsbyImageSharpFluid
             }
           }
         }

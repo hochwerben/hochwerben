@@ -1,11 +1,10 @@
 import React from 'react';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 import SliderOne from '../components/Home/SliderOne';
-// import SliderOneSide from '../components/Home/SliderOneSide';
-// import SliderVertical from '../components/Home/SliderVertical';
 import WerbeTraeger from '../components/Home/WerbeTraeger';
 import WebDesign from '../components/Home/WebDesign';
-import SEO from '../components/seo';
+import Kontakt from '../components/Kontakt';
 
 import styles from '../css/index.module.css';
 
@@ -17,8 +16,8 @@ const IndexPage = () => (
     <WerbeTraeger></WerbeTraeger>
     <div className={styles.skewSectionTwo} />
     <WebDesign></WebDesign>
-    {/* <SliderOneSide></SliderOneSide> */}
-    {/* <SliderVertical></SliderVertical> */}
+    <div className={styles.skewSectionThree} id="kontakt" />
+    <Kontakt></Kontakt>
   </Layout>
 );
 

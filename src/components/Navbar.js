@@ -7,7 +7,8 @@ import icons from '../constants/SocialLinks';
 import { FaAlignRight } from 'react-icons/fa';
 import { AppContext } from '../context';
 const Navbar = () => {
-  const { size, handleOpenSidebar, height } = React.useContext(AppContext);
+  const { size, handleOpenSidebar } = React.useContext(AppContext);
+  // const { size, handleOpenSidebar, height } = React.useContext(AppContext);
 
   if (size > 992) {
     return (

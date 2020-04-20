@@ -1,14 +1,14 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 module.exports = {
   siteMetadata: {
     title: `Hochwerben`,
     description: `Ihr Partner für Digitaldruck, Werbeträger und Webdesign`,
     author: `Peter Pawelczyk`,
-    twitterUsername: "@hochwerben",
-    image: "/mainBcg.jpeg",
-    siteUrl: "https://www.hochwerben.de",
+    twitterUsername: '@hochwerben',
+    image: '/mainBcg.jpeg',
+    siteUrl: 'https://hochwerben.de',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,11 +31,11 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: "https://www.johnsmilga.com",
-        sitemap: "https://www.johnsmilga.com/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
+        host: 'https://hochwerben.de',
+        sitemap: 'https://www.johnsmilga.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
     {
@@ -44,8 +44,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#f49402`,
+        theme_color: `#f49402`,
         display: `minimal-ui`,
         icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
@@ -54,4 +54,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
