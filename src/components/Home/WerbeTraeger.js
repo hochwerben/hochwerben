@@ -3,7 +3,6 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import Image from 'gatsby-image';
 
 import styles from '../../css/sliderOne.module.css';
-// import styles from '../../css/sliderTwo.module.css';
 import Title from '../Title';
 
 import Slider from 'react-slick';
@@ -13,19 +12,82 @@ import 'slick-carousel/slick/slick-theme.css';
 const SliderOne = () => {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: { relativeDirectory: { eq: "slider-two" } }) {
-        edges {
-          node {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
+      shirts: file(name: { eq: "shirts" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
           }
+          id
+        }
+      }
+      messedisplays: file(name: { eq: "messedisplays" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
+      haengeschild: file(name: { eq: "haengeschild" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
+      trennwand: file(name: { eq: "trennwand" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
+      visitenkarten: file(name: { eq: "visitenkarten" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
         }
       }
     }
   `);
+
+  const wtContent = [
+    {
+      text: 'Shirts',
+      price: 25,
+      image: data.shirts.childImageSharp.fluid,
+      id: data.shirts.childImageSharp.id,
+    },
+    {
+      text: 'Messe-',
+      textSecond: 'displays',
+      price: 25,
+      image: data.messedisplays.childImageSharp.fluid,
+      id: data.messedisplays.childImageSharp.id,
+    },
+    {
+      text: 'Schilder',
+      price: 79,
+      image: data.haengeschild.childImageSharp.fluid,
+      id: data.haengeschild.childImageSharp.id,
+    },
+    {
+      text: 'Wände',
+      price: 899,
+      image: data.trennwand.childImageSharp.fluid,
+      id: data.trennwand.childImageSharp.id,
+    },
+    {
+      text: 'Visitenkarten',
+      price: 59,
+      image: data.visitenkarten.childImageSharp.fluid,
+      id: data.visitenkarten.childImageSharp.id,
+    },
+  ];
 
   const settings = {
     dots: true,
@@ -45,181 +107,26 @@ const SliderOne = () => {
         <Title title="Werbeträger"></Title>
         <div>
           <Slider {...settings}>
-            {/* Slide 1 */}
-            <div className={styles.sliderContainer}>
-              <div className={styles.img}>
-                <Image
-                  fluid={data.allFile.edges[0].node.childImageSharp.fluid}
-                  alt="Image1"
-                />
-              </div>
-              <Link to="/leistungen" as="div" className={styles.sliderText}>
-                <span className={styles.name}>Schilder</span>
-              </Link>
-              <div className={styles.price}>
-                <span>ab</span>
-                <span className={styles.priceText}>€ 699</span>
-              </div>
-            </div>
-
-            {/* Slide 2 */}
-            <div>
-              <div className={styles.sliderContainer}>
+            {wtContent.map(product => (
+              <div className={styles.sliderContainer} key={product.id}>
                 <div className={styles.img}>
-                  <Image
-                    fluid={data.allFile.edges[1].node.childImageSharp.fluid}
-                    alt="Image2"
-                  />
+                  <Image fluid={product.image} alt="shirts" />
                 </div>
                 <Link to="/leistungen" as="div" className={styles.sliderText}>
                   <span className={styles.name}>
-                    Wechsel-
-                    <br />
-                    rahmen
+                    {product.text}
+                    {product.textSecond && <br />}
+                    {product.textSecond && product.textSecond}
                   </span>
                 </Link>
                 <div className={styles.price}>
                   <span>ab</span>
-                  <span className={styles.priceText}>€ 199</span>
+                  <span
+                    className={styles.priceText}
+                  >{`€ ${product.price}`}</span>
                 </div>
               </div>
-            </div>
-            {/* End Slide */}
-
-            {/* Slide 2 */}
-            <div>
-              <div className={styles.sliderContainer}>
-                <div className={styles.img}>
-                  <Image
-                    fluid={data.allFile.edges[2].node.childImageSharp.fluid}
-                    alt="Image2"
-                  />
-                </div>
-                <Link to="/leistungen" as="div" className={styles.sliderText}>
-                  <span className={styles.name}>
-                    LED
-                    <br /> Displays
-                  </span>
-                </Link>
-                <div className={styles.price}>
-                  <span>ab</span>
-                  <span className={styles.priceText}>€ 299</span>
-                </div>
-              </div>
-            </div>
-            {/* End Slide */}
-
-            {/* Slide 2 */}
-            <div>
-              <div className={styles.sliderContainer}>
-                <div className={styles.img}>
-                  <Image
-                    fluid={data.allFile.edges[3].node.childImageSharp.fluid}
-                    alt="Image2"
-                  />
-                </div>
-                <Link to="/leistungen" as="div" className={styles.sliderText}>
-                  <span className={styles.name}>Fahnen</span>
-                </Link>
-                <div className={styles.price}>
-                  <span>ab</span>
-                  <span className={styles.priceText}>€ 199</span>
-                </div>
-              </div>
-            </div>
-            {/* End Slide */}
-
-            {/* Slide 2 */}
-            <div>
-              <div className={styles.sliderContainer}>
-                <div className={styles.img}>
-                  <Image
-                    fluid={data.allFile.edges[4].node.childImageSharp.fluid}
-                    alt="Image2"
-                  />
-                </div>
-                <Link to="/leistungen" as="div" className={styles.sliderText}>
-                  <span className={styles.name}>
-                    Fräs-
-                    <br />
-                    buchstaben
-                  </span>
-                </Link>
-                <div className={styles.price}>
-                  <span>ab</span>
-                  <span className={styles.priceText}>€ 399</span>
-                </div>
-              </div>
-            </div>
-            {/* End Slide */}
-
-            {/* Slide 2 */}
-            <div>
-              <div className={styles.sliderContainer}>
-                <div className={styles.img}>
-                  <Image
-                    fluid={data.allFile.edges[5].node.childImageSharp.fluid}
-                    alt="Image2"
-                  />
-                </div>
-                <Link to="/leistungen" as="div" className={styles.sliderText}>
-                  <span className={styles.name}>
-                    Messe-
-                    <br />
-                    displays
-                  </span>
-                </Link>
-                <div className={styles.price}>
-                  <span>ab</span>
-                  <span className={styles.priceText}>€ 99</span>
-                </div>
-              </div>
-            </div>
-            {/* End Slide */}
-
-            {/* Slide 2 */}
-            <div>
-              <div className={styles.sliderContainer}>
-                <div className={styles.img}>
-                  <Image
-                    fluid={data.allFile.edges[6].node.childImageSharp.fluid}
-                    alt="Image2"
-                  />
-                </div>
-                <Link to="/leistungen" as="div" className={styles.sliderText}>
-                  <span className={styles.name}>Fahnen und Megaposter</span>
-                </Link>
-                <div className={styles.price}>
-                  <span>ab</span>
-                  <span className={styles.priceText}>€ 349</span>
-                </div>
-              </div>
-            </div>
-            {/* End Slide */}
-
-            {/* Slide 2 */}
-            <div>
-              <div className={styles.sliderContainer}>
-                <div className={styles.img}>
-                  <Image
-                    fluid={data.allFile.edges[7].node.childImageSharp.fluid}
-                    alt="Image2"
-                  />
-                </div>
-                <Link to="/leistungen" as="div" className={styles.sliderText}>
-                  <span className={styles.name}>
-                    Werbe-
-                    <br />
-                    pylonen
-                  </span>
-                </Link>
-                <div className={styles.price}>
-                  <span>ab</span>
-                  <span className={styles.priceText}>€ 599</span>
-                </div>
-              </div>
-            </div>
-            {/* End Slide */}
+            ))}
           </Slider>
         </div>
       </div>
