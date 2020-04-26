@@ -1,16 +1,38 @@
 .form {
-  display: flex;
-  flex-direction: column;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .form label {
+  line-height: 3;
+  text-transform: uppercase;
   display: block;
+  padding-bottom: 1rem;
 }
 
 .form input {
   display: block;
+  background-color: white;
+  border-width: 0;
+  border-bottom: 1px solid var(--clr-primary);
+  width: 100%;
+  padding: 5px 10px;
 }
 
 .form textarea {
   display: block;
+  border-width: 0;
+  resize: vertical;
+  width: 100%;
+  border-bottom: 1px solid var(--clr-primary);
+}
+
+.form button {
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid var(--clr-primary);
 }
