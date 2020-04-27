@@ -4,10 +4,8 @@ type: 'dd'
 featuredImage: ../images/dd/sprinter.jpg
 ---
 
-Bei Hochwerben wir Ihr LKW professionell foliert.
+##Schnell, professionell
 
 Preis: ab € 1299
 
-Bei Fragen rufen Sie uns an:
-
-06105 / 67 66
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem unde suscipit nemo aliquid distinctio alias culpa eum aut aliquam hic excepturi fuga similique saepe in, recusandae laboriosam minima facilis quaerat sint magni id voluptatem neque optio? Incidunt, ratione, sed nemo iste officiis aperiam omnis, quasi voluptatem modi quos magni. Modi illo nulla, omnis laborum adipisci perferendis. Aspernatur adipisci facere est temporibus quia, et corporis voluptatem quaerat autem consequatur ratione at magni, inventore ut ab nemo, voluptatibus veritatis? Deleniti sint rerum nesciunt ullam eveniet maxime asperiores eos neque iure odio consequatur debitis vero numquam repellendus necessitatibus nam, ad vitae voluptatibus enim.

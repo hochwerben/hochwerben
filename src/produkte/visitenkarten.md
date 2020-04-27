@@ -1,12 +1,11 @@
 ---
 title: 'Visitenkarten'
 type: 'wt'
+featuredImage: ../images/wt/visitenkarten.jpg
 ---
 
-250 hochwertige Visitenkarten.
+##250 hochwertige Visitenkarten.
 
-Preis: ab € 59
+####Preis: ab € 59
 
-Bei Fragen rufen Sie uns an:
-
-06105 / 67 66
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem unde suscipit nemo aliquid distinctio alias culpa eum aut aliquam hic excepturi fuga similique saepe in, recusandae laboriosam minima facilis quaerat sint magni id voluptatem neque optio? Incidunt, ratione, sed nemo iste officiis aperiam omnis, quasi voluptatem modi quos magni. Modi illo nulla, omnis laborum adipisci perferendis. Aspernatur adipisci facere est temporibus quia, et corporis voluptatem quaerat autem consequatur ratione at magni, inventore ut ab nemo, voluptatibus veritatis? Deleniti sint rerum nesciunt ullam eveniet maxime asperiores eos neque iure odio consequatur debitis vero numquam repellendus necessitatibus nam, ad vitae voluptatibus enim.

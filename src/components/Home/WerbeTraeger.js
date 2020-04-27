@@ -9,7 +9,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const SliderOne = () => {
+const Werbetraeger = () => {
   const data = useStaticQuery(graphql`
     {
       shirts: file(name: { eq: "shirts" }) {
@@ -134,4 +134,4 @@ const SliderOne = () => {
   );
 };
 
-export default SliderOne;
+export default Werbetraeger;
