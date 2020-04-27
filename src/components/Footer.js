@@ -7,7 +7,9 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.logo}>
-        <img src={logo} alt="Hochwerben Logo" width="100px"></img>
+        <Link to="/">
+          <img src={logo} alt="Hochwerben Logo" width="100px"></img>
+        </Link>
       </div>
       <div className={styles.icons}>
         {icons.map(item => {
@@ -19,7 +21,8 @@ const Footer = () => {
         })}
       </div>
       <div className={styles.info}>
-        © {new Date().getFullYear()} Hochwerben.de - Alle Rechte vorbehalten.
+        © {new Date().getFullYear()} <Link to="/">Hochwerben.de</Link> - Alle
+        Rechte vorbehalten.
       </div>
       <div>
         <Link to="/impressum" className={styles.impLink}>

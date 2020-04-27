@@ -1,13 +1,13 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+// require('dotenv').config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// });
 module.exports = {
   siteMetadata: {
     title: `Hochwerben`,
     description: `Ihr Partner für Digitaldruck, Werbeträger und Webdesign`,
     author: `Peter Pawelczyk`,
     twitterUsername: '@hochwerben',
-    image: '/mainBcg.jpeg',
+    image: '/logo.jpg',
     siteUrl: 'https://hochwerben.de',
   },
   plugins: [
@@ -19,22 +19,21 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-source-contentful`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        spaceId: process.env.SPACE_ID,
-        // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.ACCESS_TOKEN,
+        name: `produkte`,
+        path: `${__dirname}/src/produkte`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://hochwerben.de',
-        sitemap: 'https://www.johnsmilga.com/sitemap.xml',
+        sitemap: 'https://hochwerben.de/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
@@ -50,6 +49,7 @@ module.exports = {
         icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-transformer-remark`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

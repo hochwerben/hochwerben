@@ -20,6 +20,12 @@
 .info {
   margin: 0.5rem 0;
 }
+.info a {
+  color: var(--clr-white);
+}
+.info a:hover {
+  color: var(--clr-primary);
+}
 .link {
   display: inline-block;
   color: var(--clr-primary);
@@ -34,4 +40,8 @@
 .impLink {
   margin: 0 0.5rem;
   color: white;
+}
+
+.impLink:hover {
+  color: var(--clr-primary);
 }

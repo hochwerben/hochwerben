@@ -15,7 +15,7 @@ const Navbar = () => {
       <nav className={styles.navbar}>
         <div className={styles.center}>
           <Link to="/" className={styles.logoLink}>
-            <img width="60" src={logo} alt="john smilga logo"></img>
+            <img width="60" src={logo} alt="Hochwerben Logo"></img>
           </Link>
           <ul className={styles.links}>
             {links.map(link => {
@@ -45,7 +45,7 @@ const Navbar = () => {
       <nav className={styles.navbar}>
         <div className={styles.header}>
           <Link to="/" className={styles.logoLink}>
-            <img src={logo} width="60" alt="john smilga logo"></img>
+            <img src={logo} width="60" alt="Hochwerben Logo"></img>
           </Link>
           <button
             type="button"

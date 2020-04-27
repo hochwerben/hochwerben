@@ -1,0 +1,20 @@
+.centerLeistungenContainer {
+  padding: 6rem 0;
+  width: 90vw;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.categoryGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.categoryGrid h2,
+h3 {
+  font-size: 1rem;
+}
