@@ -44,7 +44,10 @@ const Werbetraeger = () => {
           id
         }
       }
-      visitenkarten: file(name: { eq: "visitenkarten" }) {
+      visitenkarten: file(
+        relativeDirectory: { eq: "wt" }
+        name: { eq: "visitenkarten" }
+      ) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
