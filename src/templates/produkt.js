@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Image from 'gatsby-image';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
 import ContactForm from '../components/ContactForm';
 
@@ -8,8 +9,8 @@ import styles from '../css/produkt.module.css';
 
 export default ({
   data: {
-    markdownRemark: {
-      html,
+    mdx: {
+      body,
       frontmatter: { title, featuredImage },
     },
   },
@@ -25,7 +26,7 @@ export default ({
           )}
         </div>
         <div className={styles.beschreibung}>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
+          <MDXRenderer>{body}</MDXRenderer>
         </div>
         {/* </div> */}
       </section>
@@ -36,7 +37,7 @@ export default ({
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
         featuredImage {
@@ -47,7 +48,7 @@ export const query = graphql`
           }
         }
       }
-      html
+      body
     }
   }
 `;
