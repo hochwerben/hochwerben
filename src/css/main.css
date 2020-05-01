@@ -28,11 +28,6 @@
   --fixed-width: 620px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   font-family: var(--ff-secondary);
   background: white;
@@ -41,6 +36,9 @@ body {
   line-height: 1.8;
   font-size: 0.875rem;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -144,9 +142,7 @@ ul {
 .center-div {
   text-align: center;
 }
-/* .gatsby-image-wrapper {
-  height: 12.93rem;
-} */
+
 .center {
   width: 90vw;
   max-width: 1170px;
@@ -155,6 +151,11 @@ ul {
   gap: 3rem;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
 }
+
+.leistungen-grid.gatsby-image-wrapper {
+  height: 250px;
+}
+
 @media screen and (min-width: 576px) {
   .center {
     grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
@@ -165,9 +166,6 @@ ul {
     width: 95vw;
   }
 }
-/* .course-link {
-  display: block;
-} */
 
 .columnHeader {
   color: white;

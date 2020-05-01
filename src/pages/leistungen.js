@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-// import Image from 'gatsby-image';
+import Image from 'gatsby-image';
 import Layout from '../components/layout';
 import Title from '../components/Title';
 import styles from '../css/leistungen.module.css';
@@ -12,7 +12,7 @@ export default ({ data }) => {
       <SEO title="Contact" />
       <section className={styles.centerLeistungenContainer}>
         <Title title="Leistungen"></Title>
-        <div className={styles.categoryGrid}>
+        {/* <div className={styles.categoryGrid}>
           <div>
             <h2>Digitaldruck:</h2>
             <ul>
@@ -49,18 +49,33 @@ export default ({ data }) => {
               ))}
             </ul>
           </div>
-        </div>
-
-        {/* <div className={styles.imageGrid}>
-          {data.allFile.edges.map(({ node }) => (
-            <div
-              key={Math.floor(Math.random() * 100000)}
-              className={styles.imageContainer}
-            >
-              <Image fluid={node.childImageSharp.fluid} alt="MyImage" />
-            </div>
-          ))}
         </div> */}
+
+        <div className={styles.imageGrid}>
+          {data.all.edges.map(
+            ({
+              node: {
+                id,
+                frontmatter,
+                fields: { slug },
+              },
+            }) => (
+              <div key={id} className={styles.imageContainer}>
+                <Link to={slug}>
+                  <Image
+                    fluid={
+                      frontmatter.featuredImage
+                        ? frontmatter.featuredImage.childImageSharp.fluid
+                        : data.placeholder.childImageSharp.fluid
+                    }
+                    alt={frontmatter.title}
+                    className="leistungen-grid"
+                  />
+                </Link>
+              </div>
+            )
+          )}
+        </div>
       </section>
     </Layout>
   );
@@ -68,13 +83,22 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    allFile(filter: { relativeDirectory: { eq: "adobe-stock" } }) {
+    all: allMdx(sort: { fields: frontmatter___title }) {
       edges {
         node {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+          frontmatter {
+            title
+            type
+            featuredImage {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
+          }
+          fields {
+            slug
           }
         }
       }
@@ -115,6 +139,13 @@ export const query = graphql`
           fields {
             slug
           }
+        }
+      }
+    }
+    placeholder: file(name: { eq: "change" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }
