@@ -51,6 +51,7 @@ export default ({ data }) => {
           </div>
         </div> */}
 
+        {/* TODO: key issue */}
         <div className={styles.imageGrid}>
           {data.all.edges.map(
             ({

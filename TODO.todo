@@ -1,2 +1,6 @@
 ☐ Remove hardcoded alt on images.
   The sliders have this.
+
+Bugs:
+  ☐ Warning in leistungen.
+    id as key property of node doesn't work.
