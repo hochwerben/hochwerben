@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout';
-import ContactForm from '../components/ContactForm';
+// import ContactForm from '../components/ContactForm';
 
 import styles from '../css/produkt.module.css';
 
@@ -30,7 +30,7 @@ export default ({
         </div>
         {/* </div> */}
       </section>
-      <ContactForm />
+      {/* <ContactForm /> */}
     </Layout>
   );
 };
