@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Image from 'gatsby-image';
 
-import styles from '../../css/sliderOne.module.css';
+import styles from '../../css/digitalDruck.module.css';
 import Title from '../Title';
 
 import Slider from 'react-slick';

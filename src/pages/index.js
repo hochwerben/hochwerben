@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import SliderOne from '../components/Home/SliderOne';
+import DigitalDruck from '../components/Home/DigitalDruck';
 import WerbeTraeger from '../components/Home/WerbeTraeger';
 import WebDesign from '../components/Home/WebDesign';
 import Kontakt from '../components/Kontakt';
@@ -11,7 +11,7 @@ import styles from '../css/index.module.css';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home"></SEO>
-    <SliderOne></SliderOne>
+    <DigitalDruck></DigitalDruck>
     <div className={styles.skewSectionOne} />
     <WerbeTraeger></WerbeTraeger>
     <div className={styles.skewSectionTwo} />

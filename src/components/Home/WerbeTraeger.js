@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Image from 'gatsby-image';
 
-import styles from '../../css/sliderOne.module.css';
+import styles from '../../css/digitalDruck.module.css';
 import Title from '../Title';
 
 import Slider from 'react-slick';
@@ -28,7 +28,7 @@ const Werbetraeger = () => {
           id
         }
       }
-      haengeschild: file(name: { eq: "haengeschild" }) {
+      haengeschild: file(name: { eq: "haengeschild-01" }) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid

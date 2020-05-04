@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;700;900&family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;500;700;900&family=Oswald:wght@400;700&display=swap');
 
 :root {
   --clr-primary: #f49402;
@@ -154,6 +154,9 @@ ul {
 
 .leistungen-grid.gatsby-image-wrapper {
   height: 250px;
+}
+.leistung.gatsby-image-wrapper {
+  height: 400px;
 }
 
 @media screen and (min-width: 576px) {

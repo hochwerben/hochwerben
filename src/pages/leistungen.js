@@ -12,44 +12,6 @@ export default ({ data }) => {
       <SEO title="Contact" />
       <section className={styles.centerLeistungenContainer}>
         <Title title="Leistungen"></Title>
-        {/* <div className={styles.categoryGrid}>
-          <div>
-            <h2>Digitaldruck:</h2>
-            <ul>
-              {data.dd.edges.map(({ node }) => (
-                <li key={node.id}>
-                  <Link to={node.fields.slug}>
-                    <h3>{node.frontmatter.title}</h3>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h2>Werbeträger:</h2>
-            <ul>
-              {data.wt.edges.map(({ node }) => (
-                <li key={node.id}>
-                  <Link to={node.fields.slug}>
-                    <h3>{node.frontmatter.title}</h3>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h2>Webdesign:</h2>
-            <ul>
-              {data.wd.edges.map(({ node }) => (
-                <li key={node.id}>
-                  <Link to={node.fields.slug}>
-                    <h3>{node.frontmatter.title}</h3>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div> */}
 
         {/* TODO: key issue */}
         <div className={styles.imageGrid}>
@@ -62,7 +24,7 @@ export default ({ data }) => {
               },
             }) => (
               <div key={id} className={styles.imageContainer}>
-                <Link to={slug}>
+                <Link to={`/leistungen/${slug}`}>
                   <Image
                     fluid={
                       frontmatter.featuredImage
@@ -72,6 +34,9 @@ export default ({ data }) => {
                     alt={frontmatter.title}
                     className="leistungen-grid"
                   />
+                  <span className={styles.leistungTitle}>
+                    {frontmatter.title}
+                  </span>
                 </Link>
               </div>
             )
@@ -87,6 +52,7 @@ export const query = graphql`
     all: allMdx(sort: { fields: frontmatter___title }) {
       edges {
         node {
+          id
           frontmatter {
             title
             type

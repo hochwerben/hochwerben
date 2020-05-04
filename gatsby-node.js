@@ -4,7 +4,11 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === 'Mdx') {
-    const slug = createFilePath({ node, getNode, basePath: `src/produkte` });
+    const slug = createFilePath({
+      node,
+      getNode,
+      basePath: `src/leistungen-mdx`,
+    });
     createNodeField({
       node,
       name: `slug`,
@@ -31,8 +35,8 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
-      path: node.fields.slug,
-      component: path.resolve(`./src/templates/produkt.js`),
+      path: `/leistungen${node.fields.slug}`,
+      component: path.resolve(`./src/templates/leistung.js`),
       context: {
         slug: node.fields.slug,
       },
