@@ -16,6 +16,7 @@ const Beschriftung = () => {
     <form onSubmit={handleSubmit}>
       <label>
         Wählen Sie Ihr Produkt aus:
+        <br />
         <select
           name="beschriftung"
           id="beschriftung"

@@ -99,9 +99,10 @@ const Werbetraeger = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     rtl: true,
     arrows: false,
+    pauseOnHover: false,
   };
 
   return (
