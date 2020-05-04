@@ -36,3 +36,9 @@
   cursor: pointer;
   border: 1px solid var(--clr-primary);
 }
+
+.form input,
+textarea,
+button {
+  outline: none;
+}

@@ -52,21 +52,32 @@ export default () => {
 
   return (
     <Slider {...settings}>
-      <Image
-        fluid={data.hs1.childImageSharp.fluid}
-        alt={data.hs1.name}
-        className="leistung"
-      />
-      <Image
-        fluid={data.hs2.childImageSharp.fluid}
-        alt={data.hs2.name}
-        className="leistung"
-      />
-      <Image
-        fluid={data.hs3.childImageSharp.fluid}
-        alt={data.hs3.name}
-        className="leistung"
-      />
+      <div className={styles.schildBox}>
+        <Image
+          fluid={data.hs1.childImageSharp.fluid}
+          alt={data.hs1.name}
+          className="leistung"
+        />
+        <span className={styles.schilderBeschreibung}>Hängeschild XL</span>
+      </div>
+      <div className={styles.schildBox}>
+        <Image
+          fluid={data.hs2.childImageSharp.fluid}
+          alt={data.hs2.name}
+          className="leistung"
+        />
+        <span className={styles.schilderBeschreibung}>Hängeschild M</span>
+      </div>
+      <div className={styles.schildBox}>
+        <Image
+          fluid={data.hs3.childImageSharp.fluid}
+          alt={data.hs3.name}
+          className="leistung"
+        />
+        <span className={styles.schilderBeschreibung}>
+          Beleuchtetes Standschild
+        </span>
+      </div>
     </Slider>
   );
 };
