@@ -27,6 +27,14 @@ export default () => {
           }
         }
       }
+      hs3: file(name: { eq: "schild-beleuchtet-01" }) {
+        name
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -52,6 +60,11 @@ export default () => {
       <Image
         fluid={data.hs2.childImageSharp.fluid}
         alt={data.hs2.name}
+        className="leistung"
+      />
+      <Image
+        fluid={data.hs3.childImageSharp.fluid}
+        alt={data.hs3.name}
         className="leistung"
       />
     </Slider>

@@ -8,7 +8,6 @@
 .title {
   text-align: center;
   font-size: 2rem;
-  /* padding-bottom: 4rem; */
 }
 
 .produktContainer {
@@ -18,10 +17,11 @@
 }
 
 .fImage {
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   max-width: 500px;
 }
 
 .beschreibung {
   font-size: 1rem;
+  line-height: 1.2;
 }
