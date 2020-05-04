@@ -52,16 +52,16 @@ const Webdesign = () => {
                   alt="Image1"
                 />
               </div>
-              <Link to="/leistungen" as="div" className={styles.sliderText}>
-                <span className={styles.name}>
-                  Persönliche
-                  <br />
-                  Webseite
-                </span>
+              <Link
+                to="/leistungen/webdesign"
+                as="div"
+                className={styles.sliderText}
+              >
+                <span className={styles.name}>"OnePager"</span>
               </Link>
               <div className={styles.price}>
                 <span>ab</span>
-                <span className={styles.priceText}>€ 499</span>
+                <span className={styles.priceText}>€ 699</span>
               </div>
             </div>
             {/* End Slide */}
@@ -74,22 +74,25 @@ const Webdesign = () => {
                   alt="Image1"
                 />
               </div>
-              <Link to="/leistungen" as="div" className={styles.sliderText}>
+              <Link
+                to="/leistungen/webdesign"
+                as="div"
+                className={styles.sliderText}
+              >
                 <span className={styles.name}>
-                  Business
+                  Corporate-
                   <br />
-                  Lösungen
+                  Design
                 </span>
               </Link>
               <div className={styles.price}>
                 <span>ab</span>
-                <span className={styles.priceText}>€ 1499</span>
+                <span className={styles.priceText}>€ 1299</span>
               </div>
             </div>
             {/* End Slide */}
 
-            {/* Slide 2 */}
-            <div className={styles.sliderContainer}>
+            {/* <div className={styles.sliderContainer}>
               <div className={styles.img}>
                 <Image
                   fluid={data.allFile.edges[2].node.childImageSharp.fluid}
@@ -107,8 +110,7 @@ const Webdesign = () => {
                 <span>ab</span>
                 <span className={styles.priceText}>€ 2499</span>
               </div>
-            </div>
-            {/* End Slide */}
+            </div> */}
           </Slider>
         </div>
       </div>

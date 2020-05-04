@@ -38,6 +38,7 @@ const DigitalDruck = () => {
       price: 699,
       image: data.suv.childImageSharp.fluid,
       id: data.suv.childImageSharp.id,
+      link: '/fahrzeug-beschriftung',
     },
     {
       text: 'LKW-',
@@ -45,6 +46,7 @@ const DigitalDruck = () => {
       price: 1299,
       image: data.sprinter.childImageSharp.fluid,
       id: data.sprinter.childImageSharp.id,
+      link: '/lkw-folierung',
     },
   ];
 
@@ -70,7 +72,11 @@ const DigitalDruck = () => {
               <div className={styles.img}>
                 <Image fluid={product.image} alt="Digitaldruck Produkt" />
               </div>
-              <Link to="/leistungen" as="div" className={styles.sliderText}>
+              <Link
+                to={`/leistungen${product.link}`}
+                as="div"
+                className={styles.sliderText}
+              >
                 <span className={styles.name}>
                   {product.text}
                   {product.textSecond && <br />}

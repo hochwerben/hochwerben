@@ -64,6 +64,7 @@ const Werbetraeger = () => {
       price: 25,
       image: data.shirts.childImageSharp.fluid,
       id: data.shirts.childImageSharp.id,
+      link: '/textildruck',
     },
     {
       text: 'Messe-',
@@ -71,24 +72,28 @@ const Werbetraeger = () => {
       price: 25,
       image: data.messedisplays.childImageSharp.fluid,
       id: data.messedisplays.childImageSharp.id,
+      link: '/messedisplays',
     },
     {
       text: 'Schilder',
       price: 79,
       image: data.haengeschild.childImageSharp.fluid,
       id: data.haengeschild.childImageSharp.id,
+      link: '/schilder',
     },
     {
       text: 'Wände',
       price: 899,
       image: data.trennwand.childImageSharp.fluid,
       id: data.trennwand.childImageSharp.id,
+      link: '/waende',
     },
     {
       text: 'Visitenkarten',
       price: 59,
       image: data.visitenkarten.childImageSharp.fluid,
       id: data.visitenkarten.childImageSharp.id,
+      link: '/visitenkarten',
     },
   ];
 
@@ -116,7 +121,11 @@ const Werbetraeger = () => {
                 <div className={styles.img}>
                   <Image fluid={product.image} alt="shirts" />
                 </div>
-                <Link to="/leistungen" as="div" className={styles.sliderText}>
+                <Link
+                  to={`/leistungen${product.link}`}
+                  as="div"
+                  className={styles.sliderText}
+                >
                   <span className={styles.name}>
                     {product.text}
                     {product.textSecond && <br />}
