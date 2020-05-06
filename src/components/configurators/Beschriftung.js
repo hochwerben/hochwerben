@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-const data = [];
-
 const Beschriftung = () => {
   const [value, setValue] = useState('seiten');
 

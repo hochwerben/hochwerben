@@ -107,4 +107,29 @@
   .img * {
     height: 300px;
   }
+  .sliderText {
+    background-color: var(--clr-primary);
+    padding: 0.5rem 1rem;
+    height: auto;
+    width: auto;
+    display: block;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    word-break: break-word;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .name {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    display: block;
+    color: white;
+  }
 }

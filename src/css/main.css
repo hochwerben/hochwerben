@@ -6,8 +6,9 @@
   --clr-primary-dark: hsl(205, 100%, 21%);
   --clr-primary-light: #ffcb7d;
   /* --clr-primary-light: hsl(205, 84%, 74%); */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-5: hsl(209, 22%, 49%);
+  --clr-grey-1: hsl(212, 13%, 23%);
+  /* --clr-grey-1: hsl(209, 61%, 16%); */
+  --clr-grey-5: hsl(212, 6%, 46%);
   --clr-grey-6: #e0ebf7;
   --clr-grey-7: #ebf9fa;
   --clr-grey-8: #efebfa;
@@ -23,7 +24,7 @@
   --ff-secondary: 'Barlow', sans-serif;
   --ff-title: 'Oswald', sans-serif;
   --transition: all 0.3s linear;
-  --spacing: 0.2rem;
+  --spacing: 0.1rem;
   --radius: 0.5rem;
   --fixed-width: 620px;
 }
@@ -156,12 +157,15 @@ ul {
   height: 250px;
 }
 .leistung.gatsby-image-wrapper {
-  height: 500px;
+  height: 300px;
 }
 
 @media screen and (min-width: 576px) {
   .center {
     grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
+  }
+  .leistung.gatsby-image-wrapper {
+    height: 500px;
   }
 }
 @media screen and (min-width: 992px) {

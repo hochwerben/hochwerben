@@ -60,8 +60,8 @@ const Werbetraeger = () => {
 
   const wtContent = [
     {
-      text: 'Shirts',
-      price: 25,
+      text: 'Textildruck',
+      price: 19,
       image: data.shirts.childImageSharp.fluid,
       id: data.shirts.childImageSharp.id,
       link: '/textildruck',
@@ -69,28 +69,28 @@ const Werbetraeger = () => {
     {
       text: 'Messe-',
       textSecond: 'displays',
-      price: 25,
+      price: 149,
       image: data.messedisplays.childImageSharp.fluid,
       id: data.messedisplays.childImageSharp.id,
       link: '/messedisplays',
     },
     {
       text: 'Schilder',
-      price: 79,
+      price: 49,
       image: data.haengeschild.childImageSharp.fluid,
       id: data.haengeschild.childImageSharp.id,
       link: '/schilder',
     },
     {
       text: 'Wände',
-      price: 899,
+      price: 199,
       image: data.trennwand.childImageSharp.fluid,
       id: data.trennwand.childImageSharp.id,
       link: '/waende',
     },
     {
       text: 'Visitenkarten',
-      price: 59,
+      price: 49,
       image: data.visitenkarten.childImageSharp.fluid,
       id: data.visitenkarten.childImageSharp.id,
       link: '/visitenkarten',

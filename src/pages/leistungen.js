@@ -13,7 +13,6 @@ export default ({ data }) => {
       <section className={styles.centerLeistungenContainer}>
         <Title title="Leistungen"></Title>
 
-        {/* TODO: key issue */}
         <div className={styles.imageGrid}>
           {data.all.edges.map(
             ({

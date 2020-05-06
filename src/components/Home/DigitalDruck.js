@@ -35,7 +35,7 @@ const DigitalDruck = () => {
     {
       text: 'Fahrzeug-',
       textSecond: 'beschriftung',
-      price: 699,
+      price: 99,
       image: data.suv.childImageSharp.fluid,
       id: data.suv.childImageSharp.id,
       link: '/fahrzeug-beschriftung',
@@ -43,7 +43,7 @@ const DigitalDruck = () => {
     {
       text: 'LKW-',
       textSecond: 'Folierung',
-      price: 1299,
+      price: 599,
       image: data.sprinter.childImageSharp.fluid,
       id: data.sprinter.childImageSharp.id,
       link: '/lkw-folierung',

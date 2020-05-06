@@ -6,7 +6,11 @@ const ContactLink = () => {
     <div className={styles.container}>
       <h4>So erreichen Sie uns:</h4>
       <div className={styles.underline}></div>
+      <h4 className={styles.icon}>☎</h4>
       <h4 className={styles.phone}>+49 6105 6766</h4>
+      <h4 className={styles.icon}>
+        <a href="mailto:info@hochwerben.de">✉</a>
+      </h4>
       <a href="mailto:info@hochwerben.de" className={styles.email}>
         info@hochwerben.de
       </a>
