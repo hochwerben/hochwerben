@@ -3,7 +3,7 @@ Ideas:
     implement this slogan somehow
 
 Todos:
-  □ Make the contact form look nicer @today @started(20-05-05 14:05)
+  □ Make the contact form look nicer @started(20-05-05 14:05)
     □ Also implement netlify-form-functionality
   □ Remove hardcoded alt on images.
     The sliders have this.
@@ -14,4 +14,6 @@ Bugs:
   ✔ Warning in leistungen. @done(20-05-05 13:38)
     id as key property of node doesn't work.
   □ Text bubbles on main page sliders are looking bad on medium screens
+  ☐ Careful with embedded youtube videos
+    Too wide in mdx.
   

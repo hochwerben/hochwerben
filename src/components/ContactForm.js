@@ -11,19 +11,13 @@ const ContactForm = () => {
   return (
     <div className={styles.contactContainer}>
       <div className={styles.adressContainer}>
-        <h4>
-          Kontakt<span>daten</span>
-        </h4>
-        <p>Hochwerben</p>
+        <h4>Hochwerben</h4>
         <p>Nordendstr. 82-84</p>
         <p>64546 Mörfelden-Walldorf</p>
         <p>Telefonnummer</p>
         <button>Mail senden</button>
       </div>
       <div className={styles.formContainer}>
-        <h4>
-          Kontakt<span>formular</span>
-        </h4>
         <form className={styles.form}>
           <label>
             Vorname

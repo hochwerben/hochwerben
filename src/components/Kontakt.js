@@ -7,7 +7,7 @@ const Kontakt = () => (
   <section className={styles.contact}>
     <Title title="Kontakt"></Title>
 
-    <div className={styles.contactInfo}>
+    {/* <div className={styles.contactInfo}>
       <p>
         Für nähere Informationen senden Sie uns eine Email an{' '}
         <a href="mailto:info@hochwerben.de">info@hochwerben.de</a>
@@ -23,7 +23,7 @@ const Kontakt = () => (
       >
         +49 6105 6766
       </h3>
-    </div>
+    </div> */}
 
     <ContactForm />
 
