@@ -1,19 +1,20 @@
 Ideas:
-  □ Humans are visual beings
+  ☐ Humans are visual beings
     implement this slogan somehow
 
 Todos:
-  □ Make the contact form look nicer @started(20-05-05 14:05)
-    □ Also implement netlify-form-functionality
-  □ Remove hardcoded alt on images.
+  ☐ Make the contact form look nicer
+    ☐ Also implement netlify-form-functionality
+  ☐ Remove hardcoded alt on images.
     The sliders have this.
-  □ Make a dropdown menu
+  ☐ Make a dropdown menu
     Make a responsive menu, too
 
 Bugs:
   ✔ Warning in leistungen. @done(20-05-05 13:38)
     id as key property of node doesn't work.
-  □ Text bubbles on main page sliders are looking bad on medium screens
+  ☐ Text bubbles on main page sliders are looking bad on medium screens
+    Make either rectangles or svgs.
   ☐ Careful with embedded youtube videos
     Too wide in mdx.
   

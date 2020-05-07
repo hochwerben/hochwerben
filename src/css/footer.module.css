@@ -13,6 +13,7 @@
   font-size: 2rem;
   margin: 0 0.4rem;
   transition: var(--transition);
+  color: var(--clr-primary);
 }
 .icon:hover {
   transform: translateY(-10%);

@@ -7,18 +7,36 @@ export default () => (
   <Layout>
     <section className={styles.centerPolicy}>
       <Title title="Impressum"></Title>
+      <p className={styles.firstP}>
+        <strong>ATLASAVIA GmbH</strong>
+        <br />
+        Nordendstrasse 82
+        <br />
+        D-64546 Moerfelden-Walldorf
+        <br />
+        Germany
+        <br />
+      </p>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores,
-        temporibus! Minus nulla error est sequi esse ut facere vitae? Laudantium
-        officiis aspernatur nulla esse eveniet earum facilis, ut aut.
-        Consequuntur dicta, dolores maxime ut illo numquam iusto reiciendis enim
-        vitae officiis eos voluptas iste? Veniam, fugit? Ab, blanditiis eveniet?
-        Assumenda tenetur dolorum omnis, ea quis quia ut quidem culpa voluptas
-        expedita vel corporis qui dolore voluptatem nam nesciunt molestias
-        molestiae fugit dicta! Deserunt, maxime reiciendis. Nesciunt similique
-        aut fuga fugiat. Eaque, libero blanditiis explicabo mollitia amet non
-        autem, aspernatur illo voluptas alias modi placeat officiis, quidem
-        omnis corrupti sunt praesentium?
+        Telefon: +49 6105 / 6766
+        <br />
+        Telefax: +49 6105 / 6738
+        <br />
+        E-Mail: contact@atlasavia.de
+        <br />
+        Web: www.atlasavia.de
+        <br />
+        Rechtsform: GmbH Geschäftsführer: Bernhard Fladung
+        <br />
+        Registerart: Handelsregister
+        <br />
+        Register / Ort: Amtsgericht Darmstadt
+        <br />
+        Registernummer: HRB 53375
+        <br />
+        Angehörige Kammer: IHK Darmstadt
+        <br />
+        Umsatzsteuer ID: DE 113827450
       </p>
     </section>
   </Layout>

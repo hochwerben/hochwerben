@@ -29,6 +29,19 @@
   --fixed-width: 620px;
 }
 
+::-moz-selection {
+  background: var(--clr-primary);
+  color: black;
+}
+::selection {
+  background: var(--clr-primary);
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--ff-secondary);
   background: white;
