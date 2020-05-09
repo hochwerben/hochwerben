@@ -52,19 +52,16 @@ const Webdesign = () => {
                   alt="Image1"
                 />
               </div>
-              <Link
-                to="/leistungen/webdesign"
-                as="div"
-                className={styles.sliderText}
-              >
-                <span className={styles.name}>"OnePager"</span>
+              <Link to="/leistungen/webdesign" as="div">
+                <span className={styles.rect}>"OnePager"</span>
+                {/* <span className={styles.name}>"OnePager"</span> */}
               </Link>
-              <div className={styles.price}>
+              <div className={styles.priceTag}>ab € 699</div>
+              {/* <div className={styles.price}>
                 <span>ab</span>
                 <span className={styles.priceText}>€ 699</span>
-              </div>
+              </div> */}
             </div>
-            {/* End Slide */}
 
             {/* Slide 2 */}
             <div className={styles.sliderContainer}>
@@ -74,43 +71,20 @@ const Webdesign = () => {
                   alt="Image1"
                 />
               </div>
-              <Link
-                to="/leistungen/webdesign"
-                as="div"
-                className={styles.sliderText}
-              >
-                <span className={styles.name}>
+              <Link to="/leistungen/webdesign" as="div">
+                <span className={styles.rect}>Corporate Design</span>
+                {/* <span className={styles.name}>
                   Corporate-
                   <br />
                   Design
-                </span>
+                </span> */}
               </Link>
-              <div className={styles.price}>
+              <div className={styles.priceTag}>ab € 1299</div>
+              {/* <div className={styles.price}>
                 <span>ab</span>
                 <span className={styles.priceText}>€ 1299</span>
-              </div>
+              </div> */}
             </div>
-            {/* End Slide */}
-
-            {/* <div className={styles.sliderContainer}>
-              <div className={styles.img}>
-                <Image
-                  fluid={data.allFile.edges[2].node.childImageSharp.fluid}
-                  alt="Image1"
-                />
-              </div>
-              <Link to="/leistungen" as="div" className={styles.sliderText}>
-                <span className={styles.name}>
-                  eCommerce
-                  <br />
-                  Lösungen
-                </span>
-              </Link>
-              <div className={styles.price}>
-                <span>ab</span>
-                <span className={styles.priceText}>€ 2499</span>
-              </div>
-            </div> */}
           </Slider>
         </div>
       </div>

@@ -43,6 +43,7 @@ const DigitalDruck = () => {
     {
       text: 'Fahrzeug-',
       textSecond: 'beschriftung',
+      textFull: 'Fahrzeug-Beschriftung',
       price: 99,
       image: data.suv.childImageSharp.fluid,
       id: data.suv.childImageSharp.id,
@@ -51,7 +52,8 @@ const DigitalDruck = () => {
     {
       text: 'LKW-',
       textSecond: 'Folierung',
-      price: 599,
+      textFull: 'LKW-Folierung',
+      price: 1399,
       image: data.sprinter.childImageSharp.fluid,
       id: data.sprinter.childImageSharp.id,
       link: '/lkw-folierung',
@@ -59,6 +61,7 @@ const DigitalDruck = () => {
     {
       text: 'Fahrzeug-',
       textSecond: 'Beschriftung',
+      textFull: 'Fahrzeug-Beschriftung',
       price: 599,
       image: data.frontHeck.childImageSharp.fluid,
       id: data.frontHeck.childImageSharp.id,
@@ -73,7 +76,7 @@ const DigitalDruck = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 6000,
     arrows: false,
     pauseOnHover: false,
   };
@@ -88,21 +91,20 @@ const DigitalDruck = () => {
               <div className={styles.img}>
                 <Image fluid={product.image} alt="Digitaldruck Produkt" />
               </div>
-              <Link
-                to={`/leistungen${product.link}`}
-                as="div"
-                className={styles.sliderText}
-              >
-                <span className={styles.name}>
+              {/* old className was .sliderText */}
+              <Link to={`/leistungen${product.link}`} as="div">
+                <span className={styles.rect}>{product.textFull}</span>
+                {/* <span className={styles.name}>
                   {product.text}
                   {product.textSecond && <br />}
                   {product.textSecond && product.textSecond}
-                </span>
+                </span> */}
               </Link>
-              <div className={styles.price}>
+              <div className={styles.priceTag}>ab € {product.price}</div>
+              {/* <div className={styles.price}>
                 <span>ab</span>
                 <span className={styles.priceText}>{`€ ${product.price}`}</span>
-              </div>
+              </div> */}
             </div>
           ))}
         </Slider>

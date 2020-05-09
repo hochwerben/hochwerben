@@ -61,6 +61,7 @@ const Werbetraeger = () => {
   const wtContent = [
     {
       text: 'Textildruck',
+      textFull: 'Textildruck',
       price: 19,
       image: data.shirts.childImageSharp.fluid,
       id: data.shirts.childImageSharp.id,
@@ -69,6 +70,7 @@ const Werbetraeger = () => {
     {
       text: 'Messe-',
       textSecond: 'displays',
+      textFull: 'Messedisplays',
       price: 149,
       image: data.messedisplays.childImageSharp.fluid,
       id: data.messedisplays.childImageSharp.id,
@@ -76,6 +78,7 @@ const Werbetraeger = () => {
     },
     {
       text: 'Schilder',
+      textFull: 'Schilder',
       price: 49,
       image: data.haengeschild.childImageSharp.fluid,
       id: data.haengeschild.childImageSharp.id,
@@ -83,6 +86,7 @@ const Werbetraeger = () => {
     },
     {
       text: 'Wände',
+      textFull: 'Wände',
       price: 199,
       image: data.trennwand.childImageSharp.fluid,
       id: data.trennwand.childImageSharp.id,
@@ -90,6 +94,7 @@ const Werbetraeger = () => {
     },
     {
       text: 'Visitenkarten',
+      textFull: 'Visitenkarten',
       price: 49,
       image: data.visitenkarten.childImageSharp.fluid,
       id: data.visitenkarten.childImageSharp.id,
@@ -104,7 +109,7 @@ const Werbetraeger = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 6000,
     rtl: true,
     arrows: false,
     pauseOnHover: false,
@@ -121,23 +126,21 @@ const Werbetraeger = () => {
                 <div className={styles.img}>
                   <Image fluid={product.image} alt="shirts" />
                 </div>
-                <Link
-                  to={`/leistungen${product.link}`}
-                  as="div"
-                  className={styles.sliderText}
-                >
-                  <span className={styles.name}>
+                <Link to={`/leistungen${product.link}`} as="div">
+                  <span className={styles.rect}>{product.textFull}</span>
+                  {/* <span className={styles.name}>
                     {product.text}
                     {product.textSecond && <br />}
                     {product.textSecond && product.textSecond}
-                  </span>
+                  </span> */}
                 </Link>
-                <div className={styles.price}>
+                <div className={styles.priceTag}>ab € {product.price}</div>
+                {/* <div className={styles.price}>
                   <span>ab</span>
                   <span
                     className={styles.priceText}
                   >{`€ ${product.price}`}</span>
-                </div>
+                </div> */}
               </div>
             ))}
           </Slider>
