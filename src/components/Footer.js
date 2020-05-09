@@ -12,6 +12,7 @@ const Footer = () => {
           value={{
             style: { verticalAlign: 'middle', marginRight: '1rem' },
             size: '2em',
+            color: '#f49402',
           }}
         >
           <div className={styles.phone}>
