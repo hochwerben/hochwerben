@@ -1,21 +1,23 @@
+Todos:
+  ☐ Implement scroll down textbox on Kompetenzen.
+  ☐ Change text-bubble in Kompetenzen component to rectangle.
+  ☐ Also change the price bubble to a rectangle.
+  ☐ Implement description icons.
+  ✘ Make the contact form look nicer @cancelled(20-05-09 22:32)
+  ✘ Also implement netlify-form-functionality @cancelled(20-05-09 22:32)
+  ☐ Remove hardcoded alt on images.
+  The sliders have this.
+  ☐ Make a dropdown menu.
+  Make a responsive menu, too.
+  
+Bugs:
+  ✔ Warning in leistungen. @done(20-05-05 13:38)
+  id as key property of node doesn't work.
+  ☐ Text bubbles on main page sliders are looking bad on medium screens
+  Make either rectangles or svgs.
+  ☐ Careful with embedded youtube videos
+  Too wide in mdx.
+  
 Ideas:
   ☐ Humans are visual beings
     implement this slogan somehow
-
-Todos:
-  ☐ Implement description icons
-  ✔ Make the contact form look nicer @done(20-05-08 15:12)
-    ☐ Also implement netlify-form-functionality
-  ☐ Remove hardcoded alt on images.
-    The sliders have this.
-  ☐ Make a dropdown menu
-    Make a responsive menu, too
-
-Bugs:
-  ✔ Warning in leistungen. @done(20-05-05 13:38)
-    id as key property of node doesn't work.
-  ☐ Text bubbles on main page sliders are looking bad on medium screens
-    Make either rectangles or svgs.
-  ☐ Careful with embedded youtube videos
-    Too wide in mdx.
-  
