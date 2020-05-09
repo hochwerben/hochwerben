@@ -6,13 +6,21 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 3fr 4fr;
+  gap: 2rem;
   margin: 6rem auto;
 }
+
+.phoneAndMail {
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
 .contactInfo {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  font-size: 1.3rem;
 }
 .list {
   display: inline-block;
@@ -30,9 +38,10 @@
 
 .divider {
   display: block;
+  width: 50%;
   height: 1px;
   background-color: var(--clr-grey-6);
-  margin: 1rem 0;
+  margin: 1rem auto;
 }
 
 .mapContainer {
@@ -56,5 +65,11 @@
   }
   .mapContainer {
     margin-top: 3rem;
+  }
+  .phoneAndMail {
+    font-size: 1.5rem;
+  }
+  .contactInfo {
+    font-size: 1rem;
   }
 }

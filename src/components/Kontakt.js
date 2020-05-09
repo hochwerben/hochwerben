@@ -11,33 +11,33 @@ const Kontakt = () => (
 
     <div className={styles.grid}>
       <div className={styles.contactInfo}>
-        <IconContext.Provider
-          value={{
-            style: { verticalAlign: 'middle', marginRight: '1rem' },
-            size: '2em',
-            color: '#f49402',
-          }}
-        >
-          <ul className={styles.list}>
-            <li>
+        <div className={styles.phoneAndMail}>
+          <IconContext.Provider
+            value={{
+              style: { verticalAlign: 'middle', marginRight: '1rem' },
+              size: '2em',
+              color: '#f49402',
+            }}
+          >
+            <div>
               <MdPhone />
               <span>+49 6105 9777704</span>
-            </li>
+            </div>
             <div className={styles.mail}>
               <a href="mailto:info@hochwerben.de">
                 <MdMail />
                 <span>info@hochwerben.de</span>
               </a>
             </div>
-            <li>
-              <span className={styles.divider}></span>
-            </li>
-            <li>Hochwerben</li>
-            <li>AtlasAvia GmbH</li>
-            <li>Nordendstr. 82-84</li>
-            <li>64546 Mörfelden-Walldorf</li>
-          </ul>
-        </IconContext.Provider>
+          </IconContext.Provider>
+        </div>
+        <span className={styles.divider}></span>
+        <ul className={styles.list}>
+          <li>Hochwerben</li>
+          <li>AtlasAvia GmbH</li>
+          <li>Nordendstr. 82-84</li>
+          <li>64546 Mörfelden-Walldorf</li>
+        </ul>
       </div>
       <div className={styles.mapContainer}>
         <iframe
