@@ -4,7 +4,7 @@ import SEO from '../components/seo';
 import DigitalDruck from '../components/Home/DigitalDruck';
 import WerbeTraeger from '../components/Home/WerbeTraeger';
 import WebDesign from '../components/Home/WebDesign';
-import Kontakt from '../components/Kontakt';
+// import Kontakt from '../components/Kontakt';
 
 import styles from '../css/index.module.css';
 
@@ -17,7 +17,7 @@ const IndexPage = () => (
     <div className={styles.skewSectionTwo} />
     <WebDesign></WebDesign>
     <div className={styles.skewSectionThree} id="kontakt" />
-    <Kontakt></Kontakt>
+    {/* <Kontakt></Kontakt> */}
   </Layout>
 );
 

@@ -3,7 +3,8 @@ Ideas:
     implement this slogan somehow
 
 Todos:
-  ☐ Make the contact form look nicer
+  ☐ Implement description icons
+  ✔ Make the contact form look nicer @done(20-05-08 15:12)
     ☐ Also implement netlify-form-functionality
   ☐ Remove hardcoded alt on images.
     The sliders have this.

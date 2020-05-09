@@ -14,7 +14,7 @@ const DigitalDruck = () => {
     {
       suv: file(name: { eq: "suv" }) {
         childImageSharp {
-          fluid(quality: 95, maxWidth: 1200) {
+          fluid(quality: 95, maxWidth: 2000) {
             ...GatsbyImageSharpFluid
           }
           id
@@ -22,7 +22,15 @@ const DigitalDruck = () => {
       }
       sprinter: file(name: { eq: "sprinter" }) {
         childImageSharp {
-          fluid(quality: 95, maxWidth: 1200) {
+          fluid(quality: 95, maxWidth: 2000) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
+      frontHeck: file(name: { eq: "vito-front-heck-01" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 2000) {
             ...GatsbyImageSharpFluid
           }
           id
@@ -47,6 +55,14 @@ const DigitalDruck = () => {
       image: data.sprinter.childImageSharp.fluid,
       id: data.sprinter.childImageSharp.id,
       link: '/lkw-folierung',
+    },
+    {
+      text: 'Fahrzeug-',
+      textSecond: 'Beschriftung',
+      price: 599,
+      image: data.frontHeck.childImageSharp.fluid,
+      id: data.frontHeck.childImageSharp.id,
+      link: '/fahrzeug-beschriftung',
     },
   ];
 

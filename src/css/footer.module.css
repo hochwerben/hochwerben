@@ -1,9 +1,38 @@
 .footer {
   text-align: center;
   padding: 2rem;
-  color: var(--clr-white);
   background: var(--clr-grey-1);
+  color: var(--clr-grey-5);
 }
+
+.twoColumns {
+  color: var(--clr-grey-4);
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  display: grid;
+  gap: 0;
+  grid-template-areas: 'a c';
+  text-align: left;
+}
+
+.address {
+  grid-area: a;
+}
+.contactInfo {
+  grid-area: c;
+}
+.phone {
+  display: block;
+  padding: 1rem;
+}
+.mail {
+  display: block;
+  color: var(--clr-grey-4);
+}
+.mail:hover {
+  color: var(--clr-primary);
+}
+
 .icons {
   margin: 0.5rem 0;
   display: flex;
@@ -13,7 +42,7 @@
   font-size: 2rem;
   margin: 0 0.4rem;
   transition: var(--transition);
-  color: var(--clr-primary);
+  color: var(--clr-grey-5);
 }
 .icon:hover {
   transform: translateY(-10%);
@@ -22,7 +51,7 @@
   margin: 0.5rem 0;
 }
 .info a {
-  color: var(--clr-white);
+  color: var(--clr-grey-5);
 }
 .info a:hover {
   color: var(--clr-primary);
@@ -40,9 +69,18 @@
 
 .impLink {
   margin: 0 0.5rem;
-  color: white;
+  color: var(--clr-grey-5);
 }
 
 .impLink:hover {
   color: var(--clr-primary);
+}
+
+@media screen and (max-width: 700px) {
+  .twoColumns {
+    grid-template-areas:
+      'c'
+      'a';
+    text-align: center;
+  }
 }

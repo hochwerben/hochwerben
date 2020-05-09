@@ -12,6 +12,6 @@ export default [
   {
     id: Math.random(),
     text: 'kontakt',
-    url: '/#kontakt',
+    url: '/kontakt',
   },
 ];

@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from './Title';
-import ContactForm from './ContactForm';
+// import ContactForm from './ContactForm';
 import styles from '../css/contact.module.css';
 
 const Kontakt = () => (
@@ -25,7 +25,7 @@ const Kontakt = () => (
       </h3>
     </div> */}
 
-    <ContactForm />
+    {/* <ContactForm /> */}
 
     <div className={styles.mapContainer}>
       <iframe

@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   background: var(--clr-white);
-  z-index: 1;
+  z-index: 4;
   transition: all 0.5s;
   border-top: 2px solid var(--clr-primary);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);

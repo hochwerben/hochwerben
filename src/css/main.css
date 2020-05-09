@@ -8,6 +8,7 @@
   /* --clr-primary-light: hsl(205, 84%, 74%); */
   --clr-grey-1: hsl(212, 13%, 23%);
   /* --clr-grey-1: hsl(209, 61%, 16%); */
+  --clr-grey-4: #94989c;
   --clr-grey-5: hsl(212, 6%, 46%);
   --clr-grey-6: #e0ebf7;
   --clr-grey-7: #ebf9fa;
@@ -27,6 +28,7 @@
   --spacing: 0.1rem;
   --radius: 0.5rem;
   --fixed-width: 620px;
+  --maxWidth: 1170px;
 }
 
 ::-moz-selection {
