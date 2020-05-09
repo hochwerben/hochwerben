@@ -1,39 +1,48 @@
 .footer {
-  text-align: center;
-  padding: 2rem;
   background: var(--clr-grey-1);
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-4);
 }
 
-.twoColumns {
-  color: var(--clr-grey-4);
+.grid {
   max-width: var(--maxWidth);
   margin: 0 auto;
   display: grid;
-  gap: 0;
-  grid-template-areas: 'a c';
-  text-align: left;
+  grid-template-areas:
+    'phone . address'
+    'mail . address'
+    'info links icons';
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
 }
 
-.address {
-  grid-area: a;
-}
-.contactInfo {
-  grid-area: c;
-}
 .phone {
-  display: block;
-  padding: 1rem;
+  grid-area: phone;
 }
+.phone h3 {
+  margin: 0;
+}
+
 .mail {
-  display: block;
+  grid-area: mail;
+}
+.mail a {
   color: var(--clr-grey-4);
 }
 .mail:hover {
   color: var(--clr-primary);
 }
 
+.address {
+  grid-area: address;
+  margin: 0 auto;
+}
+.address ul {
+  margin: 0;
+}
+
 .icons {
+  grid-area: icons;
   margin: 0.5rem 0;
   display: flex;
   justify-content: center;
@@ -48,13 +57,18 @@
   transform: translateY(-10%);
 }
 .info {
+  grid-area: info;
   margin: 0.5rem 0;
 }
 .info a {
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-4);
 }
 .info a:hover {
   color: var(--clr-primary);
+}
+
+.links {
+  grid-area: links;
 }
 .link {
   display: inline-block;
@@ -69,7 +83,7 @@
 
 .impLink {
   margin: 0 0.5rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-4);
 }
 
 .impLink:hover {
