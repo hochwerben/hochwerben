@@ -17,20 +17,21 @@ const Footer = () => {
           <div className={styles.phone}>
             <h3>
               <MdPhone />
-              +49 6105 9777704
+              <span>+49 6105 9777704</span>
             </h3>
           </div>
           <div className={styles.mail}>
             <a href="mailto:info@hochwerben.de">
               <MdMail />
-              info@hochwerben.de
+              <span>info@hochwerben.de</span>
             </a>
           </div>
         </IconContext.Provider>
 
         <div className={styles.address}>
           <ul>
-            <li>Hochwerben</li>
+            <li className={styles.heading}>Hochwerben</li>
+            <li>AtlasAvia GmbH</li>
             <li>Nordendstr. 82-84</li>
             <li>64546 Mörfelden-Walldorf</li>
           </ul>
@@ -49,14 +50,18 @@ const Footer = () => {
           © {new Date().getFullYear()} <Link to="/">Hochwerben.de</Link> - Alle
           Rechte vorbehalten.
         </div>
-        <div className={styles.links}>
-          <Link to="/impressum" className={styles.impLink}>
-            Impressum
-          </Link>
-          <Link to="/datenschutz" className={styles.impLink}>
-            Datenschutzerklärung
-          </Link>
-        </div>
+        <ul className={styles.links}>
+          <li>
+            <Link to="/impressum" className={styles.impLink}>
+              Impressum
+            </Link>
+          </li>
+          <li>
+            <Link to="/datenschutz" className={styles.impLink}>
+              Datenschutzerklärung
+            </Link>
+          </li>
+        </ul>
       </div>
     </footer>
   );
