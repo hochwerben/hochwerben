@@ -1,4 +1,5 @@
 Todos:
+  ☐ Change text and price rectangles to ribbons on Kompetenzen sliders.
   ☐ Implement scroll down textbox on Kompetenzen.
   ✔ Change text-bubble in Kompetenzen component to rectangle. @done(20-05-10 01:20)
   ✔ Also change the price bubble to a rectangle. @done(20-05-10 01:20)

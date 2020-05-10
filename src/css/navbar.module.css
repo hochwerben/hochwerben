@@ -60,6 +60,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .navLink {
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -68,6 +69,7 @@
   transition: var(--transition);
   color: var(--clr-grey-1);
   line-height: 1;
+  display: inline;
 }
 .navLink:hover {
   color: var(--clr-primary);
