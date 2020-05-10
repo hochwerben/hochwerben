@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import logo from '../images/hochwerben-logo.svg';
 import styles from '../css/navbar.module.css';
-import links from '../constants/Links';
+// import links from '../constants/Links';
 import icons from '../constants/SocialLinks';
 import { IconContext } from 'react-icons';
 import { FaAlignRight } from 'react-icons/fa';

@@ -4,6 +4,7 @@ import { IconContext } from 'react-icons';
 import { MdPhone, MdMail } from 'react-icons/md';
 // import ContactForm from './ContactForm';
 import styles from '../css/contact.module.css';
+import kontaktBox from '../images/kontakt-box.svg';
 
 const Kontakt = () => (
   <section className={styles.contact}>
@@ -31,13 +32,8 @@ const Kontakt = () => (
             </div>
           </IconContext.Provider>
         </div>
-        <span className={styles.divider}></span>
-        <ul className={styles.list}>
-          <li>Hochwerben</li>
-          <li>AtlasAvia GmbH</li>
-          <li>Nordendstr. 82-84</li>
-          <li>64546 Mörfelden-Walldorf</li>
-        </ul>
+        {/* <span className={styles.divider}></span> */}
+        <img src={kontaktBox} alt="Adressenbox" className={styles.adressBox} />
       </div>
       <div className={styles.mapContainer}>
         <iframe

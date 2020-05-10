@@ -31,7 +31,7 @@ const KompetenzenDropDown = () => {
 
       {showMenu && (
         <div className={styles.menu}>
-          <button>Digitaldr uck</button>
+          <button>Digitaldruck</button>
           <button>Werbeträger</button>
           <button>Webdesign</button>
         </div>
