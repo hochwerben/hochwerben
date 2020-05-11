@@ -12,6 +12,7 @@ Todos:
   Make a responsive menu, too.
 
 Bugs:
+  ☐ Preis abgeschnitten.
   ✔ Warning in leistungen. @done(20-05-05 13:38)
   id as key property of node doesn't work.
   ✔ Text bubbles on main page sliders are looking bad on medium screens @done(20-05-10 01:27)

@@ -40,18 +40,6 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          {/* <ul className={styles.links}>
-            {links.map(link => {
-              return (
-                <li key={link.id}>
-                  <Link to={link.url} className={styles.navLink}>
-                    {link.text}
-                  </Link>
-                  <KompetenzenDropDown />
-                </li>
-              );
-            })}
-          </ul> */}
           <div className={styles.icons}>
             {icons.map(icon => {
               return (
