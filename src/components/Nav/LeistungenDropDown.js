@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons';
 import { FaCaretDown } from 'react-icons/fa';
 import styles from '../../css/dropDown.module.css';
 
-const KompetenzenDropDown = () => {
+const LeistungenDropDown = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
@@ -37,13 +37,31 @@ const KompetenzenDropDown = () => {
 
       {showMenu && (
         <div className={styles.menu}>
-          <Link to="/">
-            <button>Digitaldruck</button>
+          <Link to="/leistungen/fahrzeug-beschriftung">
+            <button>Fahrzeug-Beschriftung</button>
           </Link>
-          <Link to="/#werbetraeger">
-            <button>Werbeträger</button>
+          <Link to="/leistungen/lkw-folierung">
+            <button>LKW-Folierung</button>
           </Link>
-          <Link to="/#webdesign">
+          <Link to="/leistungen/megabanner">
+            <button>Megabanner</button>
+          </Link>
+          <Link to="/leistungen/messedisplays">
+            <button>Messedisplays</button>
+          </Link>
+          <Link to="/leistungen/schilder">
+            <button>Schilder</button>
+          </Link>
+          <Link to="/leistungen/textildruck">
+            <button>Textildruck</button>
+          </Link>
+          <Link to="/leistungen/visitenkarten">
+            <button>Visitenkarten</button>
+          </Link>
+          <Link to="/leistungen/waende">
+            <button>Wände</button>
+          </Link>
+          <Link to="/leistungen/webdesign">
             <button>Webdesign</button>
           </Link>
         </div>
@@ -52,4 +70,4 @@ const KompetenzenDropDown = () => {
   );
 };
 
-export default KompetenzenDropDown;
+export default LeistungenDropDown;

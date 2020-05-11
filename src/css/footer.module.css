@@ -68,7 +68,7 @@
   align-self: center;
   margin-top: 2rem;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .icon {
   font-size: 2rem;

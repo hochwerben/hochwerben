@@ -1,4 +1,6 @@
 Todos:
+  ☐ Implement smooth scrolling to id.
+    https://github.com/gatsbyjs/gatsby/issues/8413
   ☐ Change text and price rectangles to ribbons on Kompetenzen sliders.
   ☐ Implement scroll down textbox on Kompetenzen.
   ✔ Change text-bubble in Kompetenzen component to rectangle. @done(20-05-10 01:20)

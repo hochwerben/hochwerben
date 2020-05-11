@@ -4,10 +4,10 @@ import logo from '../images/hochwerben-logo.svg';
 import styles from '../css/navbar.module.css';
 // import links from '../constants/Links';
 import icons from '../constants/SocialLinks';
-import { IconContext } from 'react-icons';
 import { FaAlignRight } from 'react-icons/fa';
 import { AppContext } from '../context';
 import KompetenzenDropDown from './Nav/KompetenzenDropDown';
+import LeistungenDropDown from './Nav/LeistungenDropDown';
 
 const Navbar = () => {
   const { size, handleOpenSidebar } = React.useContext(AppContext);
@@ -20,29 +20,26 @@ const Navbar = () => {
           <Link to="/" className={styles.logoLink}>
             <img width="60" src={logo} alt="Hochwerben Logo"></img>
           </Link>
-          <IconContext.Provider
-            value={{ style: { verticalAlign: 'middle', marginLeft: '0.2rem' } }}
-          >
-            <ul className={styles.links}>
-              <li>
-                <Link to="/" className={styles.navLink}>
-                  Kompetenzen
-                </Link>
-                <KompetenzenDropDown />
-              </li>
-              <li>
-                <Link to="/leistungen" className={styles.navLink}>
-                  Leistungen
-                </Link>
-                <KompetenzenDropDown />
-              </li>
-              <li>
-                <Link to="/kontakt" className={styles.navLink}>
-                  Kontakt
-                </Link>
-              </li>
-            </ul>
-          </IconContext.Provider>
+
+          <ul className={styles.links}>
+            <li>
+              <Link to="/" className={styles.navLink}>
+                Kompetenzen
+              </Link>
+              <KompetenzenDropDown />
+            </li>
+            <li>
+              <Link to="/leistungen" className={styles.navLink}>
+                Leistungen
+              </Link>
+              <LeistungenDropDown />
+            </li>
+            <li>
+              <Link to="/kontakt" className={styles.navLink}>
+                Kontakt
+              </Link>
+            </li>
+          </ul>
           {/* <ul className={styles.links}>
             {links.map(link => {
               return (

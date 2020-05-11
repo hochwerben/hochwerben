@@ -12,12 +12,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home"></SEO>
     <DigitalDruck></DigitalDruck>
-    <div className={styles.skewSectionOne} />
+    <div className={styles.skewSectionOne} id="werbetraeger" />
     <WerbeTraeger></WerbeTraeger>
-    <div className={styles.skewSectionTwo} />
+    <div className={styles.skewSectionTwo} id="webdesign" />
     <WebDesign></WebDesign>
-    <div className={styles.skewSectionThree} id="kontakt" />
-    {/* <Kontakt></Kontakt> */}
+    <div className={styles.skewSectionThree} />
   </Layout>
 );
 
