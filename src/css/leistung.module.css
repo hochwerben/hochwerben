@@ -1,5 +1,5 @@
 .centerProdukt {
-  padding: 6rem 0 6rem 0;
+  padding: 5rem 0 6rem 0;
   width: 90vw;
   max-width: 800px;
   margin: auto;
@@ -38,4 +38,10 @@ th {
 }
 .beschreibung th {
   background-color: #f0f0f0;
+}
+
+@media only screen and (max-width: 650px) {
+  .centerProdukt {
+    padding-top: 2.5rem;
+  }
 }

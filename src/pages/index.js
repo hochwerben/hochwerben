@@ -4,7 +4,6 @@ import SEO from '../components/seo';
 import DigitalDruck from '../components/Home/DigitalDruck';
 import WerbeTraeger from '../components/Home/WerbeTraeger';
 import WebDesign from '../components/Home/WebDesign';
-// import Kontakt from '../components/Kontakt';
 
 import styles from '../css/index.module.css';
 

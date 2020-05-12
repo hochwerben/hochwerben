@@ -1,5 +1,5 @@
 .centerLeistungenContainer {
-  padding: 6rem 0;
+  padding: 5rem 0;
   width: 90vw;
   max-width: 1170px;
   margin: auto;
@@ -45,4 +45,10 @@ h3 {
   font-weight: 500;
   color: white;
   letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 650px) {
+  .centerLeistungenContainer {
+    padding-top: 2.5rem;
+  }
 }

@@ -2,56 +2,17 @@ import React from 'react';
 import { Link } from 'gatsby';
 import logo from '../images/hochwerben-logo.svg';
 import styles from '../css/navbar.module.css';
-// import links from '../constants/Links';
-import icons from '../constants/SocialLinks';
 import { FaAlignRight } from 'react-icons/fa';
 import { AppContext } from '../context';
-import KompetenzenDropDown from './Nav/KompetenzenDropDown';
-import LeistungenDropDown from './Nav/LeistungenDropDown';
+
+import DesktopNav from './Nav/DesktopNav';
 
 const Navbar = () => {
   const { size, handleOpenSidebar } = React.useContext(AppContext);
   // const { size, handleOpenSidebar, height } = React.useContext(AppContext);
 
   if (size > 992) {
-    return (
-      <nav className={styles.navbar}>
-        <div className={styles.center}>
-          <Link to="/" className={styles.logoLink}>
-            <img width="60" src={logo} alt="Hochwerben Logo"></img>
-          </Link>
-
-          <ul className={styles.links}>
-            <li>
-              <Link to="/" className={styles.navLink}>
-                Kompetenzen
-              </Link>
-              <KompetenzenDropDown />
-            </li>
-            <li>
-              <Link to="/leistungen" className={styles.navLink}>
-                Leistungen
-              </Link>
-              <LeistungenDropDown />
-            </li>
-            <li>
-              <Link to="/kontakt" className={styles.navLink}>
-                Kontakt
-              </Link>
-            </li>
-          </ul>
-          <div className={styles.icons}>
-            {icons.map(icon => {
-              return (
-                <a key={icon.id} href={icon.url} className={styles.navIcon}>
-                  {icon.image}
-                </a>
-              );
-            })}
-          </div>
-        </div>
-      </nav>
-    );
+    return <DesktopNav />;
   } else {
     return (
       <nav className={styles.navbar}>

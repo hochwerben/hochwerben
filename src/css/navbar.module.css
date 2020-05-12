@@ -27,7 +27,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 5;
+  z-index: 999;
 }
 @media screen and (max-width: 500px) {
   .navbar {
@@ -60,21 +60,22 @@
 .links {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 
-.navLink {
+.dropBtn {
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   font-size: 1rem;
-  margin-left: 1.5rem;
   transition: var(--transition);
   color: var(--clr-grey-1);
-  line-height: 1;
-  display: inline;
+  /* line-height: 1; */
+  padding: 1rem;
+  display: inline-block;
 }
-.navLink:hover {
+.dropBtn:hover {
   color: var(--clr-primary);
-  box-shadow: 0 1.5px var(--clr-primary);
+  /* box-shadow: 0 1.5px var(--clr-primary); */
 }
 .logoLink {
   line-height: 1;
@@ -93,4 +94,35 @@
 .navIcon:hover {
   color: var(--clr-primary);
   transform: translateY(-10%);
+}
+
+.dropDownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  /* left: 0; */
+  background: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropDownLink {
+  color: var(--clr-grey-1);
+  /* letter-spacing: var(--spacing); */
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.dropDownLink:hover {
+  color: var(--clr-primary);
+  background-color: #f1f1f1;
+}
+
+.dropDownContainer:hover .menu {
+  display: block;
 }

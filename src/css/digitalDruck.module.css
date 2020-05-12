@@ -103,14 +103,15 @@
 }
 
 .img * {
-  height: 700px;
+  height: 500px;
   max-height: 80vh;
 }
 
 .centerSliderOne {
-  padding: 6rem 0;
+  padding: 5rem 0 7rem;
   width: 90vw;
-  max-width: var(--maxWidth);
+  max-width: 900px;
+  /* max-width: var(--maxWidth); */
   margin: auto;
 }
 
@@ -140,7 +141,7 @@
     padding: 0 0.5rem;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
   .img * {
     height: 200px;
   }
@@ -168,5 +169,8 @@
     line-height: 1.2;
     display: block;
     color: white;
+  }
+  .centerSliderOne {
+    padding: 2.5rem 0 6rem;
   }
 }

@@ -1,18 +1,23 @@
 Todos:
+  ☐ Add menu hover fade transition.
   ☐ Implement smooth scrolling to id.
     https://github.com/gatsbyjs/gatsby/issues/8413
-  ☐ Change text and price rectangles to ribbons on Kompetenzen sliders.
+  ✔ Change text and price rectangles to ribbons on Kompetenzen sliders. @done(20-05-12 18:47)
   ☐ Implement scroll down textbox on Kompetenzen.
   ✔ Change text-bubble in Kompetenzen component to rectangle. @done(20-05-10 01:20)
   ✔ Also change the price bubble to a rectangle. @done(20-05-10 01:20)
   ☐ Implement description icons.
   ☐ Remove hardcoded alt on images.
   The sliders have this.
-  ☐ Make a dropdown menu.
+  ✔ Make a dropdown menu. @done(20-05-12 18:47)
   Make a responsive menu, too.
 
 Bugs:
-  ☐ Preis abgeschnitten.
+  ☐ Höhe von Title Leistungen ist niedriger als die der anderen beiden Seiten.
+  ✔ z-index of navbar is messed up. @done(20-05-12 18:47)
+    on mobile you can't see the close icon
+  ✔ Preis abgeschnitten. @done(20-05-12 18:09)
+    Mess with margin of Title and view height.
   ✔ Warning in leistungen. @done(20-05-05 13:38)
   id as key property of node doesn't work.
   ✔ Text bubbles on main page sliders are looking bad on medium screens @done(20-05-10 01:27)
