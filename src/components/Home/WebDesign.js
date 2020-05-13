@@ -46,44 +46,26 @@ const Webdesign = () => {
           <Slider {...settings}>
             {/* Slide 1 */}
             <div className={styles.sliderContainer}>
-              <div className={styles.img}>
-                <Image
-                  fluid={data.allFile.edges[0].node.childImageSharp.fluid}
-                  alt="Image1"
-                />
-              </div>
+              <Image
+                fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+                alt="Image1"
+              />
               <Link to="/leistungen/webdesign" as="div">
                 <span className={styles.rect}>"OnePager"</span>
-                {/* <span className={styles.name}>"OnePager"</span> */}
               </Link>
-              <div className={styles.priceTag}>ab € 699</div>
-              {/* <div className={styles.price}>
-                <span>ab</span>
-                <span className={styles.priceText}>€ 699</span>
-              </div> */}
+              <span className={styles.priceTag}>ab € 699</span>
             </div>
 
             {/* Slide 2 */}
             <div className={styles.sliderContainer}>
-              <div className={styles.img}>
-                <Image
-                  fluid={data.allFile.edges[1].node.childImageSharp.fluid}
-                  alt="Image1"
-                />
-              </div>
+              <Image
+                fluid={data.allFile.edges[1].node.childImageSharp.fluid}
+                alt="Image1"
+              />
               <Link to="/leistungen/webdesign" as="div">
                 <span className={styles.rect}>Corporate Design</span>
-                {/* <span className={styles.name}>
-                  Corporate-
-                  <br />
-                  Design
-                </span> */}
               </Link>
-              <div className={styles.priceTag}>ab € 1299</div>
-              {/* <div className={styles.price}>
-                <span>ab</span>
-                <span className={styles.priceText}>€ 1299</span>
-              </div> */}
+              <span className={styles.priceTag}>ab € 1299</span>
             </div>
           </Slider>
         </div>

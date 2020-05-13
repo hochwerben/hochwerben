@@ -1,5 +1,5 @@
 .centerLeistungenContainer {
-  padding: 5rem 0;
+  padding: 3rem 0 5rem;
   width: 90vw;
   max-width: 1170px;
   margin: auto;
@@ -46,9 +46,19 @@ h3 {
   color: white;
   letter-spacing: 1px;
 }
-
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1450px) {
   .centerLeistungenContainer {
     padding-top: 2.5rem;
+  }
+  .imageGrid {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .centerLeistungenContainer {
+    padding-top: 2rem;
+  }
+  .imageGrid {
+    margin-top: 1rem;
   }
 }

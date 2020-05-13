@@ -88,23 +88,11 @@ const DigitalDruck = () => {
         <Slider {...settings}>
           {ddContent.map(product => (
             <div className={styles.sliderContainer} key={product.id}>
-              <div className={styles.img}>
-                <Image fluid={product.image} alt="Digitaldruck Produkt" />
-              </div>
-              {/* old className was .sliderText */}
+              <Image fluid={product.image} alt="Digitaldruck Produkt" />
               <Link to={`/leistungen${product.link}`} as="div">
                 <span className={styles.rect}>{product.textFull}</span>
-                {/* <span className={styles.name}>
-                  {product.text}
-                  {product.textSecond && <br />}
-                  {product.textSecond && product.textSecond}
-                </span> */}
               </Link>
-              <div className={styles.priceTag}>ab € {product.price}</div>
-              {/* <div className={styles.price}>
-                <span>ab</span>
-                <span className={styles.priceText}>{`€ ${product.price}`}</span>
-              </div> */}
+              <span className={styles.priceTag}>ab € {product.price}</span>
             </div>
           ))}
         </Slider>
