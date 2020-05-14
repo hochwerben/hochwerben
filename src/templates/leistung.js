@@ -19,13 +19,13 @@ export default ({
     <Layout>
       <section className={styles.centerProdukt}>
         {/* <h3 className={styles.title}>{title}</h3> */}
-        <Title title={title} />
+        {/* <Title title={title} /> */}
         {/* <div className={styles.produktContainer}> */}
-        <div className={styles.fImage}>
+        {/* <div className={styles.fImage}>
           {featuredImage && (
             <Image fluid={featuredImage.childImageSharp.fluid} alt={title} />
           )}
-        </div>
+        </div> */}
         <div className={styles.beschreibung}>
           <MDXRenderer>{body}</MDXRenderer>
         </div>

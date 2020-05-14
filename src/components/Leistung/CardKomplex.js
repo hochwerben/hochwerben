@@ -6,9 +6,9 @@ import styles from './card.module.css';
 const Card = () => {
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: { eq: "dd/vito-front-heck-01.png" }) {
+      file(relativePath: { eq: "dd/citan-komplex.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
@@ -19,19 +19,34 @@ const Card = () => {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <h3 className={styles.heading}>Komplex</h3>
-        <div className={styles.image}>
-          <Image fluid={data.file.childImageSharp.fluid} alt="Card Image" />
+        <h3 className={styles.heading}>
+          Komplex
+          <span className={styles.price}>ab € 235 <span className={styles.mwst}>zzgl. 19% MwSt.</span></span>
+        </h3>
+        <div className={styles.cardContent}>
+          <ul className={styles.details}>
+            <li>Fläche: 3qm</li>
+            <li>
+              2 x Seitenbeschriftung
+              <br />
+              <span className={styles.innerLi}>Abmaße: 2.000mm x 500mm</span>
+            </li>
+            <li>
+              1 x Heckbeschriftung
+              <br />
+              <span className={styles.innerLi}>Abmaße: 1.000mm x 500mm</span>
+            </li>
+            <li>
+              1 x Frontbeschriftung
+              <br />
+              <span className={styles.innerLi}>Abmaße: 1.000mm x 500mm</span>
+            </li>
+          </ul>
+
+          <div className={styles.image}>
+            <Image fluid={data.file.childImageSharp.fluid} alt="Card Image" />
+          </div>
         </div>
-        <ul className={styles.details}>
-          <li>Fläche: 3qm</li>
-          <li>2 x Seitenbeschriftung</li>
-          <li>Abmaße: 2.000mm x 500mm</li>
-          <li>2 x Heckbeschriftung</li>
-          <li>Abmaße: 1.000mm x 500mm</li>
-          <li>2 x Frontbeschriftung</li>
-          <li>Abmaße: 1.000mm x 500mm</li>
-        </ul>
       </div>
     </div>
   );

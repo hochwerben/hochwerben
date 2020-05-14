@@ -3,17 +3,17 @@
   max-width: 600px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 .iconsContainer > * {
   margin: 0.3rem;
 }
 
 .bigImage {
-  display: inline-block;
+  display: none;
 }
 .smallImage {
-  display: none;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,6 +1,10 @@
+.container {
+  margin: 2rem 0;
+}
+
 .heading {
   background-color: var(--clr-primary);
-  padding: 0.7rem 3rem;
+  padding: 1rem 3rem;
   color: white;
   font-weight: 500;
   font-size: 1.3rem;
