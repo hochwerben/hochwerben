@@ -40,6 +40,23 @@ th {
   background-color: #f0f0f0;
 }
 
+.beschreibung ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0 0.5rem 2rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.beschreibung ul li {
+  padding-left: 16px;
+}
+
+.beschreibung ul li:before {
+  content: '•'; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: var(--clr-primary); /* Or a color you prefer */
+}
+
 @media only screen and (max-width: 1450px) {
   .centerProdukt {
     padding: 2.5rem 0;

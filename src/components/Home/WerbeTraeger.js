@@ -3,7 +3,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import Image from 'gatsby-image';
 
 import styles from '../../css/digitalDruck.module.css';
-import Title from '../Title';
+import KompetenzInfo from './KompetenzInfo';
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -118,7 +118,7 @@ const Werbetraeger = () => {
   return (
     <section className={styles.sectionBackgroundWT}>
       <div className={styles.centerSliderOne}>
-        <Title title="Werbeträger"></Title>
+        <KompetenzInfo title={'Werbeträger'} />
         <div>
           <Slider {...settings}>
             {wtContent.map(product => (

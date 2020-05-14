@@ -35,16 +35,10 @@ const DesktopNav = () => {
             </Link>
             <div className={styles.menu}>
               <Link
-                to="/leistungen/fahrzeug-beschriftung"
+                to="/leistungen/kfz-beschriftung"
                 className={styles.dropDownLink}
               >
-                Fahrzeug-Beschriftung
-              </Link>
-              <Link
-                to="/leistungen/lkw-folierung"
-                className={styles.dropDownLink}
-              >
-                LKW-Folierung
+                KFZ-Beschriftung
               </Link>
               <Link to="/leistungen/megabanner" className={styles.dropDownLink}>
                 Megabanner

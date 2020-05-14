@@ -3,7 +3,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import Image from 'gatsby-image';
 
 import styles from '../../css/digitalDruck.module.css';
-import Title from '../Title';
+import KompetenzInfo from './KompetenzInfo';
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -41,7 +41,7 @@ const Webdesign = () => {
   return (
     <section className={styles.sectionBackgroundWD}>
       <div className={styles.centerSliderOne}>
-        <Title title="Webdesign"></Title>
+        <KompetenzInfo title={'Webdesign'} />
         <div>
           <Slider {...settings}>
             {/* Slide 1 */}

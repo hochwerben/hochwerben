@@ -3,7 +3,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import Image from 'gatsby-image';
 
 import styles from '../../css/digitalDruck.module.css';
-import Title from '../Title';
+import KompetenzInfo from './KompetenzInfo';
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -41,31 +41,22 @@ const DigitalDruck = () => {
 
   const ddContent = [
     {
-      text: 'Fahrzeug-',
-      textSecond: 'beschriftung',
-      textFull: 'Fahrzeug-Beschriftung',
+      text: 'KFZ-',
+      textSecond: 'Beschriftung',
+      textFull: 'KFZ-Beschriftung',
       price: 99,
       image: data.suv.childImageSharp.fluid,
       id: data.suv.childImageSharp.id,
-      link: '/fahrzeug-beschriftung',
+      link: '/kfz-beschriftung',
     },
     {
-      text: 'LKW-',
-      textSecond: 'Folierung',
-      textFull: 'LKW-Folierung',
-      price: 1399,
-      image: data.sprinter.childImageSharp.fluid,
-      id: data.sprinter.childImageSharp.id,
-      link: '/lkw-folierung',
-    },
-    {
-      text: 'Fahrzeug-',
+      text: 'KFZ-',
       textSecond: 'Beschriftung',
-      textFull: 'Fahrzeug-Beschriftung',
+      textFull: 'KFZ-Beschriftung',
       price: 599,
       image: data.frontHeck.childImageSharp.fluid,
       id: data.frontHeck.childImageSharp.id,
-      link: '/fahrzeug-beschriftung',
+      link: '/kfz-beschriftung',
     },
   ];
 
@@ -83,7 +74,7 @@ const DigitalDruck = () => {
 
   return (
     <section className={styles.centerSliderOne}>
-      <Title title="Digitaldruck"></Title>
+      <KompetenzInfo title={'Digitaldruck'} />
       <div>
         <Slider {...settings}>
           {ddContent.map(product => (

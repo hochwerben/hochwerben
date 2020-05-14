@@ -1,0 +1,17 @@
+.banner {
+  text-align: left;
+  margin: 2rem 0 3rem;
+}
+
+.title {
+  font-family: var(--ff-title);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.underline {
+  height: 0.25rem;
+  width: 5.5rem;
+  background: var(--clr-primary);
+  /* margin-left: 1rem; */
+}

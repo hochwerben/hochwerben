@@ -26,7 +26,9 @@ export default () => (
         <br />
         Web: www.atlasavia.de
         <br />
-        Rechtsform: GmbH Geschäftsführer: Bernhard Fladung
+        Rechtsform: GmbH
+        <br />
+        Geschäftsführer: Christoph Fladung
         <br />
         Registerart: Handelsregister
         <br />

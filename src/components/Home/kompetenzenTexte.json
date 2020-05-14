@@ -1,0 +1,14 @@
+[
+  {
+    "type": "digitaldruck",
+    "description": "Digitaldruck (oder kurz „Digidruck“, im internationalen Sprachgebrauch auch Direct Digital Printing (DDP) oder Computer-to-Print) bezeichnet eine Gruppe von Druckverfahren, bei denen das Druckbild direkt aus einer Datei oder einem Datenstrom von einem Computer in eine Druckmaschine übertragen wird, ohne dass eine statische Druckform benutzt wird. Die am weitesten verbreiteten Verfahren sind die Elektrofotografie, z. B. der Laserdruck, und der Tintenstrahldruck. Der Digitaldruck ergänzt die klassischen Druckverfahren wie Offsetdruck, Tiefdruck, Flexodruck oder Siebdruck in all ihren Anwendungsbereichen dort, wo die gewünschte niedrige Auflagenhöhe bis hinunter zum Unikat (Auflage 1) nicht mehr wirtschaftlich gedruckt werden könnte, und eröffnet mit seiner dynamischen Druckbilderzeugung die Möglichkeit zu verschiedenen Arten des Customizing, z. B. Personalisierung und Individualisierung zu einem günstigen Preis-Leistungs-Verhältnis. Seit Anfang der 2000er Jahre erreichen die Elektrofotografie- und Tintenstrahldruckverfahren Druckgeschwindigkeiten, die für den bebilderten Non-stop-Produktionsdruck bei offsetähnlicher Druckqualität nutzbar sind."
+  },
+  {
+    "type": "werbetraeger",
+    "description": "Unter Werbeträger versteht man das Medium zur Übertragung von Werbebotschaften, mit dessen Hilfe Werbemittel an die Werbeempfänger herangeführt werden können."
+  },
+  {
+    "type": "webdesign",
+    "description": "Webdesign bezeichnet die Gestaltung (engl. Design) von Websites oder einzelnen Webseiten. Der Webdesigner muss dabei die Ziele, die der Kunde mit der Website erreichen will, berücksichtigen. Die Gestaltung sollte die optimale Nutzung für die gewünschte Zielgruppe ermöglichen. Dabei spielen Technik und Benutzerfreundlichkeit (engl. Usability) eine wichtige Rolle."
+  }
+]
