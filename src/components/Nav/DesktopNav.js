@@ -52,6 +52,9 @@ const DesktopNav = () => {
               <Link to="/leistungen/schilder" className={styles.dropDownLink}>
                 Schilder
               </Link>
+              <Link to="/leistungen/sticker" className={styles.dropDownLink}>
+                Sticker
+              </Link>
               <Link
                 to="/leistungen/textildruck"
                 className={styles.dropDownLink}

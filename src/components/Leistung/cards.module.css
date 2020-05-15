@@ -1,3 +1,10 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+}
+
 .container * {
   padding: 0;
   margin: 0;
@@ -12,7 +19,6 @@
 
 .card {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-
   height: 100%;
 }
 
@@ -40,7 +46,7 @@
 }
 .mwst {
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   color: #6e6e6e;
   font-weight: 400;
 }
