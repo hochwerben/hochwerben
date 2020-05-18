@@ -32,8 +32,13 @@ const Kontakt = () => (
             </div>
           </IconContext.Provider>
         </div>
-        {/* <span className={styles.divider}></span> */}
-        <img src={kontaktBox} alt="Adressenbox" className={styles.adressBox} />
+        <span className={styles.divider}></span>
+        <div className={styles.addressContainer}>
+          <h3>Hochwerben</h3>
+          Nordendstr. 82-84<br />
+          64546 Mörfelden-Walldorf
+        </div>
+        
       </div>
       <div className={styles.mapContainer}>
         <iframe

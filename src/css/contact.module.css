@@ -49,6 +49,15 @@
   margin: 1rem auto;
 }
 
+.addressContainer {
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.addressContainer h3 {
+  font-size: 1.5rem;
+}
+
 .mapContainer {
   position: relative;
   overflow: hidden;
