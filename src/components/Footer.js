@@ -38,7 +38,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className={styles.icons}>
+        {/* <div className={styles.icons}>
           {icons.map(item => {
             return (
               <a key={item.id} href={item.url} className={styles.icon}>
@@ -46,7 +46,7 @@ const Footer = () => {
               </a>
             );
           })}
-        </div>
+        </div> */}
         <div className={styles.info}>
           © {new Date().getFullYear()} <Link to="/">Hochwerben.de</Link> - Alle
           Rechte vorbehalten.

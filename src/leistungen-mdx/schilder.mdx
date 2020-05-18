@@ -1,31 +1,42 @@
 ---
 title: 'Schilder'
-type: 'wt'
+type: 'dd'
 featuredImage: ../images/wt/aluverbund-01.jpg
 ---
 
-import SchilderSlider from '../components/Leistungen/SchilderSlider';
 import Icons from '../components/Icons';
+import SchilderCards from '../components/Leistung/Schilder/SchilderCards';
+import SchilderCardsDescription from '../components/Leistung/Schilder/SchilderCardsDescription';
+import LeistungTitle from '../components/Leistung/LeistungTitle';
+import AlternativProdukte from '../components/Leistung/AlternativProdukte';
+import SchilderBanner from '../components/Leistung/Schilder/SchilderBanner';
+import deinSign from '../images/dein-sign.png';
 
-<Icons b1 cmyk uv wind inside outside />
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem unde suscipit nemo aliquid distinctio alias culpa eum aut aliquam hic excepturi fuga similique saepe in, recusandae laboriosam minima facilis quaerat sint magni id voluptatem neque optio? Incidunt, ratione, sed nemo iste officiis aperiam omnis, quasi voluptatem modi quos magni. Modi illo nulla, omnis laborum adipisci perferendis. Aspernatur adipisci facere est temporibus quia, et corporis voluptatem quaerat autem consequatur ratione at magni, inventore ut ab nemo, voluptatibus veritatis? Deleniti sint rerum nesciunt ullam eveniet maxime asperiores eos neque iure odio consequatur debitis vero numquam repellendus necessitatibus nam, ad vitae voluptatibus enim.
+<SchilderBanner />
+<SchilderCards />
+<LeistungTitle title={'Beschreibung'} />
 
-<div style={{ paddingTop: '1rem' }} />
+Ob Privat oder Gewerbetreibende, mit <img src={deinSign} alt="dein sign" width="100px"/> werden die Alu-Verbundplatten zum echten Hingucker. Unabhängig davon ob Sie bspw. Beschilderungen im Innen- u. Außenbereich planen, Messe- und Ladenbau realisieren oder Urlaubsbilder aufhängen möchten. Das geringe Gewicht (ca. 3,5 kg/m²), die Verarbeitungsmöglichkeiten und die Witterungsbeständigkeit bietet unzählige Möglichkeiten.
 
-### Schildervarianten bei Hochwerben:
+<SchilderCardsDescription />
 
-<div style={{ paddingTop: '1.5rem' }} />
+<!--  -->
 
-<!-- component -->
+<LeistungTitle title={'Alternativprodukte'} />
 
-<SchilderSlider />
-<div style={{ paddingTop: '1.5rem' }} />
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem unde suscipit nemo aliquid distinctio alias culpa eum aut aliquam hic excepturi fuga similique saepe in, recusandae laboriosam minima facilis quaerat sint magni id voluptatem neque optio? Incidunt, ratione, sed nemo iste officiis aperiam omnis, quasi voluptatem modi quos magni. Modi illo nulla, omnis laborum adipisci perferendis. Aspernatur adipisci facere est temporibus quia, et corporis voluptatem quaerat autem consequatur ratione at magni, inventore ut ab nemo, voluptatibus veritatis? Deleniti sint rerum nesciunt ullam eveniet maxime asperiores eos neque iure odio consequatur debitis vero numquam repellendus necessitatibus nam, ad vitae voluptatibus enim.
-
-| Variante                 | Größe (cm) | Preis    |
-| ------------------------ | ---------- | -------- |
-| Hängeschild M            | 50 x 50    | ab € 49  |
-| Hängeschild XL           | 200 x 100  | ab € 99  |
-| Beleuchtetes Standschild | 100 x 300  | ab € 299 |
+<ol style={{ listStyle: 'none' }}>
+  <li><img src={deinSign} alt="dein sign" width="100px"/> Banner</li>
+  <li>
+    <img src={deinSign} alt="dein sign" width="100px"/> 3D Buchstaben
+  </li>
+  <li>
+    <img src={deinSign} alt="dein sign" width="100px"/> Fenster- / Schaufensterfolierung
+  </li>
+  <li>
+    <img src={deinSign} alt="dein sign" width="100px"/> Mega- / Fassadenbanner
+  </li>
+  <li>
+    <img src={deinSign} alt="dein sign" width="100px"/> Bodenfolie
+  </li>
+</ol>

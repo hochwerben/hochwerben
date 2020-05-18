@@ -51,21 +51,9 @@ const Webdesign = () => {
                 alt="Image1"
               />
               <Link to="/leistungen/webdesign" as="div">
-                <span className={styles.rect}>"OnePager"</span>
+                <span className={styles.rect}>Individuell</span>
               </Link>
-              <span className={styles.priceTag}>ab € 699</span>
-            </div>
-
-            {/* Slide 2 */}
-            <div className={styles.sliderContainer}>
-              <Image
-                fluid={data.allFile.edges[1].node.childImageSharp.fluid}
-                alt="Image1"
-              />
-              <Link to="/leistungen/webdesign" as="div">
-                <span className={styles.rect}>Corporate Design</span>
-              </Link>
-              <span className={styles.priceTag}>ab € 1299</span>
+              {/* <span className={styles.priceTag}>ab € 699</span> */}
             </div>
           </Slider>
         </div>

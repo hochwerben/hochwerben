@@ -34,6 +34,15 @@ const DesktopNav = () => {
               Leistungen
             </Link>
             <div className={styles.menu}>
+              <Link to="/leistungen/banner" className={styles.dropDownLink}>
+                Banner
+              </Link>
+              <Link
+                to="/leistungen/bauzaunbanner"
+                className={styles.dropDownLink}
+              >
+                Bauzaunbanner
+              </Link>
               <Link
                 to="/leistungen/kfz-beschriftung"
                 className={styles.dropDownLink}
@@ -67,9 +76,6 @@ const DesktopNav = () => {
               >
                 Visitenkarten
               </Link>
-              <Link to="/leistungen/waende" className={styles.dropDownLink}>
-                Wände
-              </Link>
               <Link to="/leistungen/webdesign" className={styles.dropDownLink}>
                 Webdesign
               </Link>
@@ -81,7 +87,7 @@ const DesktopNav = () => {
             </Link>
           </li>
         </ul>
-        <div className={styles.icons}>
+        {/* <div className={styles.icons}>
           {icons.map(icon => {
             return (
               <a
@@ -95,7 +101,7 @@ const DesktopNav = () => {
               </a>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </nav>
   );

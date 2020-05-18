@@ -1,5 +1,5 @@
 .iconsContainer {
-  margin: -1rem auto 2rem auto;
+  margin: -1rem auto 2rem auto !important;
   max-width: 600px;
   display: flex;
   flex-wrap: wrap;

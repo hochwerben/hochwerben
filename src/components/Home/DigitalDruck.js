@@ -53,7 +53,7 @@ const DigitalDruck = () => {
       text: 'KFZ-',
       textSecond: 'Beschriftung',
       textFull: 'KFZ-Beschriftung',
-      price: 599,
+      price: 99,
       image: data.frontHeck.childImageSharp.fluid,
       id: data.frontHeck.childImageSharp.id,
       link: '/kfz-beschriftung',
@@ -73,7 +73,7 @@ const DigitalDruck = () => {
   };
 
   return (
-    <section className={styles.centerSliderOne}>
+    <section className={styles.centerSliderOne} style={{ paddingTop: '1rem' }}>
       <KompetenzInfo title={'Digitaldruck'} />
       <div>
         <Slider {...settings}>

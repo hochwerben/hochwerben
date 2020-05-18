@@ -7,129 +7,131 @@ export default () => (
   <Layout>
     <section className={styles.centerPolicy}>
       <Title title="Datenschutzerklärung"></Title>
-      <p className={styles.firstP}>
-        Atlasavia (“Atlasavia“) operates hochwerben.de and may operate other
-        websites. It is Atlasavia’s policy to respect your privacy regarding any
-        information we may collect while operating our websites.
-      </p>
-      <h3>Website Visitors</h3>
+
+      <p>Allgemeiner Hinweis und Pflichtinformationen</p>
+      <p>Benennung der verantwortlichen Stelle</p>
+
       <p>
-        Like most website operators, Atlasavia collects
-        non-personally-identifying information of the sort that web browsers and
-        servers typically make available, such as the browser type, language
-        preference, referring site, and the date and time of each visitor
-        request. Atlasavia’s purpose in collecting non-personally identifying
-        information is to better understand how Atlasavia’s visitors use its
-        website. From time to time, Atlasavia may release
-        non-personally-identifying information in the aggregate, e.g., by
-        publishing a report on trends in the usage of its website.
+        Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website
+        ist:
       </p>
       <p>
-        Atlasavia also collects potentially personally-identifying information
-        like Internet Protocol (IP) addresses for logged in users and for users
-        leaving comments on hochwerben.de blogs/sites. Atlasavia only discloses
-        logged in user and commenter IP addresses under the same circumstances
-        that it uses and discloses personally-identifying information as
-        described below, except that commenter IP addresses and email addresses
-        are visible and disclosed to the administrators of the blog/site where
-        the comment was left.
+        AtlasAvia GmbH
+        <br />
+        Christoph Fladung
+        <br />
+        Nordendstr. 82-84
+        <br />
+        64546 Mörfelden-Walldorf
       </p>
-      <h3>Gathering of Personally-Identifying Information</h3>
       <p>
-        Certain visitors to Atlasavia’s websites choose to interact with
-        Atlasavia in ways that require Atlasavia to gather
-        personally-identifying information. The amount and type of information
-        that Atlasavia gathers depends on the nature of the interaction. For
-        example, we ask visitors who sign up at hochwerben.de to provide a
-        username and email address. Those who engage in transactions with
-        Atlasavia are asked to provide additional information, including as
-        necessary the personal and financial information required to process
-        those transactions. In each case, Atlasavia collects such information
-        only insofar as is necessary or appropriate to fulfill the purpose of
-        the visitor’s interaction with Atlasavia. Atlasavia does not disclose
-        personally-identifying information other than as described below. And
-        visitors can always refuse to supply personally-identifying information,
-        with the caveat that it may prevent them from engaging in certain
-        website-related activities.
+        Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen
+        über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten
+        (z.B. Namen, Kontaktdaten o. Ä.).
       </p>
-      <h3>Aggregated Statistics</h3>
+      <p>Widerruf Ihrer Einwilligung zur Datenverarbeitung</p>
       <p>
-        Atlasavia may collect statistics about the behavior of visitors to its
-        websites. Atlasavia may display this information publicly or provide it
-        to others. However, Atlasavia does not disclose personally-identifying
-        information other than as described below.
+        Nur mit Ihrer ausdrücklichen Einwilligung sind einige Vorgänge der
+        Datenverarbeitung möglich. Ein Widerruf Ihrer bereits erteilten
+        Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine
+        formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf
+        erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
       </p>
-      <h3>Protection of Certain Personally-Identifying Information</h3>
+      <p>Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde</p>
       <p>
-        Atlasavia discloses potentially personally-identifying and
-        personally-identifying information only to those of its employees,
-        contractors and affiliated organizations that (i) need to know that
-        information in order to process it on Atlasavia’s behalf or to provide
-        services available at Atlasavia’s websites, and (ii) that have agreed
-        not to disclose it to others. Some of those employees, contractors and
-        affiliated organizations may be located outside of your home country; by
-        using Atlasavia’s websites, you consent to the transfer of such
-        information to them. Atlasavia will not rent or sell potentially
-        personally-identifying and personally-identifying information to anyone.
-        Other than to its employees, contractors and affiliated organizations,
-        as described above, Atlasavia discloses potentially
-        personally-identifying and personally-identifying information only in
-        response to a subpoena, court order or other governmental request, or
-        when Atlasavia believes in good faith that disclosure is reasonably
-        necessary to protect the property or rights of Atlasavia, third parties
-        or the public at large. If you are a registered user of an Atlasavia
-        website and have supplied your email address, Atlasavia may occasionally
-        send you an email to tell you about new features, solicit your feedback,
-        or just keep you up to date with what’s going on with Atlasavia and our
-        products. If you send us a request (for example via email or via one of
-        our feedback mechanisms), we reserve the right to publish it in order to
-        help us clarify or respond to your request or to help us support other
-        users. Atlasavia takes all measures reasonably necessary to protect
-        against the unauthorized access, use, alteration or destruction of
-        potentially personally-identifying and personally-identifying
-        information.
+        Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen
+        Verstoßes ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
+        Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher Fragen ist
+        der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz
+        unseres Unternehmens befindet. Der folgende Link stellt eine Liste der
+        Datenschutzbeauftragten sowie deren Kontaktdaten bereit:
+        https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html.
       </p>
-      <h3>Cookies</h3>
+      <p>Recht auf Datenübertragbarkeit</p>
       <p>
-        A cookie is a string of information that a website stores on a visitor’s
-        computer, and that the visitor’s browser provides to the website each
-        time the visitor returns. Atlasavia uses cookies to help Atlasavia
-        identify and track visitors, their usage of Atlasavia website, and their
-        website access preferences. Atlasavia visitors who do not wish to have
-        cookies placed on their computers should set their browsers to refuse
-        cookies before using Atlasavia’s websites, with the drawback that
-        certain features of Atlasavia’s websites may not function properly
-        without the aid of cookies.
+        Ihnen steht das Recht zu, Daten, die wir auf Grundlage Ihrer
+        Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten,
+        an sich oder an Dritte aushändigen zu lassen. Die Bereitstellung erfolgt
+        in einem maschinenlesbaren Format. Sofern Sie die direkte Übertragung
+        der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur,
+        soweit es technisch machbar ist.
       </p>
-      <h3>Business Transfers</h3>
+      <p>Recht auf Auskunft, Berichtigung, Sperrung, Löschung</p>
       <p>
-        If Atlasavia, or substantially all of its assets, were acquired, or in
-        the unlikely event that Atlasavia goes out of business or enters
-        bankruptcy, user information would be one of the assets that is
-        transferred or acquired by a third party. You acknowledge that such
-        transfers may occur, and that any acquirer of Atlasavia may continue to
-        use your personal information as set forth in this policy.
+        Sie haben jederzeit im Rahmen der geltenden gesetzlichen Bestimmungen
+        das Recht auf unentgeltliche Auskunft über Ihre gespeicherten
+        personenbezogenen Daten, Herkunft der Daten, deren Empfänger und den
+        Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung,
+        Sperrung oder Löschung dieser Daten. Diesbezüglich und auch zu weiteren
+        Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über
+        die im Impressum aufgeführten Kontaktmöglichkeiten an uns wenden.
       </p>
-      <h3>Ads</h3>
+      <p>SSL- bzw. TLS-Verschlüsselung</p>
       <p>
-        Ads appearing on any of our websites may be delivered to users by
-        advertising partners, who may set cookies. These cookies allow the ad
-        server to recognize your computer each time they send you an online
-        advertisement to compile information about you or others who use your
-        computer. This information allows ad networks to, among other things,
-        deliver targeted advertisements that they believe will be of most
-        interest to you. This Privacy Policy covers the use of cookies by
-        Atlasavia and does not cover the use of cookies by any advertisers.
+        Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher
+        Inhalte, die Sie an uns als Seitenbetreiber senden, nutzt unsere Website
+        eine SSL-bzw. TLS-Verschlüsselung. Damit sind Daten, die Sie über diese
+        Website übermitteln, für Dritte nicht mitlesbar. Sie erkennen eine
+        verschlüsselte Verbindung an der „https://“ Adresszeile Ihres Browsers
+        und am Schloss-Symbol in der Browserzeile.
       </p>
-      <h3>Privacy Policy Changes</h3>
+      <p>YouTube</p>
       <p>
-        Although most changes are likely to be minor, Atlasavia may change its
-        Privacy Policy from time to time, and in Atlasavia’s sole discretion.
-        Atlasavia encourages visitors to frequently check this page for any
-        changes to its Privacy Policy. If you have a hochwerben.de account, you
-        might also receive an alert informing you of these changes. Your
-        continued use of this site after any change in this Privacy Policy will
-        constitute your acceptance of such change.
+        Für Integration und Darstellung von Videoinhalten nutzt unsere Website
+        Plugins von YouTube. Anbieter des Videoportals ist die YouTube, LLC, 901
+        Cherry Ave., San Bruno, CA 94066, USA.
+      </p>
+      <p>
+        Bei Aufruf einer Seite mit integriertem YouTube-Plugin wird eine
+        Verbindung zu den Servern von YouTube hergestellt. YouTube erfährt
+        hierdurch, welche unserer Seiten Sie aufgerufen haben.
+      </p>
+      <p>
+        YouTube kann Ihr Surfverhalten direkt Ihrem persönlichen Profil
+        zuzuordnen, sollten Sie in Ihrem YouTube Konto eingeloggt sein. Durch
+        vorheriges Ausloggen haben Sie die Möglichkeit, dies zu unterbinden.
+      </p>
+      <p>
+        Die Nutzung von YouTube erfolgt im Interesse einer ansprechenden
+        Darstellung unserer Online-Angebote. Dies stellt ein berechtigtes
+        Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.
+      </p>
+      <p>
+        Einzelheiten zum Umgang mit Nutzerdaten finden Sie in der
+        Datenschutzerklärung von YouTube unter:
+        https://www.google.de/intl/de/policies/privacy.
+      </p>
+      <p>Google Web Fonts</p>
+      <p>
+        Unsere Website verwendet Web Fonts von Google. Anbieter ist die Google
+        Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.
+      </p>
+      <p>
+        Durch den Einsatz dieser Web Fonts wird es möglich Ihnen die von uns
+        gewünschte Darstellung unserer Website zu präsentieren, unabhängig davon
+        welche Schriften Ihnen lokal zur Verfügung stehen. Dies erfolgt über den
+        Abruf der Google Web Fonts von einem Server von Google in den USA und
+        der damit verbundenen Weitergabe Ihre Daten an Google. Dabei handelt es
+        sich um Ihre IP-Adresse und welche Seite Sie bei uns besucht haben. Der
+        Einsatz von Google Web Fonts erfolgt auf Grundlage von Art. 6 Abs. 1
+        lit. f DSGVO. Als Betreiber dieser Website haben wir ein berechtigtes
+        Interesse an der optimalen Darstellung und Übertragung unseres
+        Webauftritts.
+      </p>
+      <p>
+        Das Unternehmen Google ist für das us-europäische
+        Datenschutzübereinkommen "Privacy Shield" zertifiziert. Dieses
+        Datenschutzübereinkommen soll die Einhaltung des in der EU geltenden
+        Datenschutzniveaus gewährleisten.
+      </p>
+      <p>
+        Einzelheiten über Google Web Fonts finden Sie unter:
+        https://www.google.com/fonts#AboutPlace:about und weitere Informationen
+        in den Datenschutzbestimmungen von Google:
+        https://policies.google.com/privacy/partners?hl=de
+      </p>
+      <p>
+        Quelle: Datenschutz-Konfigurator von mein-datenschutzbeauftragter.de
       </p>
     </section>
   </Layout>

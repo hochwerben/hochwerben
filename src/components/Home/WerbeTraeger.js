@@ -62,7 +62,7 @@ const Werbetraeger = () => {
     {
       text: 'Textildruck',
       textFull: 'Textildruck',
-      price: 19,
+      price: 0,
       image: data.shirts.childImageSharp.fluid,
       id: data.shirts.childImageSharp.id,
       link: '/textildruck',
@@ -71,7 +71,7 @@ const Werbetraeger = () => {
       text: 'Messe-',
       textSecond: 'displays',
       textFull: 'Messedisplays',
-      price: 149,
+      price: 0,
       image: data.messedisplays.childImageSharp.fluid,
       id: data.messedisplays.childImageSharp.id,
       link: '/messedisplays',
@@ -79,23 +79,23 @@ const Werbetraeger = () => {
     {
       text: 'Schilder',
       textFull: 'Schilder',
-      price: 49,
+      price: 29,
       image: data.haengeschild.childImageSharp.fluid,
       id: data.haengeschild.childImageSharp.id,
       link: '/schilder',
     },
     {
-      text: 'Wände',
-      textFull: 'Wände',
-      price: 199,
+      text: 'Banner',
+      textFull: 'Banner',
+      price: 69,
       image: data.trennwand.childImageSharp.fluid,
       id: data.trennwand.childImageSharp.id,
-      link: '/waende',
+      link: '/banner',
     },
     {
       text: 'Visitenkarten',
       textFull: 'Visitenkarten',
-      price: 49,
+      price: 0,
       image: data.visitenkarten.childImageSharp.fluid,
       id: data.visitenkarten.childImageSharp.id,
       link: '/visitenkarten',
@@ -127,7 +127,9 @@ const Werbetraeger = () => {
                 <Link to={`/leistungen${product.link}`} as="div">
                   <span className={styles.rect}>{product.textFull}</span>
                 </Link>
-                <span className={styles.priceTag}>ab € {product.price}</span>
+                {product.price !== 0 && (
+                  <span className={styles.priceTag}>ab € {product.price}</span>
+                )}
               </div>
             ))}
           </Slider>
