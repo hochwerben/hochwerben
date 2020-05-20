@@ -51,7 +51,7 @@ const Webdesign = () => {
                 alt="Image1"
               />
               <Link to="/leistungen/webdesign" as="div">
-                <span className={styles.rect}>Individuell</span>
+                <span className={styles.rect}>Webseite</span>
               </Link>
               {/* <span className={styles.priceTag}>ab € 699</span> */}
             </div>

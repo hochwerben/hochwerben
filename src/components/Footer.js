@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { IconContext } from 'react-icons';
 import { MdPhone, MdMail } from 'react-icons/md';
 import styles from '../css/footer.module.css';
-import icons from '../constants/SocialLinks';
+// import icons from '../constants/SocialLinks';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -32,7 +32,6 @@ const Footer = () => {
         <div className={styles.address}>
           <ul>
             <li className={styles.heading}>Hochwerben</li>
-            <li>AtlasAvia GmbH</li>
             <li>Nordendstr. 82-84</li>
             <li>64546 Mörfelden-Walldorf</li>
           </ul>

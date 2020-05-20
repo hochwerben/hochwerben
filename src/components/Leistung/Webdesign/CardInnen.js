@@ -7,15 +7,15 @@ const Card = () => (
       <h3 className={styles.heading}>
         Innen
         <span className={styles.price}>
-          ab € 699<span className={styles.mwst}>zzgl. 19% MwSt.</span>
+          ab € 11,95<span className={styles.mwst}>zzgl. 19% MwSt.</span>
         </span>
       </h3>
       <ul className={`${styles.details} ${styles.paddedList}`}>
-        <li>Seiten: 1</li>
-        <li>Inklusive Impressum und Datenschutzerklärung</li>
-        <li>Email-Adressen: 1</li>
-        <li>Postfach-Speicher: 2GB</li>
-        <li>Bildmaterial, Texte und Logo werden von Ihnen zugeliefert</li>
+        <li>1 Stück</li>
+        <li>Abmaße: 500mm Ø</li>
+        <li>Farbe: weiß</li>
+        <li>Veredelung: ohne</li>
+        <li>Innenbereich</li>
       </ul>
     </div>
   </div>

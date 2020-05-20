@@ -5,17 +5,18 @@ const Card = () => (
   <div className={styles.container}>
     <div className={styles.card}>
       <h3 className={styles.heading}>
-        Innen
+        10er Pack
         <span className={styles.price}>
-          ab € 699<span className={styles.mwst}>zzgl. 19% MwSt.</span>
+          ab € 160<span className={styles.mwst}>zzgl. 19% MwSt.</span>
         </span>
       </h3>
+
       <ul className={`${styles.details} ${styles.paddedList}`}>
-        <li>Seiten: 1</li>
-        <li>Inklusive Impressum und Datenschutzerklärung</li>
-        <li>Email-Adressen: 1</li>
-        <li>Postfach-Speicher: 2GB</li>
-        <li>Bildmaterial, Texte und Logo werden von Ihnen zugeliefert</li>
+        <li>10 Stück</li>
+        <li>Abmaße: 500mm Ø</li>
+        <li>Farbe: weiß</li>
+        <li>Veredelung: UV-Schutz</li>
+        <li>Innen- / Außenbereich</li>
       </ul>
     </div>
   </div>

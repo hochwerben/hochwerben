@@ -6,7 +6,7 @@ import styles from '../leistungBanner.module.css';
 const Banner = () => {
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: { eq: "wt/trennwand.jpg" }) {
+      file(relativePath: { eq: "wt/banner.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
