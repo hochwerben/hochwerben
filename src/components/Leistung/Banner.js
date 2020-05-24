@@ -1,0 +1,77 @@
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import Image from 'gatsby-image';
+import styles from './leistungBanner.module.css';
+
+const Banner = ({ title, leistung, maxWidth }) => {
+  let maximumWidth;
+  if (maxWidth) {
+    maximumWidth = maxWidth + '%';
+  } else {
+    maximumWidth = '80%';
+  }
+
+  const data = useStaticQuery(graphql`
+    {
+      banner: file(relativePath: { eq: "wt/banner.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      bauzaunbanner: file(relativePath: { eq: "wt/trennwand.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      kfzbeschriftung: file(relativePath: { eq: "dd/citan-banner.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      schilder: file(relativePath: { eq: "wt/aluverbund-01.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      sticker: file(relativePath: { eq: "wt/sticker-fussabdruck.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      webdesign: file(relativePath: { eq: "wd/responsive-design.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.heading}>{title || leistung}</h1>
+      <div
+        className={styles.bannerImageContainer}
+        style={{ maxWidth: maximumWidth }}
+      >
+        <Image
+          fluid={data[leistung].childImageSharp.fluid}
+          alt={`${leistung} Banner`}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Banner;
