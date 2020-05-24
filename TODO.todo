@@ -1,25 +1,25 @@
-Launch:
-  ☐ Banner Foto richtigstellen.
-  ☐ 
-  ☐ Social Icons!!!
-  ☐ Preise bei unfertigen Leistungen weglassen?
-  ✔ Change contact svg to text. @done(20-05-19 13:49)
-
 Todos:
+  ☐ Implement scroll down textbox on Kompetenzen.
   ☐ Change transition on leistungen tiles.
   ☐ Reduce size of many images.
   ☐ Add menu hover fade transition.
   ☐ Implement smooth scrolling to id.
-    https://github.com/gatsbyjs/gatsby/issues/8413
+  ☐ Remove hardcoded alt on images.
+  https://github.com/gatsbyjs/gatsby/issues/8413
   ✔ Change text and price rectangles to ribbons on Kompetenzen sliders. @done(20-05-12 18:47)
-  ☐ Implement scroll down textbox on Kompetenzen.
   ✔ Change text-bubble in Kompetenzen component to rectangle. @done(20-05-10 01:20)
   ✔ Also change the price bubble to a rectangle. @done(20-05-10 01:20)
   ✔ Implement description icons. @done(20-05-12 21:29)
-  ☐ Remove hardcoded alt on images.
   The sliders have this.
   ✔ Make a dropdown menu. @done(20-05-12 18:47)
   Make a responsive menu, too.
+  
+Launch:
+  ✔ Social Icons!!! @done(20-05-24 09:36)
+    Social icons are deactivated due to the fact that there is no social content yet.
+  ✔ Preise bei unfertigen Leistungen weglassen? @done(20-05-24 09:37)
+    Unfertige Leistungen wurden inaktiv gesetzt. D.h. sie wurden in ein temporäres Inaktiv-Verzeichnis verschoben.
+  ✔ Change contact svg to text. @done(20-05-19 13:49)
 
 Bugs:
   ✔ Höhe von Title Leistungen ist niedriger als die der anderen beiden Seiten. @done(20-05-12 21:29)
@@ -35,5 +35,5 @@ Bugs:
   Fixed with a wrapper.
   
 Ideas:
-  ☐ Humans are visual beings
-    implement this slogan somehow
+  ☐ "Humans are visual beings"
+    Lege den Fokus auf das Visuelle und das Thema "Schönheit", die vom Menschen stark wahrgenommen wird.

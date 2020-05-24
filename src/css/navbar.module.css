@@ -104,10 +104,20 @@
 .menu {
   display: none;
   position: absolute;
-  /* left: 0; */
   background: #f9f9f9;
   border: 1px solid #f9f9f9;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.menu a {
+  color: var(--clr-grey-1);
+  /* letter-spacing: var(--spacing); */
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+.menu a:hover {
+  color: var(--clr-primary);
+  background-color: #f1f1f1;
 }
 
 .dropDownLink {

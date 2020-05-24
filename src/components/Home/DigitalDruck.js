@@ -12,22 +12,6 @@ import 'slick-carousel/slick/slick-theme.css';
 const DigitalDruck = () => {
   const data = useStaticQuery(graphql`
     {
-      suv: file(name: { eq: "suv" }) {
-        childImageSharp {
-          fluid(quality: 95, maxWidth: 2000) {
-            ...GatsbyImageSharpFluid
-          }
-          id
-        }
-      }
-      sprinter: file(name: { eq: "sprinter" }) {
-        childImageSharp {
-          fluid(quality: 95, maxWidth: 2000) {
-            ...GatsbyImageSharpFluid
-          }
-          id
-        }
-      }
       frontHeck: file(name: { eq: "vito-front-heck-01" }) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 2000) {
@@ -40,15 +24,6 @@ const DigitalDruck = () => {
   `);
 
   const ddContent = [
-    {
-      text: 'KFZ-',
-      textSecond: 'Beschriftung',
-      textFull: 'KFZ-Beschriftung',
-      price: 99,
-      image: data.suv.childImageSharp.fluid,
-      id: data.suv.childImageSharp.id,
-      link: '/kfz-beschriftung',
-    },
     {
       text: 'KFZ-',
       textSecond: 'Beschriftung',

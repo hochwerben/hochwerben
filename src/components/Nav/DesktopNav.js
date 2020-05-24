@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styles from '../../css/navbar.module.css';
 import logo from '../../images/hochwerben-logo.svg';
-import icons from '../../constants/SocialLinks';
+// import icons from '../../constants/SocialLinks';
 
 const DesktopNav = () => {
   return (
@@ -33,52 +33,21 @@ const DesktopNav = () => {
             <Link to="/leistungen" className={styles.dropBtn}>
               Leistungen
             </Link>
+
+            {/* 
+            ----- Dropdown Leistungen -----
+            */}
             <div className={styles.menu}>
-              <Link to="/leistungen/banner" className={styles.dropDownLink}>
-                Banner
-              </Link>
-              <Link
-                to="/leistungen/bauzaunbanner"
-                className={styles.dropDownLink}
-              >
-                Bauzaunbanner
-              </Link>
-              <Link
-                to="/leistungen/kfz-beschriftung"
-                className={styles.dropDownLink}
-              >
-                KFZ-Beschriftung
-              </Link>
-              <Link to="/leistungen/megabanner" className={styles.dropDownLink}>
-                Megabanner
-              </Link>
-              <Link
-                to="/leistungen/messedisplays"
-                className={styles.dropDownLink}
-              >
-                Messedisplays
-              </Link>
-              <Link to="/leistungen/schilder" className={styles.dropDownLink}>
-                Schilder
-              </Link>
-              <Link to="/leistungen/sticker" className={styles.dropDownLink}>
-                Sticker
-              </Link>
-              <Link
-                to="/leistungen/textildruck"
-                className={styles.dropDownLink}
-              >
-                Textildruck
-              </Link>
-              <Link
-                to="/leistungen/visitenkarten"
-                className={styles.dropDownLink}
-              >
-                Visitenkarten
-              </Link>
-              <Link to="/leistungen/webdesign" className={styles.dropDownLink}>
-                Webdesign
-              </Link>
+              <Link to="/leistungen/banner">Banner</Link>
+              <Link to="/leistungen/bauzaunbanner">Bauzaunbanner</Link>
+              <Link to="/leistungen/kfz-beschriftung">KFZ-Beschriftung</Link>
+              {/* <Link to="/leistungen/megabanner">Megabanner</Link> */}
+              {/* <Link to="/leistungen/messedisplays">Messedisplays</Link> */}
+              <Link to="/leistungen/schilder">Schilder</Link>
+              <Link to="/leistungen/sticker">Sticker</Link>
+              {/* <Link to="/leistungen/textildruck">Textildruck</Link> */}
+              {/* <Link to="/leistungen/visitenkarten">Visitenkarten</Link> */}
+              <Link to="/leistungen/webdesign">Webdesign</Link>
             </div>
           </li>
           <li className={styles.dropDownContainer}>

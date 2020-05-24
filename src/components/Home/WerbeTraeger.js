@@ -12,22 +12,22 @@ import 'slick-carousel/slick/slick-theme.css';
 const Werbetraeger = () => {
   const data = useStaticQuery(graphql`
     {
-      shirts: file(name: { eq: "shirts" }) {
-        childImageSharp {
-          fluid(quality: 95, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-          id
-        }
-      }
-      messedisplays: file(name: { eq: "messedisplays" }) {
-        childImageSharp {
-          fluid(quality: 95, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-          id
-        }
-      }
+      # shirts: file(name: { eq: "shirts" }) {
+      #   childImageSharp {
+      #     fluid(quality: 95, maxWidth: 1200) {
+      #       ...GatsbyImageSharpFluid
+      #     }
+      #     id
+      #   }
+      # }
+      # messedisplays: file(name: { eq: "messedisplays" }) {
+      #   childImageSharp {
+      #     fluid(quality: 95, maxWidth: 1200) {
+      #       ...GatsbyImageSharpFluid
+      #     }
+      #     id
+      #   }
+      # }
       haengeschild: file(name: { eq: "haengeschild-01" }) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
@@ -44,38 +44,35 @@ const Werbetraeger = () => {
           id
         }
       }
-      visitenkarten: file(
-        relativeDirectory: { eq: "wt" }
-        name: { eq: "visitenkarten" }
-      ) {
-        childImageSharp {
-          fluid(quality: 95, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-          id
-        }
-      }
+      # visitenkarten: file(name: { eq: "visitenkarten" }) {
+      #   childImageSharp {
+      #     fluid(quality: 95, maxWidth: 1200) {
+      #       ...GatsbyImageSharpFluid
+      #     }
+      #     id
+      #   }
+      # }
     }
   `);
 
   const wtContent = [
-    {
-      text: 'Textildruck',
-      textFull: 'Textildruck',
-      price: 0,
-      image: data.shirts.childImageSharp.fluid,
-      id: data.shirts.childImageSharp.id,
-      link: '/textildruck',
-    },
-    {
-      text: 'Messe-',
-      textSecond: 'displays',
-      textFull: 'Messedisplays',
-      price: 0,
-      image: data.messedisplays.childImageSharp.fluid,
-      id: data.messedisplays.childImageSharp.id,
-      link: '/messedisplays',
-    },
+    // {
+    //   text: 'Textildruck',
+    //   textFull: 'Textildruck',
+    //   price: 0,
+    //   image: data.shirts.childImageSharp.fluid,
+    //   id: data.shirts.childImageSharp.id,
+    //   link: '/textildruck',
+    // },
+    // {
+    //   text: 'Messe-',
+    //   textSecond: 'displays',
+    //   textFull: 'Messedisplays',
+    //   price: 0,
+    //   image: data.messedisplays.childImageSharp.fluid,
+    //   id: data.messedisplays.childImageSharp.id,
+    //   link: '/messedisplays',
+    // },
     {
       text: 'Schilder',
       textFull: 'Schilder',
@@ -85,32 +82,32 @@ const Werbetraeger = () => {
       link: '/schilder',
     },
     {
-      text: 'Banner',
-      textFull: 'Banner',
+      text: 'Bauzaunbanner',
+      textFull: 'Bauzaunbanner',
       price: 69,
       image: data.trennwand.childImageSharp.fluid,
       id: data.trennwand.childImageSharp.id,
-      link: '/banner',
+      link: '/bauzaunbanner',
     },
-    {
-      text: 'Visitenkarten',
-      textFull: 'Visitenkarten',
-      price: 0,
-      image: data.visitenkarten.childImageSharp.fluid,
-      id: data.visitenkarten.childImageSharp.id,
-      link: '/visitenkarten',
-    },
+    // {
+    //   text: 'Visitenkarten',
+    //   textFull: 'Visitenkarten',
+    //   price: 0,
+    //   image: data.visitenkarten.childImageSharp.fluid,
+    //   id: data.visitenkarten.childImageSharp.id,
+    //   link: '/visitenkarten',
+    // },
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 6000,
-    rtl: true,
+    rtl: false,
     arrows: false,
     pauseOnHover: false,
   };
