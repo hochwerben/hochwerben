@@ -45,7 +45,10 @@ export default () => (
         der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz
         unseres Unternehmens befindet. Der folgende Link stellt eine Liste der
         Datenschutzbeauftragten sowie deren Kontaktdaten bereit:
-        https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html.
+        <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html">
+          BFDI
+        </a>
+        .
       </p>
       <p>Recht auf Datenübertragbarkeit</p>
       <p>
