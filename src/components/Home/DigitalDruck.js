@@ -12,9 +12,25 @@ import 'slick-carousel/slick/slick-theme.css';
 const DigitalDruck = () => {
   const data = useStaticQuery(graphql`
     {
-      frontHeck: file(name: { eq: "vito-front-heck-01" }) {
+      pkwBeschriftung: file(name: { eq: "citan-banner" }) {
         childImageSharp {
-          fluid(quality: 95, maxWidth: 2000) {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
+      transporterBeschriftung: file(relativePath: { eq: "dd/trans-beschriftung.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
+      lkwBeschriftung: file(relativePath: { eq: "dd/lkw-banner.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
           id
@@ -25,13 +41,31 @@ const DigitalDruck = () => {
 
   const ddContent = [
     {
-      text: 'KFZ-',
+      text: 'PKW-',
       textSecond: 'Beschriftung',
-      textFull: 'KFZ-Beschriftung',
+      textFull: 'PKW-Beschriftung',
       price: 99,
-      image: data.frontHeck.childImageSharp.fluid,
-      id: data.frontHeck.childImageSharp.id,
-      link: '/kfz-beschriftung',
+      image: data.pkwBeschriftung.childImageSharp.fluid,
+      id: data.pkwBeschriftung.childImageSharp.id,
+      link: '/pkw-beschriftung',
+    },
+    {
+      text: 'Transporter-',
+      textSecond: 'Beschriftung',
+      textFull: 'Transporter-Beschriftung',
+      price: 285,
+      image: data.transporterBeschriftung.childImageSharp.fluid,
+      id: data.transporterBeschriftung.childImageSharp.id,
+      link: '/transporter-beschriftung',
+    },
+    {
+      text: 'LKW-',
+      textSecond: 'Beschriftung',
+      textFull: 'LKW-Beschriftung',
+      price: 729,
+      image: data.lkwBeschriftung.childImageSharp.fluid,
+      id: data.lkwBeschriftung.childImageSharp.id,
+      link: '/lkw-beschriftung',
     },
   ];
 

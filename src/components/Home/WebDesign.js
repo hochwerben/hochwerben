@@ -12,15 +12,12 @@ import 'slick-carousel/slick/slick-theme.css';
 const Webdesign = () => {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: { relativeDirectory: { eq: "wd" } }) {
-        edges {
-          node {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
+      website: file(relativePath: { eq: "wd/responsive-design.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
           }
+          id
         }
       }
     }
@@ -47,13 +44,13 @@ const Webdesign = () => {
             {/* Slide 1 */}
             <div className={styles.sliderContainer}>
               <Image
-                fluid={data.allFile.edges[0].node.childImageSharp.fluid}
+                fluid={data.website.childImageSharp.fluid}
                 alt="Image1"
               />
               <Link to="/leistungen/webdesign" as="div">
                 <span className={styles.rect}>Webseite</span>
               </Link>
-              {/* <span className={styles.priceTag}>ab € 699</span> */}
+              <span className={styles.priceTag}>ab € 599</span>
             </div>
           </Slider>
         </div>

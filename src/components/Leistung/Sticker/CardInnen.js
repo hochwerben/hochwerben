@@ -7,7 +7,7 @@ const Card = () => (
       <h3 className={styles.heading}>
         Innen
         <span className={styles.price}>
-          ab € 699<span className={styles.mwst}>zzgl. 19% MwSt.</span>
+          ab € 11,95<span className={styles.mwst}>zzgl. 19% MwSt.</span>
         </span>
       </h3>
       <ul className={`${styles.details} ${styles.paddedList}`}>

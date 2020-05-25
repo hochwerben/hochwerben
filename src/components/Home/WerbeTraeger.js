@@ -36,7 +36,31 @@ const Werbetraeger = () => {
           id
         }
       }
+      schild: file(relativePath: { eq: "wt/aluverbund-01.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
       trennwand: file(name: { eq: "trennwand" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
+      banner: file(relativePath: { eq: "wt/banner.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
+      sticker: file(relativePath: { eq: "wt/sticker-fussabdruck.png" }) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -77,17 +101,33 @@ const Werbetraeger = () => {
       text: 'Schilder',
       textFull: 'Schilder',
       price: 29,
-      image: data.haengeschild.childImageSharp.fluid,
-      id: data.haengeschild.childImageSharp.id,
+      image: data.schild.childImageSharp.fluid,
+      id: data.schild.childImageSharp.id,
       link: '/schilder',
+    },
+    {
+      text: 'Banner',
+      textFull: 'Banner',
+      price: 69,
+      image: data.banner.childImageSharp.fluid,
+      id: data.banner.childImageSharp.id,
+      link: '/banner',
     },
     {
       text: 'Bauzaunbanner',
       textFull: 'Bauzaunbanner',
-      price: 69,
+      price: 95,
       image: data.trennwand.childImageSharp.fluid,
       id: data.trennwand.childImageSharp.id,
       link: '/bauzaunbanner',
+    },
+    {
+      text: 'Sticker',
+      textFull: 'Sticker',
+      price: 95,
+      image: data.sticker.childImageSharp.fluid,
+      id: data.sticker.childImageSharp.id,
+      link: '/sticker',
     },
     // {
     //   text: 'Visitenkarten',
@@ -100,7 +140,7 @@ const Werbetraeger = () => {
   ];
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

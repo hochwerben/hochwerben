@@ -71,6 +71,7 @@
 
 .details li {
   padding-left: 16px;
+  text-indent: -0.8rem;
 }
 
 .details li:before {

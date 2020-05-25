@@ -23,7 +23,7 @@
 
 .rect {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 0;
   background-color: var(--clr-primary);
   padding: 0 1.3rem;
@@ -40,7 +40,7 @@
 }
 .priceTag {
   position: absolute;
-  top: 10%;
+  top: 5%;
   right: 0;
   border: 1px solid #e2e2e2;
   color: var(--clr-grey-4);

@@ -15,42 +15,56 @@ const Banner = ({ title, leistung, maxWidth }) => {
     {
       banner: file(relativePath: { eq: "wt/banner.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       bauzaunbanner: file(relativePath: { eq: "wt/trennwand.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      kfzbeschriftung: file(relativePath: { eq: "dd/citan-banner.png" }) {
+      lkwBeschriftung: file(relativePath: { eq: "dd/lkw-banner.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      pkwbeschriftung: file(relativePath: { eq: "dd/citan-banner.png" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       schilder: file(relativePath: { eq: "wt/aluverbund-01.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       sticker: file(relativePath: { eq: "wt/sticker-fussabdruck.png" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      transBeschriftung: file(relativePath: { eq: "dd/trans-beschriftung.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       webdesign: file(relativePath: { eq: "wd/responsive-design.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
