@@ -13,7 +13,6 @@ const Card = () => (
       <ul className={`${styles.details} ${styles.paddedList}`}>
         <li>1 Stück</li>
         <li>Abmaße: 500mm Ø</li>
-        <li>Farbe: weiß</li>
         <li>Veredelung: UV-Schutz</li>
         <li>Innen- / Außenbereich</li>
       </ul>

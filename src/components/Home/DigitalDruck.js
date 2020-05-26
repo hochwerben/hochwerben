@@ -12,7 +12,15 @@ import 'slick-carousel/slick/slick-theme.css';
 const DigitalDruck = () => {
   const data = useStaticQuery(graphql`
     {
-      pkwBeschriftung: file(name: { eq: "citan-banner" }) {
+      pkwBeschriftung: file(relativePath: { eq: "dd/pkw-beschriftung-banner.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
+      pkwGrafiken: file(relativePath: { eq: "dd/pkw-grafiken-banner.jpg" }) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -28,7 +36,39 @@ const DigitalDruck = () => {
           id
         }
       }
+      transporterGrafiken: file(relativePath: { eq: "dd/transporter-grafiken-banner.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
+      transporterFolierung: file(relativePath: { eq: "dd/transporter-folierung-banner.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
       lkwBeschriftung: file(relativePath: { eq: "dd/lkw-banner.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
+      lkwGrafiken: file(relativePath: { eq: "dd/lkw-grafiken-banner.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+          id
+        }
+      }
+      lkwFolierung: file(relativePath: { eq: "dd/lkw-folierung-banner.jpg" }) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -50,6 +90,15 @@ const DigitalDruck = () => {
       link: '/pkw-beschriftung',
     },
     {
+      text: 'PKW-',
+      textSecond: 'Grafiken',
+      textFull: 'PKW-Grafiken',
+      price: 285,
+      image: data.pkwGrafiken.childImageSharp.fluid,
+      id: data.pkwGrafiken.childImageSharp.id,
+      link: '/pkw-grafiken',
+    },
+    {
       text: 'Transporter-',
       textSecond: 'Beschriftung',
       textFull: 'Transporter-Beschriftung',
@@ -59,6 +108,24 @@ const DigitalDruck = () => {
       link: '/transporter-beschriftung',
     },
     {
+      text: 'Transporter-',
+      textSecond: 'Grafiken',
+      textFull: 'Transporter-Grafiken',
+      price: 469,
+      image: data.transporterGrafiken.childImageSharp.fluid,
+      id: data.transporterGrafiken.childImageSharp.id,
+      link: '/transporter-grafiken',
+    },
+    // {
+    //   text: 'Transporter-',
+    //   textSecond: 'Folierung',
+    //   textFull: 'Transporter-Folierung',
+    //   price: 285,
+    //   image: data.transporterFolierung.childImageSharp.fluid,
+    //   id: data.transporterFolierung.childImageSharp.id,
+    //   link: '/transporter-folierung',
+    // },
+    {
       text: 'LKW-',
       textSecond: 'Beschriftung',
       textFull: 'LKW-Beschriftung',
@@ -66,6 +133,24 @@ const DigitalDruck = () => {
       image: data.lkwBeschriftung.childImageSharp.fluid,
       id: data.lkwBeschriftung.childImageSharp.id,
       link: '/lkw-beschriftung',
+    },
+    // {
+    //   text: 'LKW-',
+    //   textSecond: 'Grafiken',
+    //   textFull: 'LKW-Grafiken',
+    //   price: 99999,
+    //   image: data.lkwGrafiken.childImageSharp.fluid,
+    //   id: data.lkwGrafiken.childImageSharp.id,
+    //   link: '/lkw-grafiken',
+    // },
+    {
+      text: 'LKW-',
+      textSecond: 'Folierung',
+      textFull: 'LKW-Folierung',
+      price: 1490,
+      image: data.lkwFolierung.childImageSharp.fluid,
+      id: data.lkwFolierung.childImageSharp.id,
+      link: '/lkw-folierung',
     },
   ];
 

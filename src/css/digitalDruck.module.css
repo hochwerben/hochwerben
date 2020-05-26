@@ -50,7 +50,7 @@
   background-color: white;
 }
 
-@media only screen and (max-width: 1450px) {
+/* @media only screen and (max-width: 1450px) {
   .sliderContainer {
     max-height: 450px;
   }
@@ -60,7 +60,7 @@
   .centerSliderOne {
     padding: 2.5rem 0 7rem;
   }
-}
+} */
 
 @media only screen and (max-width: 650px) {
   .sliderContainer {
@@ -72,6 +72,7 @@
   .rect {
     font-size: 1rem;
     padding: 0 0.5rem;
+    top: 0;
   }
   .priceTag {
     font-size: 0.8rem;

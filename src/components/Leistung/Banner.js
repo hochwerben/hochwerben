@@ -34,7 +34,28 @@ const Banner = ({ title, leistung, maxWidth }) => {
           }
         }
       }
+      lkwGrafiken: file(relativePath: { eq: "dd/lkw-grafiken-banner.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      lkwFolierung: file(relativePath: { eq: "dd/lkw-folierung-banner.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       pkwbeschriftung: file(relativePath: { eq: "dd/citan-banner.png" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      pkwGrafiken: file(relativePath: { eq: "dd/pkw-grafiken-banner.jpg" }) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -56,6 +77,20 @@ const Banner = ({ title, leistung, maxWidth }) => {
         }
       }
       transBeschriftung: file(relativePath: { eq: "dd/trans-beschriftung.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      transporterGrafiken: file(relativePath: { eq: "dd/transporter-grafiken-banner.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      transporterFolierung: file(relativePath: { eq: "dd/transporter-folierung-banner.jpg" }) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid

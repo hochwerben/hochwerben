@@ -9,7 +9,7 @@ import styles from '../css/index.module.css';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home"></SEO>
+    <SEO title="Digitaldruck - Werbeträger - Webdesign"></SEO>
     <DigitalDruck></DigitalDruck>
     <div className={styles.skewSectionOne} id="werbetraeger" />
     <WerbeTraeger></WerbeTraeger>

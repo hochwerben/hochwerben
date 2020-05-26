@@ -1,5 +1,5 @@
 .contact {
-  padding: 3rem 0;
+  padding: 1rem 0 5rem 0;
   width: 90vw;
   max-width: var(--maxWidth);
   margin: 0 auto;
@@ -73,11 +73,6 @@
   border: 0;
 }
 
-@media only screen and (max-width: 1450px) {
-  .contact {
-    padding-top: 2.5rem;
-  }
-}
 @media only screen and (max-width: 1000px) {
   .grid {
     grid-template-columns: 1fr;
