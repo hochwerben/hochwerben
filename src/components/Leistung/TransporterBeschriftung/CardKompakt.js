@@ -6,9 +6,9 @@ import styles from '../cards.module.css';
 const Card = () => {
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: { eq: "dd/card-kompakt.jpg" }) {
+      file(relativePath: { eq: "dd/transporter-beschriftung-kompakt.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
+          fluid(quality: 95, maxWidth: 600) {
             ...GatsbyImageSharpFluid
           }
         }
