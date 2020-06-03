@@ -9,6 +9,13 @@
   padding-top: 5rem;
 }
 
+.centerPolicy h3 {
+  font-size: 1.3rem;
+}
+.centerPolicy h4 {
+  font-size: 1.1rem;
+}
+
 @media screen and (max-width: 600px) {
   .firstP {
     padding-top: 2rem;

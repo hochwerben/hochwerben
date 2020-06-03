@@ -8,7 +8,7 @@ const Card = () => {
   {
     file(relativePath: { eq: "dd/transporter-beschriftung-moderat.jpg" }) {
       childImageSharp {
-        fluid(quality: 95, maxWidth: 600) {
+        fluid(quality: 100, maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }

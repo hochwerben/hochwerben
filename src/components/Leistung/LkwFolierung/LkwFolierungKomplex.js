@@ -20,7 +20,7 @@ const Card = () => {
     <div className={styles.container}>
       <div className={styles.card}>
         <h3 className={styles.heading}>
-          Vollfolierung
+          LKW-Folierung
           <span className={styles.price}>ab € 1490 <span className={styles.mwst}>zzgl. 19% MwSt.</span></span>
         </h3>
         <div className={styles.cardContent}>
