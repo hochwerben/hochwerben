@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styles from '../../css/navbar.module.css';
 import logo from '../../images/hochwerben-logo.svg';
-// import icons from '../../constants/SocialLinks';
+import icons from '../../constants/SocialLinks';
 
 const DesktopNav = () => {
   return (
@@ -63,7 +63,7 @@ const DesktopNav = () => {
             </Link>
           </li>
         </ul>
-        {/* <div className={styles.icons}>
+        <div className={styles.icons}>
           {icons.map(icon => {
             return (
               <a
@@ -77,7 +77,7 @@ const DesktopNav = () => {
               </a>
             );
           })}
-        </div> */}
+        </div>
       </div>
     </nav>
   );

@@ -1,8 +1,9 @@
 import React from 'react';
 import {
   FaInstagram,
-  FaYoutubeSquare,
-  FaPinterestSquare,
+  FaFacebook
+  // FaYoutubeSquare,
+  // FaPinterestSquare,
 } from 'react-icons/fa';
 
 export default [
@@ -13,14 +14,19 @@ export default [
   },
   {
     id: Math.random(),
-    url: 'https://pinterest.de',
-    image: <FaPinterestSquare />,
+    url: 'https://facebook.com/Hochwerben-173648279878506/',
+    image: <FaFacebook />,
   },
-  {
-    id: Math.random(),
-    url: 'https://www.youtube.com/channel/UCBFCE4OPehK7whABCuWjw4Q',
-    image: <FaYoutubeSquare />,
-  },
+  // {
+  //   id: Math.random(),
+  //   url: 'https://pinterest.de',
+  //   image: <FaPinterestSquare />,
+  // },
+  // {
+  //   id: Math.random(),
+  //   url: 'https://www.youtube.com/channel/UCBFCE4OPehK7whABCuWjw4Q',
+  //   image: <FaYoutubeSquare />,
+  // },
 ];
 // export default [
 //   {

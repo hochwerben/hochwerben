@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { IconContext } from 'react-icons';
 import { MdPhone, MdMail } from 'react-icons/md';
 import styles from '../css/footer.module.css';
-// import icons from '../constants/SocialLinks';
+import icons from '../constants/SocialLinks';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -37,7 +37,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* <div className={styles.icons}>
+        <div className={styles.icons}>
           {icons.map(item => {
             return (
               <a key={item.id} href={item.url} className={styles.icon}>
@@ -45,7 +45,7 @@ const Footer = () => {
               </a>
             );
           })}
-        </div> */}
+        </div>
         <div className={styles.info}>
           © {new Date().getFullYear()} <Link to="/">Hochwerben.de</Link> - Alle
           Rechte vorbehalten.
