@@ -11,7 +11,7 @@ const Card = () => (
         </span>
       </h3>
       <ul className={`${styles.details} ${styles.paddedList}`}>
-        <li>Fläche: 2m²</li>
+        <li>Fläche: 1m²</li>
         <li>Alu-Verbundplatte</li>
         <li>Abmaße: 1.000mm x 500mm</li>
         <li>Materialstärke: 3mm</li>
