@@ -3,8 +3,8 @@
 // });
 module.exports = {
   siteMetadata: {
-    title: `Hochwerben`,
-    description: `Ihr Partner für Digitaldruck, Werbeträger und Webdesign`,
+    title: `Hochwerben.de - Digitaldruck`,
+    description: ` Digitaldruck, Werbeträger und Webdesign aus Mörfelden-Walldorf.`,
     author: `Peter Pawelczyk`,
     twitterUsername: '@hochwerben',
     image: '/logo.jpg',

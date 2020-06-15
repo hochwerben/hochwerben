@@ -4,7 +4,6 @@ import { IconContext } from 'react-icons';
 import { MdPhone, MdMail } from 'react-icons/md';
 // import ContactForm from './ContactForm';
 import styles from '../css/contact.module.css';
-import kontaktBox from '../images/kontakt-box.svg';
 
 const Kontakt = () => (
   <section className={styles.contact}>

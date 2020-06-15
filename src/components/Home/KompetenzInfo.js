@@ -2,12 +2,12 @@ import React from 'react';
 import Title from '../Title';
 import styles from '../../css/kompetenzInfo.module.css';
 
-import texte from './kompetenzenTexte.json';
+// import texte from './kompetenzenTexte.json';
 
 const KompetenzInfo = ({ title }) => {
-  const ddText = texte[0].description;
-  const wtText = texte[1].description;
-  const wdText = texte[2].description;
+  // const ddText = texte[0].description;
+  // const wtText = texte[1].description;
+  // const wdText = texte[2].description;
 
   return (
     <div className={styles.container}>
