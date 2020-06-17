@@ -57,6 +57,11 @@ const DesktopNav = () => {
               <Link to="/leistungen/webdesign">Webdesign</Link>
             </div>
           </li>
+          {/* <li className={styles.dropDownContainer}>
+            <Link to="/blog" className={styles.dropBtn}>
+              Blog
+            </Link>
+          </li> */}
           <li className={styles.dropDownContainer}>
             <Link to="/kontakt" className={styles.dropBtn}>
               Kontakt

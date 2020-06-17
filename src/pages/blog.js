@@ -9,9 +9,9 @@ import SEO from '../components/seo';
 export default ({ data }) => {
   return (
     <Layout>
-      <SEO title="Leistungen Übersicht" description="Übersicht aller Leistungen. Digitaldruck, Werbeträger und Webdesign auf einen Blick."/>
+      <SEO title="Blog" description="Der Hochwerben Blog in der Übersicht. Hier finden Sie alle News rund um das Thema Werbung und Digitaldruck." />
       <section className={styles.centerLeistungenContainer}>
-        <Title title="Leistungen"></Title>
+        <Title title="Blog"></Title>
 
         <div className={styles.imageGrid}>
           {data.all.edges.map(
@@ -22,7 +22,7 @@ export default ({ data }) => {
               },
             }) => (
               <div key={id} className={styles.imageContainer}>
-                <Link to={`/leistungen/${frontmatter.slug}`}>
+                <Link to={`/blog/${frontmatter.slug}`}>
                   <Image
                     fluid={
                       frontmatter.featuredImage
@@ -47,14 +47,14 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    all: allMdx(filter: {frontmatter: {type: {ne: "blog"}}}, sort: { fields: frontmatter___title }) {
+    all: allMdx(filter: {frontmatter: {type: {eq: "blog"}}}, sort: { fields: frontmatter___title }) {
       edges {
         node {
           id
           frontmatter {
+            slug
             title
             type
-            slug
             featuredImage {
               childImageSharp {
                 fluid {
@@ -63,13 +63,6 @@ export const query = graphql`
               }
             }
           }
-        }
-      }
-    }
-    placeholder: file(name: { eq: "change" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
         }
       }
     }

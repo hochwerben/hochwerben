@@ -11,7 +11,7 @@ export default ({
   data: {
     mdx: {
       body,
-      frontmatter: { title, featuredImage },
+      frontmatter: { title },
     },
   },
 }) => {
@@ -40,13 +40,6 @@ export const query = graphql`
     mdx(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
         title
-        featuredImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
       body
     }

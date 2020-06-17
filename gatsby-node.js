@@ -1,30 +1,22 @@
 const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
-
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
-  if (node.internal.type === 'Mdx') {
-    const slug = createFilePath({
-      node,
-      getNode,
-      basePath: `src/leistungen-mdx`,
-    });
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug,
-    });
-  }
-};
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
     query {
-      allMdx {
+      allServices: allMdx(filter: { frontmatter: { type: { ne: "blog" }}}) {
         edges {
           node {
-            fields {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+      allBlogPosts: allMdx(filter: { frontmatter: { type: { eq: "blog" }}}) {
+        edges {
+          node {
+            frontmatter {
               slug
             }
           }
@@ -33,12 +25,22 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  result.data.allMdx.edges.forEach(({ node }) => {
+  result.data.allServices.edges.forEach(({ node }) => {
     createPage({
-      path: `/leistungen${node.fields.slug}`,
+      path: `/leistungen/${node.frontmatter.slug}`,
       component: path.resolve(`./src/templates/leistung.js`),
       context: {
-        slug: node.fields.slug,
+        slug: node.frontmatter.slug,
+      },
+    });
+  });
+
+  result.data.allBlogPosts.edges.forEach(({ node }) => {
+    createPage({
+      path: `/blog/${node.frontmatter.slug}`,
+      component: path.resolve(`./src/templates/post.js`),
+      context: {
+        slug: node.frontmatter.slug,
       },
     });
   });

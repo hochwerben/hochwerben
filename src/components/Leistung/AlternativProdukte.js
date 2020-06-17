@@ -13,6 +13,7 @@ export default () => {
             frontmatter {
               title
               type
+              slug
               featuredImage {
                 childImageSharp {
                   fluid {
@@ -20,9 +21,6 @@ export default () => {
                   }
                 }
               }
-            }
-            fields {
-              slug
             }
           }
         }
@@ -37,11 +35,10 @@ export default () => {
           node: {
             id,
             frontmatter,
-            fields: { slug },
           },
         }) => (
           <div key={id} className={styles.imageContainer}>
-            <Link to={`/leistungen/${slug}`}>
+            <Link to={`/leistungen/${frontmatter.slug}`}>
               <Image
                 fluid={
                   frontmatter.featuredImage
