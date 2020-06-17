@@ -62,6 +62,13 @@ module.exports = {
         extensions: [`.mdx`, `.md`],
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `vfukfafpsk72`,
+        accessToken: `Q5MlnQZpC4hOKs6oEyiwiVSiLC99vhq0AVM1Lr0g-9E`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

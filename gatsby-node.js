@@ -4,7 +4,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
     query {
-      allServices: allMdx(filter: { frontmatter: { type: { ne: "blog" }}}) {
+      allServices: allMdx(filter: { frontmatter: { type: { eq: "service" }}}) {
         edges {
           node {
             frontmatter {
@@ -13,13 +13,9 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-      allBlogPosts: allMdx(filter: { frontmatter: { type: { eq: "blog" }}}) {
-        edges {
-          node {
-            frontmatter {
-              slug
-            }
-          }
+      getContentfulPosts: allContentfulPost {
+        nodes {
+          slug
         }
       }
     }
@@ -35,12 +31,12 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  result.data.allBlogPosts.edges.forEach(({ node }) => {
+  result.data.getContentfulPosts.nodes.forEach(({ slug }) => {
     createPage({
-      path: `/blog/${node.frontmatter.slug}`,
+      path: `/blog/${slug}`,
       component: path.resolve(`./src/templates/post.js`),
       context: {
-        slug: node.frontmatter.slug,
+        slug: slug,
       },
     });
   });

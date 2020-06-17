@@ -6,7 +6,7 @@ import Title from '../components/Title';
 import styles from '../css/leistungen.module.css';
 import SEO from '../components/seo';
 
-export default ({ data }) => {
+export default ({ data: { allContentfulPost: { nodes }} }) => {
   return (
     <Layout>
       <SEO title="Blog" description="Der Hochwerben Blog in der Übersicht. Hier finden Sie alle News rund um das Thema Werbung und Digitaldruck." />
@@ -14,26 +14,26 @@ export default ({ data }) => {
         <Title title="Blog"></Title>
 
         <div className={styles.imageGrid}>
-          {data.all.edges.map(
+          {nodes.map(
             ({
-              node: {
                 id,
-                frontmatter,
-              },
+                title,
+                slug,
+                featuredImage: {
+                  fluid
+                },
             }) => (
               <div key={id} className={styles.imageContainer}>
-                <Link to={`/blog/${frontmatter.slug}`}>
+                <Link to={`/blog/${slug}`}>
                   <Image
                     fluid={
-                      frontmatter.featuredImage
-                        ? frontmatter.featuredImage.childImageSharp.fluid
-                        : data.placeholder.childImageSharp.fluid
+                      fluid
                     }
-                    alt={frontmatter.title}
+                    alt="Blog Image"
                     className="leistungen-grid"
                   />
                   <span className={styles.leistungTitle}>
-                    {frontmatter.title}
+                    {title}
                   </span>
                 </Link>
               </div>
@@ -47,24 +47,17 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    all: allMdx(filter: {frontmatter: {type: {eq: "blog"}}}, sort: { fields: frontmatter___title }) {
-      edges {
-        node {
+    allContentfulPost {
+        nodes {
           id
-          frontmatter {
-            slug
-            title
-            type
-            featuredImage {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+          title
+          slug
+          featuredImage {
+            fluid {
+              ...GatsbyContentfulFluid
             }
           }
         }
-      }
     }
   }
 `;

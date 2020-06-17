@@ -1,0 +1,77 @@
+.centerPost {
+  padding: 3rem 0 5rem;
+  width: 90vw;
+  max-width: 800px;
+  margin: auto;
+}
+
+.centerPost img {
+  width: 80%;
+  margin: 2em auto;
+  display: block;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.produktContainer {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+.fImage {
+  margin: 0 auto 2rem auto;
+  max-width: 500px;
+}
+
+.beschreibung {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.beschreibung table {
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+.beschreibung td,
+th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+.beschreibung th {
+  background-color: #f0f0f0;
+}
+
+.beschreibung ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0 0.5rem 2rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.beschreibung ul li {
+  padding-left: 1rem;
+}
+
+.beschreibung ul li:before {
+  content: '•'; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: var(--clr-primary); /* Or a color you prefer */
+}
+
+@media only screen and (max-width: 1450px) {
+  .centerPost {
+    padding: 2.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .centerPost {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}

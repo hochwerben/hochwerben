@@ -47,7 +47,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    all: allMdx(filter: {frontmatter: {type: {ne: "blog"}}}, sort: { fields: frontmatter___title }) {
+    all: allMdx(filter: {frontmatter: {type: {eq: "service"}}}, sort: { fields: frontmatter___title }) {
       edges {
         node {
           id

@@ -11,7 +11,6 @@ export default ({
   data: {
     mdx: {
       body,
-      frontmatter: { title, featuredImage },
     },
   },
 }) => {
