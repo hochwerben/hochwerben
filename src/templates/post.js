@@ -1,10 +1,12 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
-import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { MDXProvider } from '@mdx-js/react'
-import Layout from "../components/layout"
-import Image from "gatsby-image"
-import Title from '../components/Title'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { MDXProvider } from '@mdx-js/react';
+import { FaArrowLeft } from 'react-icons/fa';
+import Layout from '../components/layout';
+import Image from 'gatsby-image';
+import Title from '../components/Title';
+import SEO from '../components/seo';
 import styles from '../css/blog.module.css';
 
 const BlogTemplate = ({
@@ -12,27 +14,35 @@ const BlogTemplate = ({
     post: {
       title,
       content,
-      featuredImage: { fluid }
+      featuredImage: { fluid },
+      seoBeschreibung,
     },
   },
 }) => {
   return (
     <Layout>
+      <SEO title={title} description={seoBeschreibung || 'Blog'} />
       <section className={styles.centerPost}>
-        <Link to="/blog">Zur Übersicht</Link>
         <Title title={title} />
-        <article>
+        <article className={styles.featuredImage}>
           <Image fluid={fluid} alt={title} />
         </article>
         <article>
-        <MDXProvider>
-          <MDXRenderer>{content.childMdx.body}</MDXRenderer>
-        </MDXProvider>
+          <MDXProvider>
+            <MDXRenderer>{content.childMdx.body}</MDXRenderer>
+          </MDXProvider>
         </article>
+        <Link to="/blog" className={styles.btn}>
+          <FaArrowLeft
+            style={{ verticalAlign: 'middle', marginRight: '0.5em' }}
+            size="1em"
+          />
+          &nbsp;Zur Übersicht
+        </Link>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query GetBlogPost($slug: String) {
@@ -48,8 +58,9 @@ export const query = graphql`
           ...GatsbyContentfulFluid
         }
       }
+      seoBeschreibung
     }
   }
-`
+`;
 
-export default BlogTemplate
+export default BlogTemplate;

@@ -11,6 +11,11 @@ export default [
   },
   {
     id: Math.random(),
+    text: 'blog',
+    url: '/blog',
+  },
+  {
+    id: Math.random(),
     text: 'kontakt',
     url: '/kontakt',
   },

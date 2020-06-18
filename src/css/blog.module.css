@@ -16,15 +16,25 @@
   font-size: 2rem;
 }
 
-.produktContainer {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr;
+h1, h2, h3 {
+  margin-top: 2em;
 }
 
-.fImage {
+h1 {
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+.featuredImage {
   margin: 0 auto 2rem auto;
-  max-width: 500px;
+  width: 80%;
 }
 
 .beschreibung {
@@ -63,6 +73,19 @@ th {
   color: var(--clr-primary); /* Or a color you prefer */
 }
 
+.btn {
+  background-color: var(--clr-primary);
+  padding: 0.5rem 1rem;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1em;
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  margin: 2rem 0;
+}
+
 @media only screen and (max-width: 1450px) {
   .centerPost {
     padding: 2.5rem 0;
@@ -73,5 +96,8 @@ th {
   .centerPost {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+  .centerPost img {
+    width: 100%;
   }
 }
