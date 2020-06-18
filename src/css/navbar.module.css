@@ -1,0 +1,138 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 5rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  background: var(--clr-white);
+  z-index: 4;
+  transition: all 0.5s;
+  border-top: 2px solid var(--clr-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  /* border-bottom: 0.125rem solid var(--clr-primary); */
+}
+
+.center {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.header {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+@media screen and (max-width: 500px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+  .header img {
+    max-width: 13rem;
+  }
+}
+
+.toggleBtn {
+  border: none;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+  cursor: pointer;
+  color: var(--clr-primary);
+  outline-color: var(--clr-primary-light);
+  background: transparent;
+}
+.toggleIcon {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+.toggleBtn:hover {
+  color: var(--clr-primary-light);
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.dropBtn {
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  font-size: 1rem;
+  transition: var(--transition);
+  color: var(--clr-grey-1);
+  /* line-height: 1; */
+  padding: 1rem;
+  display: inline-block;
+}
+.dropBtn:hover {
+  color: var(--clr-primary);
+  /* box-shadow: 0 1.5px var(--clr-primary); */
+}
+.logoLink {
+  line-height: 1;
+}
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 0;
+}
+.navIcon {
+  color: var(--clr-grey-5);
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  transition: var(--transition);
+}
+.navIcon:hover {
+  color: var(--clr-primary);
+  transform: translateY(-10%);
+}
+
+.dropDownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  background: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.menu a {
+  color: var(--clr-grey-1);
+  /* letter-spacing: var(--spacing); */
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+.menu a:hover {
+  color: var(--clr-primary);
+  background-color: #f1f1f1;
+}
+
+.dropDownLink {
+  color: var(--clr-grey-1);
+  /* letter-spacing: var(--spacing); */
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.dropDownLink:hover {
+  color: var(--clr-primary);
+  background-color: #f1f1f1;
+}
+
+.dropDownContainer:hover .menu {
+  display: block;
+}

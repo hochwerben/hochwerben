@@ -1,0 +1,72 @@
+---
+title: 'Banner'
+type: 'service'
+featuredImage: ../images/wt/banner.jpg
+slug: banner
+---
+
+import Banner from '../components/Leistung/Banner';
+import CardGrid from '../components/Leistung/CardGrid';
+import Card from '../components/Leistung/Card';
+import LeistungTitle from '../components/Leistung/LeistungTitle';
+import Icons from '../components/Icons';
+import BannerCardsDescription from '../components/Leistung/Banner/BannerCardsDescription';
+import AlternativProdukte from '../components/Leistung/AlternativProdukte';
+import deinSign from '../images/dein-sign.png';
+import SEO from '../components/seo';
+
+<SEO title="Banner" description="Banner die auffallen. An Fassaden oder freistehend. Das Format ist auch für XXL Banner geeignet."></SEO>
+
+<Banner leistung="banner" maxWidth="100" />
+
+<CardGrid>
+  <Card title="PVC" price="85" >
+    <li>Fläche Banner: 4m²</li>
+        <li>PVC Banner 500g/m²</li>
+        <li>Abmaße: 2.000mm x 2.000mm</li>
+        <li>Farbe: weiß matt</li>
+        <li>Ösen: Ringsum / Abstand ca. 50cm</li>
+        <li>Druck: 4/0 einseitig vierfarbig</li>
+  </Card>
+  <Card title="PVC Mesh" price="69">
+    <li>Fläche Banner: 4m²</li>
+        <li>PVC Mesh Banner 360g/m²</li>
+        <li>Abmaße: 2.000mm x 2.000mm</li>
+        <li>Farbe: weiß matt</li>
+        <li>Ösen: Ringsum / Abstand ca. 50cm</li>
+        <li>Druck: 4/0 einseitig vierfarbig</li>
+  </Card>
+  <Card title="Komplett">
+    <li>Fläche Banner: 4m²</li>
+        <li>PVC Banner / PVC Mesh Banner</li>
+        <li>Abmaße: 2.000mm x 2.000mm</li>
+        <li>Farbe: weiß matt</li>
+        <li>Ösen: Ringsum / Abstand ca. 50cm</li>
+        <li>Druck: 4/0 einseitig vierfarbig</li>
+  </Card>
+</CardGrid>
+
+<LeistungTitle title="Beschreibung" />
+
+Mit einem <img src={deinSign} alt="dein sign" width="100px"/> Banner erreichen Sie die Aufmerksamkeit Ihrer Kunden. Das Format ist auch für XXL Banner geeignet und kann durch die Montagesysteme an Fassaden oder freistehend angewendet werden. Dein Werbeträger für die Werbeanwendung an Fassaden, auf Messe- u. Event uvm.
+
+Die verwendeten Materialien sind für die Anwendung im Innen u. Außenbereich geeignet. Das Textilgewebe (PVC Meshbanner) eignet sich durch seine Materialeigenschaft ideal für Großformate
+
+<BannerCardsDescription />
+
+<!--  -->
+
+<LeistungTitle title="Alternativprodukte" />
+
+<ol style={{ listStyle: 'none' }}>
+  <li><img src={deinSign} alt="dein sign" width="100px"/> Bauzaun Banner</li>
+  <li>
+    <img src={deinSign} alt="dein sign" width="100px"/> Mega- / Fassadenbanner
+  </li>
+  <li>
+    <img src={deinSign} alt="dein sign" width="100px"/> Display / Leuchtdisplay
+  </li>
+  <li>
+    <img src={deinSign} alt="dein sign" width="100px"/> Bodenfolie
+  </li>
+</ol>

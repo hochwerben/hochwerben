@@ -1,0 +1,100 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  margin: 3rem auto;
+}
+
+.container * {
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 280px;
+  height: 100%;
+}
+
+.card {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.heading {
+  text-align: center;
+  background-color: var(--clr-primary);
+  padding: 1rem 1.3rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.price {
+  position: absolute;
+  top: -1rem;
+  right: -1.5rem;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  font-weight: bold;
+}
+.mwst {
+  display: block;
+  font-size: 0.6rem;
+  color: #6e6e6e;
+  font-weight: 400;
+}
+
+.cardContent {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  /* justify-content: space-around; */
+  padding: 1rem 0;
+}
+
+.details {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0 0.5rem 2rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.details li {
+  padding-left: 16px;
+  text-indent: -0.8rem;
+}
+
+.details li:before {
+  content: '•'; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: var(--clr-primary); /* Or a color you prefer */
+}
+
+.innerLi {
+  margin-left: 1rem;
+}
+
+.paddedList {
+  padding: 1rem 0 !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .heading {
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem;
+  }
+  .price {
+    padding: 5px 8px;
+    font-size: 0.7rem;
+  }
+}

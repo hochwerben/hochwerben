@@ -1,0 +1,29 @@
+.iconsContainer {
+  margin: -1rem auto 2rem auto !important;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.iconsContainer > * {
+  margin: 0.3rem;
+}
+
+.bigImage {
+  display: none;
+}
+.smallImage {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+  .iconsContainer > * {
+    max-width: 50px;
+  }
+  .bigImage {
+    display: none;
+  }
+  .smallImage {
+    display: inline-block;
+  }
+}
