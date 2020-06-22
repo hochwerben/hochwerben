@@ -11,8 +11,8 @@ export default [
   },
   {
     id: Math.random(),
-    text: 'blog',
-    url: '/blog',
+    text: 'referenzen',
+    url: '/referenzen',
   },
   {
     id: Math.random(),

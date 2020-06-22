@@ -9,7 +9,7 @@ import Title from '../components/Title';
 import SEO from '../components/seo';
 import styles from '../css/blog.module.css';
 
-const BlogTemplate = ({
+const ReferenzenTemplate = ({
   data: {
     post: {
       title,
@@ -21,7 +21,7 @@ const BlogTemplate = ({
 }) => {
   return (
     <Layout>
-      <SEO title={title} description={seoBeschreibung || 'Blog'} />
+      <SEO title={title} description={seoBeschreibung || 'Referenzen'} />
       <section className={styles.centerPost}>
         <Title title={title} />
         <article className={styles.featuredImage}>
@@ -32,7 +32,7 @@ const BlogTemplate = ({
             <MDXRenderer>{content.childMdx.body}</MDXRenderer>
           </MDXProvider>
         </article>
-        <Link to="/blog" className={styles.btn}>
+        <Link to="/referenzen" className={styles.btn}>
           <FaArrowLeft
             style={{ verticalAlign: 'middle', marginRight: '0.5em' }}
             size="1em"
@@ -63,4 +63,4 @@ export const query = graphql`
   }
 `;
 
-export default BlogTemplate;
+export default ReferenzenTemplate;

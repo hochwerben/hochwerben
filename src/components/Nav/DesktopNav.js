@@ -49,8 +49,12 @@ const DesktopNav = () => {
               {/* <Link to="/leistungen/messedisplays">Messedisplays</Link> */}
               <Link to="/leistungen/schilder">Schilder</Link>
               <Link to="/leistungen/sticker">Sticker</Link>
-              <Link to="/leistungen/transporter-beschriftung">Transporter-Beschriftung</Link>
-              <Link to="/leistungen/transporter-grafiken">Transporter-Grafiken</Link>
+              <Link to="/leistungen/transporter-beschriftung">
+                Transporter-Beschriftung
+              </Link>
+              <Link to="/leistungen/transporter-grafiken">
+                Transporter-Grafiken
+              </Link>
               {/* <Link to="/leistungen/transporter-folierung">Transporter-Folierung</Link> */}
               {/* <Link to="/leistungen/textildruck">Textildruck</Link> */}
               {/* <Link to="/leistungen/visitenkarten">Visitenkarten</Link> */}
@@ -58,8 +62,8 @@ const DesktopNav = () => {
             </div>
           </li>
           <li className={styles.dropDownContainer}>
-            <Link to="/blog" className={styles.dropBtn}>
-              Blog
+            <Link to="/referenzen" className={styles.dropBtn}>
+              Referenzen
             </Link>
           </li>
           <li className={styles.dropDownContainer}>
