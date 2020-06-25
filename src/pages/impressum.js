@@ -2,9 +2,11 @@ import React from 'react';
 import Layout from '../components/layout';
 import Title from '../components/Title';
 import styles from '../css/policy.module.css';
+import SEO from '../components/seo';
 
 export default () => (
   <Layout>
+    <SEO title="Impressum"></SEO>
     <section className={styles.centerPolicy}>
       <Title title="Impressum"></Title>
       <p className={styles.firstP}>

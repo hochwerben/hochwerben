@@ -9,36 +9,32 @@ import SEO from '../components/seo';
 export default ({ data }) => {
   return (
     <Layout>
-      <SEO title="Leistungen Übersicht" description="Übersicht aller Leistungen. Digitaldruck, Werbeträger und Webdesign auf einen Blick."/>
+      <SEO
+        title="Leistungen Übersicht"
+        description="LKW-Folierung, Autobeschriftung, Schilder und Banner. Draussen, drinnen oder digital."
+      />
       <section className={styles.centerLeistungenContainer}>
         <Title title="Leistungen"></Title>
 
         <div className={styles.imageGrid}>
-          {data.all.edges.map(
-            ({
-              node: {
-                id,
-                frontmatter,
-              },
-            }) => (
-              <div key={id} className={styles.imageContainer}>
-                <Link to={`/leistungen/${frontmatter.slug}`}>
-                  <Image
-                    fluid={
-                      frontmatter.featuredImage
-                        ? frontmatter.featuredImage.childImageSharp.fluid
-                        : data.placeholder.childImageSharp.fluid
-                    }
-                    alt={frontmatter.title}
-                    className="leistungen-grid"
-                  />
-                  <span className={styles.leistungTitle}>
-                    {frontmatter.title}
-                  </span>
-                </Link>
-              </div>
-            )
-          )}
+          {data.all.edges.map(({ node: { id, frontmatter } }) => (
+            <div key={id} className={styles.imageContainer}>
+              <Link to={`/leistungen/${frontmatter.slug}`}>
+                <Image
+                  fluid={
+                    frontmatter.featuredImage
+                      ? frontmatter.featuredImage.childImageSharp.fluid
+                      : data.placeholder.childImageSharp.fluid
+                  }
+                  alt={frontmatter.title}
+                  className="leistungen-grid"
+                />
+                <span className={styles.leistungTitle}>
+                  {frontmatter.title}
+                </span>
+              </Link>
+            </div>
+          ))}
         </div>
       </section>
     </Layout>
@@ -47,7 +43,10 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    all: allMdx(filter: {frontmatter: {type: {eq: "service"}}}, sort: { fields: frontmatter___title }) {
+    all: allMdx(
+      filter: { frontmatter: { type: { eq: "service" } } }
+      sort: { fields: frontmatter___title }
+    ) {
       edges {
         node {
           id

@@ -9,7 +9,10 @@ import styles from '../css/index.module.css';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Digitaldruck - Werbeträger - Webdesign"></SEO>
+    <SEO
+      title="Digitaldruck - Werbeträger - Webdesign"
+      description="Autobeschriftung, LKW-Folierung, Schilder und alles was mit Digitaldruck zu tun hat. Wir machen Marken mobil!"
+    ></SEO>
     <DigitalDruck></DigitalDruck>
     <div className={styles.skewSectionOne} id="werbetraeger" />
     <WerbeTraeger></WerbeTraeger>

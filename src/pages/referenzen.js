@@ -15,7 +15,7 @@ export default ({
     <Layout>
       <SEO
         title="Referenzen"
-        description="Die Arbeiten von Hochwerben in Bildern."
+        description="LKW-Folierung, Schilder oder Webdesign. Hier erhalten Sie eine Übersicht unserer Projekte und Arbeiten."
       />
       <section className={styles.centerLeistungenContainer}>
         <Title title="Referenzen"></Title>
@@ -41,7 +41,7 @@ export default ({
 
 export const query = graphql`
   {
-    allContentfulPost {
+    allContentfulPost(sort: { order: DESC, fields: createdAt }) {
       nodes {
         id
         title
