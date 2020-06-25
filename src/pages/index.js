@@ -11,7 +11,7 @@ const IndexPage = () => (
   <Layout>
     <SEO
       title="Digitaldruck - Werbeträger - Webdesign"
-      description="Autobeschriftung, LKW-Folierung, Schilder und alles was mit Digitaldruck zu tun hat. Wir machen Marken mobil!"
+      description="Autobeschriftung, LKW-Folierung, Schilder, Webdesign - Digitaldruck und Werbung aus Mörfelden-Walldorf bei Frankfurt."
     ></SEO>
     <DigitalDruck></DigitalDruck>
     <div className={styles.skewSectionOne} id="werbetraeger" />

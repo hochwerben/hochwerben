@@ -48,7 +48,7 @@ const Banner = ({ title, leistung, maxWidth }) => {
           }
         }
       }
-      pkwbeschriftung: file(relativePath: { eq: "dd/citan-banner.png" }) {
+      pkwbeschriftung: file(relativePath: { eq: "dd/citan-banner.jpg" }) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -76,21 +76,27 @@ const Banner = ({ title, leistung, maxWidth }) => {
           }
         }
       }
-      transBeschriftung: file(relativePath: { eq: "dd/trans-beschriftung.jpg" }) {
+      transBeschriftung: file(
+        relativePath: { eq: "dd/trans-beschriftung.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      transporterGrafiken: file(relativePath: { eq: "dd/transporter-grafiken-banner.jpg" }) {
+      transporterGrafiken: file(
+        relativePath: { eq: "dd/transporter-grafiken-banner.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      transporterFolierung: file(relativePath: { eq: "dd/transporter-folierung-banner.jpg" }) {
+      transporterFolierung: file(
+        relativePath: { eq: "dd/transporter-folierung-banner.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid

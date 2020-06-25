@@ -6,7 +6,7 @@ import styles from './cards.module.css';
 const Card = () => {
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: { eq: "dd/citan-seiten.png" }) {
+      file(relativePath: { eq: "dd/citan-seiten.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -21,7 +21,9 @@ const Card = () => {
       <div className={styles.card}>
         <h3 className={styles.heading}>
           Kompakt
-          <span className={styles.price}>ab € 99<span className={styles.mwst}>zzgl. 19% MwSt.</span></span>
+          <span className={styles.price}>
+            ab € 99<span className={styles.mwst}>zzgl. 19% MwSt.</span>
+          </span>
         </h3>
         <div className={styles.cardContent}>
           <ul className={styles.details}>

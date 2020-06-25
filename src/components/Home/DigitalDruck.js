@@ -12,7 +12,9 @@ import 'slick-carousel/slick/slick-theme.css';
 const DigitalDruck = () => {
   const data = useStaticQuery(graphql`
     {
-      pkwBeschriftung: file(relativePath: { eq: "dd/pkw-beschriftung-banner.jpg" }) {
+      pkwBeschriftung: file(
+        relativePath: { eq: "dd/pkw-beschriftung-banner.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -28,7 +30,9 @@ const DigitalDruck = () => {
           id
         }
       }
-      transporterBeschriftung: file(relativePath: { eq: "dd/trans-beschriftung.jpg" }) {
+      transporterBeschriftung: file(
+        relativePath: { eq: "dd/trans-beschriftung.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -36,7 +40,9 @@ const DigitalDruck = () => {
           id
         }
       }
-      transporterGrafiken: file(relativePath: { eq: "dd/transporter-grafiken-banner.jpg" }) {
+      transporterGrafiken: file(
+        relativePath: { eq: "dd/transporter-grafiken-banner.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -44,7 +50,9 @@ const DigitalDruck = () => {
           id
         }
       }
-      transporterFolierung: file(relativePath: { eq: "dd/transporter-folierung-banner.jpg" }) {
+      transporterFolierung: file(
+        relativePath: { eq: "dd/transporter-folierung-banner.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
