@@ -86,7 +86,7 @@ th {
   margin: 2rem 0;
 }
 
-a {
+.referenzen a {
   text-decoration: underline;
   color: var(--clr-grey-1);
 }

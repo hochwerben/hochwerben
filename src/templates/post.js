@@ -27,7 +27,7 @@ const ReferenzenTemplate = ({
         <article className={styles.featuredImage}>
           <Image fluid={fluid} alt={title} />
         </article>
-        <article>
+        <article className={styles.referenzen}>
           <MDXProvider>
             <MDXRenderer>{content.childMdx.body}</MDXRenderer>
           </MDXProvider>
