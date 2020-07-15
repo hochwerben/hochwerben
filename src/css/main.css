@@ -197,6 +197,12 @@ ul {
   height: 300px;
 }
 
+.trolley-images img {
+  height: 400px;
+  display: block;
+  margin: auto;
+}
+
 @media screen and (min-width: 576px) {
   .center {
     grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));

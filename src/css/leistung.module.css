@@ -57,6 +57,10 @@ th {
   color: var(--clr-primary); /* Or a color you prefer */
 }
 
+.beschreibung a {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 1450px) {
   .centerProdukt {
     padding: 2.5rem 0;

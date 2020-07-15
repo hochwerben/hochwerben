@@ -1,0 +1,60 @@
+---
+title: 'Flugzeugtrolleys'
+type: 'service'
+featuredImage: ../images/wt/flugzeugtrolleys.jpg
+slug: flugzeugtrolleys
+---
+
+import Banner from '../components/Leistung/Banner';
+import CardGrid from '../components/Leistung/CardGrid';
+import Card from '../components/Leistung/Card';
+import LeistungTitle from '../components/Leistung/LeistungTitle';
+import Icons from '../components/Icons';
+import TrolleyCardsDescription from '../components/Leistung/Trolleys/TrolleyCardsDescription';
+import AlternativProdukte from '../components/Leistung/AlternativProdukte';
+import deinSign from '../images/dein-sign.png';
+import TrolleySlider from '../components/Leistung/Trolleys/TrolleySlider'
+import SEO from '../components/seo';
+import datenblatt from '../downloads/datenblatt-trolley-individuell.pdf';
+
+<SEO title="Flugzeugtrolleys" description="Flugzeugtrolleys mit individuellem Design. Gestalten Sie Ihren Trolley selbst. ATLAS-Norm."></SEO>
+
+<Banner leistung="flugzeugtrolleys" maxWidth="100" />
+
+<CardGrid>
+  {/* <Card title='"Our Design"' price="849" >
+    <li>Design: vorgegeben</li>
+    <li>Norm: ATLAS</li>
+  </Card> */}
+  <Card title='"Your Design"' price="949">
+    <li>Design: Gestalten Sie Ihren eigenen Trolley <strong>individuell</strong></li>
+    <li>Norm: ATLAS</li>
+  </Card>
+</CardGrid>
+
+<LeistungTitle title="Beschreibung" />
+
+### Individuelles Design Ihres Flugzeugtrolleys
+Sie haben sich für ein individuelles Design Ihres neuen Trolleys entschieden?
+
+Dann müssen Ihre Grafiken folgende __Anforderungen__ erfüllen:
+
+- Dateiformat: __PDF__, __JPG__ oder __TIFF__
+- Auflösung: __300dpi__
+- Farbraum: __CMYK__
+- Beschnittzugabe: __1cm__
+
+#### Warum ist eine Beschnittzugabe notwendig?
+Beim Beschneiden Ihrer Grafiken kann es zu minimalen Abweichungen kommen.Die Beschnittzugabe dient als Spielraum, der "weiße Ränder/Blitzer" verhindert. Um diese weißen Ränder zu verhindern muss Ihre Grafik über den sichtbaren Bereich hinaus in den Bereich der Beschnittzugabe hineinreichen.
+
+<a href={datenblatt} target="_blank">Datenblatt Layout</a>
+
+### ATLAS-Norm
+Flugzeugtrolleys sind nicht alle gleich. Daher gilt es gerade beim Zubehör auf den richtigen Standard zu achten, sonst kann es passieren dass beispielsweise die Einschubfächer nicht richtig passen.
+
+Unsere Trolleys entsprechen der __ATLAS-Norm__. ATLAS ist mit ca. 80% der am häufigsten verbreitetste Standard unter den Flugzeugtrolleys.
+
+<TrolleyCardsDescription />
+
+<TrolleySlider />
+

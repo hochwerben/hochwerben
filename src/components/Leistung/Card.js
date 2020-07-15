@@ -9,7 +9,7 @@ const Card = ({ title, price, children }) => (
         {price ? (
           <span className={styles.price}>
             ab € {price}
-            <span className={styles.mwst}>zzgl. 19% MwSt.</span>
+            <span className={styles.mwst}>zzgl. MwSt.</span>
           </span>
         ) : null}
       </h3>

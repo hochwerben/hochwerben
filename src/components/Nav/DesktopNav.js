@@ -40,6 +40,7 @@ const DesktopNav = () => {
             <div className={styles.menu}>
               <Link to="/leistungen/banner">Banner</Link>
               <Link to="/leistungen/bauzaunbanner">Bauzaunbanner</Link>
+              <Link to="/leistungen/flugzeugtrolleys">Flugzeugtrolleys</Link>
               <Link to="/leistungen/lkw-beschriftung">LKW-Beschriftung</Link>
               <Link to="/leistungen/lkw-folierung">LKW-Folierung</Link>
               {/* <Link to="/leistungen/lkw-grafiken">LKW-Grafiken</Link> */}
