@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import buerotrolley from '../../../images/trolleys/Bürotrolley.jpg';
 import folientrolley from '../../../images/trolleys/Folientrolley.jpg';
-import weintrolley from '../../../images/trolleys/weintrolley.jpg';
+import weintrolley from '../../../images/trolleys/Weintrolley.jpg';
 
 const TrolleySlider = () => {
   // const data = useStaticQuery(graphql`
