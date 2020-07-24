@@ -43,14 +43,11 @@ const Webdesign = () => {
           <Slider {...settings}>
             {/* Slide 1 */}
             <div className={styles.sliderContainer}>
-              <Image
-                fluid={data.website.childImageSharp.fluid}
-                alt="Image1"
-              />
+              <Image fluid={data.website.childImageSharp.fluid} alt="Image1" />
               <Link to="/leistungen/webdesign" as="div">
                 <span className={styles.rect}>Webseite</span>
               </Link>
-              <span className={styles.priceTag}>ab € 599</span>
+              <span className={styles.priceTag}>ab € 799</span>
             </div>
           </Slider>
         </div>
