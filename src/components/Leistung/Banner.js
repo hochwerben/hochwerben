@@ -13,6 +13,13 @@ const Banner = ({ title, leistung, maxWidth }) => {
 
   const data = useStaticQuery(graphql`
     {
+      shirts: file(relativePath: { eq: "wt/shirts.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       flugzeugtrolleys: file(relativePath: { eq: "wt/flugzeugtrolleys.jpg" }) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {
@@ -122,7 +129,7 @@ const Banner = ({ title, leistung, maxWidth }) => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>{title || leistung}</h1>
+      <h1 className={styles.heading}>{leistung === 'shirts' ? 't-shirts' : title || leistung}</h1>
       <div
         className={styles.bannerImageContainer}
         style={{ maxWidth: maximumWidth }}

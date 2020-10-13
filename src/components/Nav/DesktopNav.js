@@ -56,6 +56,9 @@ const DesktopNav = () => {
               <Link to="/leistungen/transporter-grafiken">
                 Transporter-Grafiken
               </Link>
+              {/* <Link to="/leistungen/t-shirts">
+                T-Shirts
+              </Link> */}
               {/* <Link to="/leistungen/transporter-folierung">Transporter-Folierung</Link> */}
               {/* <Link to="/leistungen/textildruck">Textildruck</Link> */}
               {/* <Link to="/leistungen/visitenkarten">Visitenkarten</Link> */}
