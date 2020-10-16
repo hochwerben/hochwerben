@@ -13,6 +13,7 @@ import LeistungTitle from '../components/Leistung/LeistungTitle';
 import AlternativProdukte from '../components/Leistung/AlternativProdukte';
 import deinSign from '../images/dein-sign.png';
 import SEO from '../components/seo';
+import LeistungsReferenzen from '../components/LeistungsReferenzen/LeistungsReferenzen'
 
 <SEO title="Bauzaunbanner" description="Bauzaunbanner aus PVC bzw. PVC Mesh. Nutzen Sie Ihren Bauzaun ideal mit einem Bauzaunbanner von Hochwerben."></SEO>
 
@@ -43,3 +44,12 @@ Die verwendeten Materialien sind für die Anwendung im Innen u. Außenbereich ge
     <img src={deinSign} alt="dein sign" width="100px"/> Bodenfolie
   </li>
 </ol>
+
+<LeistungTitle title={'Referenzen'} />
+
+<div className='refContainer'>
+  <LeistungsReferenzen refSlug={'medintimSchild'} />
+  <LeistungsReferenzen refSlug={'kfzFahrzeugbeschriftung'} />
+  <LeistungsReferenzen refSlug={'tshirts'} />
+  <LeistungsReferenzen refSlug={'lkwFolierung'} />
+</div>

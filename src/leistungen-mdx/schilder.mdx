@@ -13,6 +13,7 @@ import LeistungTitle from '../components/Leistung/LeistungTitle';
 import AlternativProdukte from '../components/Leistung/AlternativProdukte';
 import deinSign from '../images/dein-sign.png';
 import SEO from '../components/seo';
+import LeistungsReferenzen from '../components/LeistungsReferenzen/LeistungsReferenzen'
 
 <SEO title="Schilder" description="Firmenschilder oder Werbeschilder als Aluverbundplatte eignen sich im Innen- und Außenbereich."></SEO>
 
@@ -44,3 +45,11 @@ Ob Privat oder Gewerbetreibende, mit <img src={deinSign} alt="dein sign" width="
     <img src={deinSign} alt="dein sign" width="100px"/> Bodenfolie
   </li>
 </ol>
+
+<LeistungTitle title={'Referenzen'} />
+
+<div className='refContainer'>
+  <LeistungsReferenzen refSlug={'medintimSchild'} />
+  <LeistungsReferenzen refSlug={'kfzFahrzeugbeschriftung'} />
+  <LeistungsReferenzen refSlug={'tshirts'} />
+</div>

@@ -13,6 +13,7 @@ import LeistungTitle from '../components/Leistung/LeistungTitle';
 import AlternativProdukte from '../components/Leistung/AlternativProdukte';
 import deinSign from '../images/dein-sign.png';
 import SEO from '../components/seo';
+import LeistungsReferenzen from '../components/LeistungsReferenzen/LeistungsReferenzen'
 
 <SEO title="Transporter Grafiken" description="Grafiken für Kleinbusse und Transporter. Ob Firmenlogo, Slogan oder Kontaktdaten, Ihr Fahrzeug als mobiler Werbeträger"></SEO>
 
@@ -42,3 +43,12 @@ Mit einer Fahrzeuggrafik werden Bilder, Muster od. Logos auf eine weiße Hochlei
     <img src={deinSign} alt="dein sign" width="100px"/> Fensterfolierung
   </li>
 </ol>
+
+<LeistungTitle title={'Referenzen'} />
+
+<div className='refContainer'>
+  <LeistungsReferenzen refSlug={'transporterBeschriftung'} />
+  <LeistungsReferenzen refSlug={'kfzFahrzeugbeschriftung'} />
+  <LeistungsReferenzen refSlug={'Flottenbeschriftung'} />
+  <LeistungsReferenzen refSlug={'rollerbeschriftung'} />
+</div>

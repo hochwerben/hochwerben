@@ -13,6 +13,7 @@ import LeistungTitle from '../components/Leistung/LeistungTitle';
 import AlternativProdukte from '../components/Leistung/AlternativProdukte';
 import deinSign from '../images/dein-sign.png';
 import SEO from '../components/seo';
+import LeistungsReferenzen from '../components/LeistungsReferenzen/LeistungsReferenzen'
 
 <SEO title="Sticker / Aufkleber" description="Hochwertige Sticker / Aufkleber in allen Varianten. Mit Veredelung für besonders lange Haltbarkeit."></SEO>
 <Banner leistung="sticker" maxWidth="80" />
@@ -44,3 +45,11 @@ Die Montage ist denkbar einfach und kann jederzeit ohne großen Aufwand getausch
     <img src={deinSign} alt="dein sign" width="100px"/> Schilder / Alu-Verbundplatte
   </li>
 </ol>
+
+<LeistungTitle title={'Referenzen'} />
+
+<div className='refContainer'>
+  <LeistungsReferenzen refSlug={'medintimSchild'} />
+  <LeistungsReferenzen refSlug={'kfzFahrzeugbeschriftung'} />
+  <LeistungsReferenzen refSlug={'tshirts'} />
+</div>

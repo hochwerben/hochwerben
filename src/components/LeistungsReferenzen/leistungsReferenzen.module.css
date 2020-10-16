@@ -1,0 +1,41 @@
+.image {
+  position: relative;
+  transition: all 0.2s linear;
+}
+
+.image img:hover {
+  filter: brightness(0.5);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.2s linear;
+  opacity: 0;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  .image {
+    max-width: 70%;
+    margin: auto;
+  }
+}

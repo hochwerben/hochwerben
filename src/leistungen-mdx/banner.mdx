@@ -14,6 +14,7 @@ import BannerCardsDescription from '../components/Leistung/Banner/BannerCardsDes
 import AlternativProdukte from '../components/Leistung/AlternativProdukte';
 import deinSign from '../images/dein-sign.png';
 import SEO from '../components/seo';
+import LeistungsReferenzen from '../components/LeistungsReferenzen/LeistungsReferenzen'
 
 <SEO title="Banner" description="Banner die auffallen. An Fassaden oder freistehend. Das Format ist auch für XXL Banner geeignet."></SEO>
 
@@ -70,3 +71,12 @@ Die verwendeten Materialien sind für die Anwendung im Innen u. Außenbereich ge
     <img src={deinSign} alt="dein sign" width="100px"/> Bodenfolie
   </li>
 </ol>
+
+<LeistungTitle title={'Referenzen'} />
+
+<div className='refContainer'>
+  <LeistungsReferenzen refSlug={'medintimSchild'} />
+  <LeistungsReferenzen refSlug={'kfzFahrzeugbeschriftung'} />
+  <LeistungsReferenzen refSlug={'tshirts'} />
+  <LeistungsReferenzen refSlug={'lkwFolierung'} />
+</div>

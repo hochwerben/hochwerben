@@ -13,6 +13,7 @@ import LeistungTitle from '../components/Leistung/LeistungTitle';
 import AlternativProdukte from '../components/Leistung/AlternativProdukte';
 import deinSign from '../images/dein-sign.png';
 import SEO from '../components/seo';
+import LeistungsReferenzen from '../components/LeistungsReferenzen/LeistungsReferenzen'
 
 <SEO title="LKW-Beschriftung" description="Hochwertige Beschriftung für Ihren LKW-Koffer."></SEO>
 
@@ -42,3 +43,12 @@ Mit einer Fahrzeugbeschriftung werden Ihre Texte od. Logos aus einer farbigen Fo
     <img src={deinSign} alt="dein sign" width="100px"/> Fensterfolierung
   </li>
 </ol>
+
+<LeistungTitle title={'Referenzen'} />
+
+<div className='refContainer'>
+  <LeistungsReferenzen refSlug={'lkwFolierung'} />
+  <LeistungsReferenzen refSlug={'kfzFahrzeugbeschriftung'} />
+  <LeistungsReferenzen refSlug={'Flottenbeschriftung'} />
+  <LeistungsReferenzen refSlug={'transporterBeschriftung'} />
+</div>
