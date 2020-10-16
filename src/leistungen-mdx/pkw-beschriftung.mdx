@@ -13,7 +13,7 @@ import LeistungTitle from '../components/Leistung/LeistungTitle';
 import AlternativProdukte from '../components/Leistung/AlternativProdukte';
 import deinSign from '../images/dein-sign.png';
 import SEO from '../components/seo';
-import LeistungsReferenzen from '../components/LeistungsReferenzen/LeistungsReferenzen'
+import RefCarousell from '../components/RefCarousell'
 
 <SEO title="PKW-Beschriftung" description="Ihr Auto als mobiler Werbeträger. Hochwertige Folienbeschriftung für Ihr Fahrzeug."></SEO>
 <Banner title="PKW-beschriftung" leistung="pkwbeschriftung" maxWidth="100" />
@@ -30,7 +30,7 @@ Mit einer Fahrzeugbeschriftung werden Ihre Texte od. Logos aus einer farbigen Fo
 
 <!--  -->
 
-<LeistungTitle title={'Alternativprodukte'} />
+<!-- <LeistungTitle title={'Alternativprodukte'} />
 
 <ol style={{ listStyle: 'none' }}>
   <li><img src={deinSign} alt="dein sign" width="100px"/> Grafiken</li>
@@ -40,13 +40,8 @@ Mit einer Fahrzeugbeschriftung werden Ihre Texte od. Logos aus einer farbigen Fo
   <li>
     <img src={deinSign} alt="dein sign" width="100px"/> Fensterfolierung
   </li>
-</ol>
+</ol> -->
 
 <LeistungTitle title={'Referenzen'} />
 
-<div className='refContainer'>
-  <LeistungsReferenzen refSlug={'transporterBeschriftung'} />
-  <LeistungsReferenzen refSlug={'kfzFahrzeugbeschriftung'} />
-  <LeistungsReferenzen refSlug={'Flottenbeschriftung'} />
-  <LeistungsReferenzen refSlug={'rollerbeschriftung'} />
-</div>
+<RefCarousell />

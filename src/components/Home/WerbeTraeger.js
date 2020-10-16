@@ -124,7 +124,7 @@ const Werbetraeger = () => {
     {
       text: 'Sticker',
       textFull: 'Sticker',
-      price: 95,
+      price: 11.95,
       image: data.sticker.childImageSharp.fluid,
       id: data.sticker.childImageSharp.id,
       link: '/sticker',

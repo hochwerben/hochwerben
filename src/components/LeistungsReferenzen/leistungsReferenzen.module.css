@@ -3,10 +3,6 @@
   transition: all 0.2s linear;
 }
 
-.image img:hover {
-  filter: brightness(0.5);
-}
-
 .overlay {
   position: absolute;
   top: 0;

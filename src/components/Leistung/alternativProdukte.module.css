@@ -1,34 +1,12 @@
-.centerLeistungenContainer {
-  padding: 3rem 0 5rem;
-  width: 90vw;
-  max-width: 1170px;
-  margin: auto;
-}
-
-.categoryGrid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 7rem;
-}
-
-.categoryGrid h2,
-h3 {
-  font-size: 1rem;
-}
-
-.imageGrid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin-top: 5rem;
+.sliderContainer {
+  margin: 1rem 25px;
+  /* width: 80%; */
 }
 
 .imageContainer {
   transition: all 0.15s linear;
   position: relative;
+  margin: 0 1rem;
 }
 
 .imageContainer:hover {
@@ -36,16 +14,15 @@ h3 {
 }
 
 .leistungTitle {
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  display: inline-block;
-  background-color: var(--clr-primary);
+  display: block;
   padding: 0 2rem;
   font-weight: 500;
-  color: white;
+  color: var(--clr-grey-5);
   letter-spacing: 1px;
+  text-align: center;
+  margin-top: 0.5rem;
 }
+
 @media only screen and (max-width: 1450px) {
   .centerLeistungenContainer {
     padding-top: 2.5rem;

@@ -14,7 +14,7 @@ import BannerCardsDescription from '../components/Leistung/Banner/BannerCardsDes
 import AlternativProdukte from '../components/Leistung/AlternativProdukte';
 import deinSign from '../images/dein-sign.png';
 import SEO from '../components/seo';
-import LeistungsReferenzen from '../components/LeistungsReferenzen/LeistungsReferenzen'
+import RefCarousell from '../components/RefCarousell'
 
 <SEO title="Banner" description="Banner die auffallen. An Fassaden oder freistehend. Das Format ist auch für XXL Banner geeignet."></SEO>
 
@@ -57,7 +57,7 @@ Die verwendeten Materialien sind für die Anwendung im Innen u. Außenbereich ge
 
 <!--  -->
 
-<LeistungTitle title="Alternativprodukte" />
+<!-- <LeistungTitle title="Alternativprodukte" />
 
 <ol style={{ listStyle: 'none' }}>
   <li><img src={deinSign} alt="dein sign" width="100px"/> Bauzaun Banner</li>
@@ -70,13 +70,8 @@ Die verwendeten Materialien sind für die Anwendung im Innen u. Außenbereich ge
   <li>
     <img src={deinSign} alt="dein sign" width="100px"/> Bodenfolie
   </li>
-</ol>
+</ol> -->
 
 <LeistungTitle title={'Referenzen'} />
 
-<div className='refContainer'>
-  <LeistungsReferenzen refSlug={'medintimSchild'} />
-  <LeistungsReferenzen refSlug={'kfzFahrzeugbeschriftung'} />
-  <LeistungsReferenzen refSlug={'tshirts'} />
-  <LeistungsReferenzen refSlug={'lkwFolierung'} />
-</div>
+<RefCarousell />
