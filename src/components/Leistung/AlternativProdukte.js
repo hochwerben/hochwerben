@@ -26,7 +26,7 @@ export default function AlternativProdukte(props) {
       <ol className={styles.linkBox}>
         {banner && (
         <li>
-          <MyLink to="leistungen/banner">
+          <MyLink to="/leistungen/banner">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>Banner</span>
@@ -36,7 +36,7 @@ export default function AlternativProdukte(props) {
         )}
         {bauzaunbanner && (
         <li>
-          <MyLink to="leistungen/bauzaunbanner">
+          <MyLink to="/leistungen/bauzaunbanner">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>Bauzaun Banner</span>
@@ -46,7 +46,7 @@ export default function AlternativProdukte(props) {
         )}
         {fassadenbanner && (
         <li>
-          <MyLink to="leistungen/bauzaunbanner">
+          <MyLink to="/leistungen/bauzaunbanner">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>Mega- / Fassadenbanner</span>
@@ -56,7 +56,7 @@ export default function AlternativProdukte(props) {
         )}
         {bodenfolie && (
         <li>
-          <MyLink to="leistungen/bauzaunbanner">
+          <MyLink to="/leistungen/bauzaunbanner">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>Bodenfolie</span>
@@ -66,7 +66,7 @@ export default function AlternativProdukte(props) {
         )}
         {flugzeugtrolleys && (
         <li>
-          <MyLink to="leistungen/flugzeugtrolleys">
+          <MyLink to="/leistungen/flugzeugtrolleys">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>Flugzeugtrolleys</span>
@@ -76,7 +76,7 @@ export default function AlternativProdukte(props) {
         )}
         {lkwBeschriftung && (
         <li>
-          <MyLink to="leistungen/lkw-beschriftung">
+          <MyLink to="/leistungen/lkw-beschriftung">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>LKW Beschriftung</span>
@@ -86,7 +86,7 @@ export default function AlternativProdukte(props) {
         )}
         {lkwFolierung && (
         <li>
-          <MyLink to="leistungen/lkw-folierung">
+          <MyLink to="/leistungen/lkw-folierung">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>LKW Folierung</span>
@@ -96,7 +96,7 @@ export default function AlternativProdukte(props) {
         )}
         {pkwBeschriftung && (
         <li>
-          <MyLink to="leistungen/pkw-beschriftung">
+          <MyLink to="/leistungen/pkw-beschriftung">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>PKW Beschriftung</span>
@@ -106,7 +106,7 @@ export default function AlternativProdukte(props) {
         )}
         {pkwGrafiken && (
         <li>
-          <MyLink to="leistungen/pkw-grafiken">
+          <MyLink to="/leistungen/pkw-grafiken">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>PKW Grafiken</span>
@@ -116,7 +116,7 @@ export default function AlternativProdukte(props) {
         )}
         {schilder && (
         <li>
-          <MyLink to="leistungen/schilder">
+          <MyLink to="/leistungen/schilder">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>Schilder</span>
@@ -126,7 +126,7 @@ export default function AlternativProdukte(props) {
         )}
         {sticker && (
         <li>
-          <MyLink to="leistungen/sticker">
+          <MyLink to="/leistungen/sticker">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>Sticker</span>
@@ -136,7 +136,7 @@ export default function AlternativProdukte(props) {
         )}
         {transporterBeschriftung && (
         <li>
-          <MyLink to="leistungen/transporter-beschriftung">
+          <MyLink to="/leistungen/transporter-beschriftung">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>Transporter Beschriftung</span>
@@ -146,7 +146,7 @@ export default function AlternativProdukte(props) {
         )}
         {transporterGrafiken && (
         <li>
-          <MyLink to="leistungen/transporter-grafiken">
+          <MyLink to="/leistungen/transporter-grafiken">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>Transporter Grafiken</span>
@@ -156,7 +156,7 @@ export default function AlternativProdukte(props) {
         )}
         {webdesign && (
         <li>
-          <MyLink to="leistungen/webdesign">
+          <MyLink to="/leistungen/webdesign">
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>Webdesign</span>
