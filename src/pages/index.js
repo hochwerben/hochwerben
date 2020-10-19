@@ -8,7 +8,7 @@ import WebDesign from '../components/Home/WebDesign';
 import styles from '../css/index.module.css';
 
 const IndexPage = () => {
-  window[process.env.GOOGLE_ANALYTICS_TRACKING_ID] = true
+  // window[process.env.GOOGLE_ANALYTICS_TRACKING_ID] = true
 
   return (
     <Layout>
