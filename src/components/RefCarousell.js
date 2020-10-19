@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import styles from './Leistung/alternativProdukte.module.css';
+import styles from './refCarousell.module.css';
 
 export default function LeistungsReferenzen() {
   const data = useStaticQuery(graphql`

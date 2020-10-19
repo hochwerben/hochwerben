@@ -1,41 +1,24 @@
-.sliderContainer {
-  margin: 1rem 25px;
-  /* width: 80%; */
+.linkContainer {
+  margin: 1rem;
 }
 
-.imageContainer {
-  transition: all 0.15s linear;
-  position: relative;
-  margin: 0 1rem;
+.linkBox {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.imageContainer:hover {
-  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+.itemContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: color 0.2s linear;
 }
 
-.leistungTitle {
+.serviceTitle {
   display: block;
-  padding: 0 2rem;
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  color: var(--clr-grey-5);
-  letter-spacing: 1px;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-@media only screen and (max-width: 1450px) {
-  .centerLeistungenContainer {
-    padding-top: 2.5rem;
-  }
-  .imageGrid {
-    margin-top: 1rem;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .centerLeistungenContainer {
-    padding-top: 2rem;
-  }
-  .imageGrid {
-    margin-top: 1rem;
-  }
 }
