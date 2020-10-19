@@ -8,7 +8,7 @@ import SEO from '../components/seo';
 
 export default ({
   data: {
-    allContentfulPost: { nodes },
+    allContentfulPost: { edges },
   },
 }) => {
   return (
@@ -21,7 +21,7 @@ export default ({
         <Title title="Referenzen"></Title>
 
         <div className={styles.imageGrid}>
-          {nodes.map(({ id, title, slug, featuredImage: { fluid } }) => (
+          {edges.map(({ node: { id, title, slug, featuredImage: { fluid } }}) => (
             <div key={id} className={styles.imageContainer}>
               <Link to={`/referenzen/${slug}`}>
                 <Image
@@ -42,13 +42,17 @@ export default ({
 export const query = graphql`
   {
     allContentfulPost(sort: { order: DESC, fields: createdAt }) {
-      nodes {
-        id
-        title
-        slug
-        featuredImage {
-          fluid {
-            ...GatsbyContentfulFluid
+      edges {
+        node {
+          slug
+          id
+          title
+          createdAt
+          updatedAt
+          featuredImage {
+            fluid {
+              ...GatsbyContentfulFluid
+            }
           }
         }
       }
