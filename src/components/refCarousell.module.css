@@ -1,0 +1,9 @@
+.leistungTitle {
+  display: block;
+  padding: 0 2rem;
+  font-weight: 500;
+  color: var(--clr-grey-5);
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 0.5rem;
+}

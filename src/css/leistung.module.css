@@ -61,6 +61,14 @@ th {
   text-decoration: underline;
 }
 
+.beschreibung ol a {
+  color: var(--clr-grey-5);
+  text-decoration: none;
+}
+.beschreibung ol a:hover {
+  color: var(--clr-primary);
+}
+
 @media only screen and (max-width: 1450px) {
   .centerProdukt {
     padding: 2.5rem 0;
