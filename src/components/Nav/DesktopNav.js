@@ -38,6 +38,7 @@ const DesktopNav = () => {
             ----- Dropdown Leistungen -----
             */}
             <div className={styles.menu}>
+              <Link to="/leistungen/atemschutzmasken">Atemschutzmasken</Link>
               <Link to="/leistungen/banner">Banner</Link>
               <Link to="/leistungen/bauzaunbanner">Bauzaunbanner</Link>
               <Link to="/leistungen/flugzeugtrolleys">Flugzeugtrolleys</Link>
@@ -50,6 +51,7 @@ const DesktopNav = () => {
               {/* <Link to="/leistungen/messedisplays">Messedisplays</Link> */}
               <Link to="/leistungen/schilder">Schilder</Link>
               <Link to="/leistungen/sticker">Sticker</Link>
+              <Link to="/leistungen/t-shirts">T-Shirts</Link>
               <Link to="/leistungen/transporter-beschriftung">
                 Transporter-Beschriftung
               </Link>

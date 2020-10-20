@@ -3,7 +3,7 @@ require('dotenv').config({
 });
 module.exports = {
   siteMetadata: {
-    title: `Hochwerben.de - Digitaldruck`,
+    title: `Hochwerben.de`,
     description: ` Digitaldruck, Werbeträger und Webdesign aus Mörfelden-Walldorf.`,
     author: `hochwerben`,
     twitterUsername: '@hochwerben',
@@ -12,12 +12,34 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-gtag`,
+      resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
-        anonymize: true,
+        googleAnalytics: {
+          trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID, // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-google-analytics', // default
+          anonymize: true, // default
+          allowAdFeatures: false // default
+        },
+        googleTagManager: {
+          trackingId: '', // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-google-tagmanager', // default
+          dataLayerName: 'dataLayer', // default
+        },
+        facebookPixel: {
+          pixelId: '', // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-facebook-pixel', // default
+        },
+        // defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production', 'development']
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-gtag`,
+    //   options: {
+    //     trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+    //     anonymize: true,
+    //   },
+    // },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

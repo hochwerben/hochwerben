@@ -20,6 +20,8 @@ export default function AlternativProdukte(props) {
     transporterBeschriftung,
     transporterGrafiken,
     webdesign,
+    masken,
+    shirts
   } = props
   return (
     <div className={styles.linkContainer}>
@@ -150,6 +152,26 @@ export default function AlternativProdukte(props) {
             <div className={styles.itemContainer}>
               <img src={deinSign} alt="dein sign" width="100px"/>
               <span className={styles.serviceTitle}>Transporter Grafiken</span>
+            </div>
+          </MyLink>
+        </li>
+        )}
+        {masken && (
+        <li>
+          <MyLink to="/leistungen/atemschutzmasken">
+            <div className={styles.itemContainer}>
+              <img src={deinSign} alt="dein sign" width="100px"/>
+              <span className={styles.serviceTitle}>Atemschutzmasken</span>
+            </div>
+          </MyLink>
+        </li>
+        )}
+        {shirts && (
+        <li>
+          <MyLink to="/leistungen/t-shirts">
+            <div className={styles.itemContainer}>
+              <img src={deinSign} alt="dein sign" width="100px"/>
+              <span className={styles.serviceTitle}>T-Shirts</span>
             </div>
           </MyLink>
         </li>

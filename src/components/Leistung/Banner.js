@@ -13,6 +13,13 @@ const Banner = ({ title, leistung, maxWidth }) => {
 
   const data = useStaticQuery(graphql`
     {
+      masken: file(relativePath: { eq: "wt/masken.jpg" }) {
+        childImageSharp {
+          fluid(quality: 95, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       shirts: file(relativePath: { eq: "wt/shirts.jpg" }) {
         childImageSharp {
           fluid(quality: 95, maxWidth: 1200) {

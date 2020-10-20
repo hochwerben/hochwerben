@@ -1,0 +1,69 @@
+---
+title: 'T-Shirts'
+type: 'service'
+featuredImage: ../images/wt/shirts.jpg
+slug: t-shirts
+---
+
+import Banner from '../components/Leistung/Banner';
+import CardGrid from '../components/Leistung/CardGrid';
+import Card from '../components/Leistung/Card';
+import LeistungTitle from '../components/Leistung/LeistungTitle';
+import Icons from '../components/Icons';
+import ShirtsCardsDescription from '../components/Leistung/Shirts/ShirtsCardsDescription';
+import AlternativProdukte from '../components/Leistung/AlternativProdukte';
+import deinSign from '../images/dein-sign.png';
+import SEO from '../components/seo';
+import RefCarousell from '../components/RefCarousell'
+import shirtWashing from '../images/descriptions/shirts-washing.svg'
+
+<SEO title="T-Shirts online kaufen" description="T-Shirts bei Hochwerben kaufen | Kreative Motive und individuelle Prints für deinen neuen Look | T-Shirts auf Hochwerben.de - Jetzt bestellen!"></SEO>
+
+<Banner leistung="shirts" maxWidth="100" />
+
+<CardGrid>
+  <Card title="1 Stk." price="19.90" >
+    <li>Farbe: siehe unten</li>
+    <li>Größe: s-5xl / Herren od. Damen</li>
+    <li>Rundhalsausschnitt</li>
+    <li>100% Baumwolle</li>
+    <li>Waschbar bis 60 °C</li>
+    <li>205g/m²</li>
+  </Card>
+  <Card title="5er PACK" price="94.50">
+    <li>Farbe: siehe unten</li>
+    <li>Größe: s-5xl / Herren od. Damen</li>
+    <li>Rundhalsausschnitt</li>
+    <li>100% Baumwolle</li>
+    <li>Waschbar bis 60 °C</li>
+    <li>205g/m²</li>
+  </Card>
+  <Card title="10er PACK" price="179">
+    <li>Farbe: siehe unten</li>
+    <li>Größe: s-5xl / Herren od. Damen</li>
+    <li>Rundhalsausschnitt</li>
+    <li>100% Baumwolle</li>
+    <li>Waschbar bis 60 °C</li>
+    <li>205g/m²</li>
+  </Card>
+</CardGrid>
+
+<img src={shirtWashing} alt="Anleitung zum Waschen von T-Shirts" style={{ maxWidth: '500px', display: 'block', margin: '2rem auto', }} />
+
+<LeistungTitle title="Beschreibung" />
+
+Werbebekleidung, Berufsbekleidung und Sportbekleidung mit&nbsp;<img src={deinSign} alt="dein sign" width="100px" />&nbsp;individuell gestalten.
+
+<ShirtsCardsDescription />
+
+<!--  -->
+
+<LeistungTitle title="Alternativprodukte" />
+
+<AlternativProdukte
+  masken
+/>
+
+<LeistungTitle title={'Referenzen'} />
+
+<RefCarousell />
