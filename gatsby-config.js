@@ -91,6 +91,17 @@ module.exports = {
         accessToken: process.env.ACCESS_TOKEN,
       },
     },
+    {
+      resolve: `gatsby-plugin-shopify-buy`,
+      options: {
+        stores: {
+          anyKeyForYourStore: {
+            domain: `hochwerben.myshopify.com`,
+            accessToken: `7c17773375ca31f8045748b766dcb41b`,
+          },
+        }
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

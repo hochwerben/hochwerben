@@ -16,7 +16,7 @@ const IndexPage = () => {
         title="Digitaldruck - Werbeträger - Webdesign"
         description="Autobeschriftung, LKW-Folierung, Schilder, Webdesign - Digitaldruck und Werbung aus Mörfelden-Walldorf bei Frankfurt."
       ></SEO>
-      <DigitalDruck></DigitalDruck>
+      <DigitalDruck id="digitaldruck"></DigitalDruck>
       <div className={styles.skewSectionOne} id="werbetraeger" />
       <WerbeTraeger></WerbeTraeger>
       <div className={styles.skewSectionTwo} id="webdesign" />

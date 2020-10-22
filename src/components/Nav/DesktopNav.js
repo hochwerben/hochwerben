@@ -18,7 +18,7 @@ const DesktopNav = () => {
               Kompetenzen
             </Link>
             <div className={styles.menu}>
-              <Link to="/" className={styles.dropDownLink}>
+              <Link to="/#digitaldruck" className={styles.dropDownLink}>
                 Digitaldruck
               </Link>
               <Link to="/#werbetraeger" className={styles.dropDownLink}>
